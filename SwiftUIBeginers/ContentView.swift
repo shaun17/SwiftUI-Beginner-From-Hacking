@@ -8,14 +8,22 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var isNavPush = false
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationView {
+            VStack {
+                NavigationLink {
+                    ChallengeOne()
+                } label: {
+                    Label("Challenge One", systemImage: "folder")
+                }
+    
+            }
+            .navigationTitle("Challenges")
+                .navigationBarTitleDisplayMode(.inline)
+                .padding()
         }
-        .padding()
     }
 }
 
