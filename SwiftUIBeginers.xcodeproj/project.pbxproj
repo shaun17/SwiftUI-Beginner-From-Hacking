@@ -15,6 +15,8 @@
 		280E599D2AC1284200DAC8F1 /* SwiftUIBeginersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280E599C2AC1284200DAC8F1 /* SwiftUIBeginersUITests.swift */; };
 		280E599F2AC1284200DAC8F1 /* SwiftUIBeginersUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280E599E2AC1284200DAC8F1 /* SwiftUIBeginersUITestsLaunchTests.swift */; };
 		280E59AC2AC1286600DAC8F1 /* ChallengeOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280E59AB2AC1286600DAC8F1 /* ChallengeOne.swift */; };
+		285B88872AC1D8640078D3F0 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285B88862AC1D8640078D3F0 /* SwiftUIView.swift */; };
+		285B88892AC2C6C80078D3F0 /* SwiftUIViewGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285B88882AC2C6C80078D3F0 /* SwiftUIViewGradient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		280E599C2AC1284200DAC8F1 /* SwiftUIBeginersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIBeginersUITests.swift; sourceTree = "<group>"; };
 		280E599E2AC1284200DAC8F1 /* SwiftUIBeginersUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIBeginersUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		280E59AB2AC1286600DAC8F1 /* ChallengeOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeOne.swift; sourceTree = "<group>"; };
+		285B88862AC1D8640078D3F0 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		285B88882AC2C6C80078D3F0 /* SwiftUIViewGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewGradient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,7 @@
 			children = (
 				280E59802AC1284100DAC8F1 /* SwiftUIBeginersApp.swift */,
 				280E59822AC1284100DAC8F1 /* ContentView.swift */,
+				285B88852AC1D8580078D3F0 /* New Group */,
 				280E59AB2AC1286600DAC8F1 /* ChallengeOne.swift */,
 				280E59842AC1284200DAC8F1 /* Assets.xcassets */,
 				280E59862AC1284200DAC8F1 /* SwiftUIBeginers.entitlements */,
@@ -130,6 +135,15 @@
 				280E599E2AC1284200DAC8F1 /* SwiftUIBeginersUITestsLaunchTests.swift */,
 			);
 			path = SwiftUIBeginersUITests;
+			sourceTree = "<group>";
+		};
+		285B88852AC1D8580078D3F0 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				285B88862AC1D8640078D3F0 /* SwiftUIView.swift */,
+				285B88882AC2C6C80078D3F0 /* SwiftUIViewGradient.swift */,
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,7 +277,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				280E59832AC1284100DAC8F1 /* ContentView.swift in Sources */,
+				285B88892AC2C6C80078D3F0 /* SwiftUIViewGradient.swift in Sources */,
 				280E59812AC1284100DAC8F1 /* SwiftUIBeginersApp.swift in Sources */,
+				285B88872AC1D8640078D3F0 /* SwiftUIView.swift in Sources */,
 				280E59AC2AC1286600DAC8F1 /* ChallengeOne.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
