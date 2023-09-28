@@ -71,9 +71,9 @@ struct Project2: View {
 
     func gussFlag(_ number: Int) {
         if number == correctAnswer {
-            scoreTitle = "Correct"
+            scoreTitle = "Correct🎉"
         } else {
-            scoreTitle = "Wrong"
+            scoreTitle = "Wrong❌"
         }
         showingScore = true
     }
