@@ -18,6 +18,11 @@ struct ContentView: View {
                 } label: {
                     Label("Challenge One", systemImage: "folder")
                 }
+                NavigationLink {
+                    ChallengeTwo()
+                } label: {
+                    Label("Challenge Two", systemImage: "folder")
+                }
                 
                 NavigationLink {
                     Project1()
