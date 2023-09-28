@@ -20,6 +20,7 @@
 		285B888B2AC2CC320078D3F0 /* SwiftUIViewButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285B888A2AC2CC320078D3F0 /* SwiftUIViewButton.swift */; };
 		285B888D2AC2D28D0078D3F0 /* SwiftUIViewAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285B888C2AC2D28D0078D3F0 /* SwiftUIViewAlert.swift */; };
 		285B88902AC3FCBD0078D3F0 /* Project1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285B888F2AC3FCBD0078D3F0 /* Project1.swift */; };
+		285B88922AC474780078D3F0 /* Project2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285B88912AC474780078D3F0 /* Project2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		285B888A2AC2CC320078D3F0 /* SwiftUIViewButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewButton.swift; sourceTree = "<group>"; };
 		285B888C2AC2D28D0078D3F0 /* SwiftUIViewAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewAlert.swift; sourceTree = "<group>"; };
 		285B888F2AC3FCBD0078D3F0 /* Project1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project1.swift; sourceTree = "<group>"; };
+		285B88912AC474780078D3F0 /* Project2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				285B888F2AC3FCBD0078D3F0 /* Project1.swift */,
+				285B88912AC474780078D3F0 /* Project2.swift */,
 			);
 			path = Projects;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				285B88922AC474780078D3F0 /* Project2.swift in Sources */,
 				280E59832AC1284100DAC8F1 /* ContentView.swift in Sources */,
 				285B88902AC3FCBD0078D3F0 /* Project1.swift in Sources */,
 				285B88892AC2C6C80078D3F0 /* SwiftUIViewGradient.swift in Sources */,
