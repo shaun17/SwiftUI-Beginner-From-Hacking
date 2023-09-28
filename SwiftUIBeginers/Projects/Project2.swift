@@ -15,12 +15,10 @@ struct Project2: View {
 
     var body: some View {
         ZStack {
-            RadialGradient(stops: [
-                .init(color: Color(red: 0.1, green: 0.2, blue: 0.35), location: 0.3),
-                .init(color: Color(red: 0.36, green: 0.35, blue: 0.16), location: 0.3)
-            ], center: .top, startRadius: 200, endRadius: 700)
-                .ignoresSafeArea()
-
+            RadialGradient(stops:[
+                .init(color: .blue, location: 0.3),
+                .init(color: .yellow, location: 0.7)], center: .top, startRadius: 200, endRadius: 700)
+            
             VStack(spacing: 15) {
                 Spacer()
 
@@ -67,6 +65,8 @@ struct Project2: View {
                 .foregroundColor(.white)
                 .font(.title.bold())
         }
+        .ignoresSafeArea()
+        
     }
 
     func gussFlag(_ number: Int) {
