@@ -13,55 +13,138 @@ struct ButtonStyle: ViewModifier {
     }
 }
 
+
+
 struct ChallengeTwo: View {
-    @State var current = 0
+    @State var score = 0
+    @State var roundNum = 0
+    @State var loseNum = 0
+    @State var enqualNum = 0
+
     @State var isWin = false
     @State var robotoutput = ""
+    @State var roundEnd = false
     var items = ["✊", "👋", "✌️"]
 
     func compare(_ user1: String) {
         isWin = false
-        var robot = Int.random(in: 0...2)
+        roundNum += 1
+        
+        
+        let robot = Int.random(in: 0...2)
         robotoutput  = items[robot]
+        
+        if robotoutput == user1 {
+            enqualNum += 1
+            if roundNum >= 10 {
+                roundEnd = true
+            }
+            return
+        }
+        
         switch robot {
         case 0:
-            if user1 == "Paper" {
+            if user1 == "👋" {
                 isWin = true
             }
-        
+            break
         case 1:
-            if user1 == "Scissors" {
+            if user1 == "✌️" {
                 isWin = true
             }
+            break
         case 2:
-            if user1 == "Rock" {
+            if user1 == "✊" {
                 isWin = true
             }
-        default: break
+            break
+        default:
+            break
            
         }
         if isWin{
-            current+=1
+            score += 1
+        }else{
+            loseNum += 1
         }
+        
+        if roundNum >= 10{
+            roundEnd = true
+        }
+       
+        print(roundNum)
     }
     
+   
     var chose = Int.random(in: 0...3)
     var body: some View {
-        VStack {
-            Text("Your Score is \(current)")
-            Text("Robot is \(robotoutput)")
-            HStack {
-                Button("👋") {
-                    compare("Paper")
-                }.modifier(ButtonStyle())
-                Button("✌️") {
-                    compare("Scissors")
-                }.modifier(ButtonStyle())
-                Button("✊") {
-                    compare("Rock")
-                }.modifier(ButtonStyle())
+        ZStack{
+            LinearGradient(colors: [.red,.orange,.yellow,.green,.cyan,.blue,.purple], startPoint: .top, endPoint: .bottom)
+            
+            VStack {
+                
+                Text("Your Score is \(score)").font(.system(size: 50))
+                Text("Robot is \(robotoutput)")
+                HStack {
+                    Button("👋") {
+                        compare("👋")
+                    }.modifier(ButtonStyle())
+                        .alert("Game is Over", isPresented: $roundEnd, actions: {
+                            Button("Cancel") {
+                                score = 0
+                                roundNum = 0
+                                loseNum = 0
+                                enqualNum = 0
+                                roundEnd = false
+                            }
+                        }, message: {
+                            VStack{
+                               
+                                Text("Win Score is \(score) \n Lose Score is \(loseNum) \n Enqual Score is \(enqualNum)")
+                            }
+                        })
+                        
+                    Button("✌️") {
+                        compare("✌️")
+                    }.modifier(ButtonStyle())
+                        .alert("Game is Over", isPresented: $roundEnd, actions: {
+                            Button("Cancel") {
+                                score = 0
+                                roundNum = 0
+                                loseNum = 0
+                                enqualNum = 0
+                                roundEnd = false
+                            }
+                        }, message: {
+                            VStack{
+                               
+                                Text("Win Score is \(score) \n Lose Score is \(loseNum) \n Enqual Score is \(enqualNum)")
+                            }
+                        })
+                    
+                    Button("✊") {
+                        compare("✊")
+                    }.modifier(ButtonStyle())
+                        .alert("Game is Over", isPresented: $roundEnd, actions: {
+                            Button("Cancel") {
+                                score = 0
+                                roundNum = 0
+                                loseNum = 0
+                                enqualNum = 0
+                                roundEnd = false
+                            }
+                        }, message: {
+                            VStack{
+                               
+                                Text("Win Score is \(score) \n Lose Score is \(loseNum) \n Enqual Score is \(enqualNum)")
+                            }
+                        })
+                    
+                   
+                }
             }
-        }
+        }.ignoresSafeArea()
+       
     }
 }
 
