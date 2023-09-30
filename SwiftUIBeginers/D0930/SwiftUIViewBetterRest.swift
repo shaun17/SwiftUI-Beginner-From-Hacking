@@ -11,7 +11,12 @@ import SwiftUI
 struct SwiftUIViewBetterRest: View {
     @State private var sleepHour = 8.0
     @State private var coffeeNum = 1
-    @State private var wakeup = Date.now
+    @State private var wakeup = defaultWakeUpTime
+    
+    static var defaultWakeUpTime: Date{
+        var component = DateComponents(hour: 7, minute: 0)
+        return Calendar.current.date(from: component) ?? Date.now
+    }
     
     @State private var alertTitle = ""
     @State private var alertMessage = ""
@@ -19,19 +24,28 @@ struct SwiftUIViewBetterRest: View {
     
     var body: some View {
         NavigationView {
-            VStack {
-                Text("When do you want to wake up?")
-                    .font(.headline)
-                DatePicker("chose time ", selection: $wakeup, displayedComponents: .hourAndMinute)
-                    .labelsHidden()
+            Form {
+                Section{
+                    DatePicker("chose time ", selection: $wakeup, displayedComponents: .hourAndMinute)
+                        .labelsHidden()
+                    
+                }header: {
+                    Text("When do you want to wake up?")
+                        .font(.headline)
+                }
                 
-                Text("Desired amount of sleep")
-                    .font(.headline)
-                Stepper("\(sleepHour.formatted()) hours", value: $sleepHour, in: 4...12, step: 0.25)
+                VStack(alignment: .leading, spacing: 2) {
+                    Text("Desired amount of sleep")
+                        .font(.headline)
+                    Stepper("\(sleepHour.formatted()) hours", value: $sleepHour, in: 4...12, step: 0.25)
+                }
                 
-                Text("Daily coffee intake")
-                    .font(.headline)
-                Stepper("\(coffeeNum.formatted()) cap", value: $coffeeNum, in: 1...10)
+                VStack(alignment: .leading, spacing: 2) {
+                    Text("Daily coffee intake")
+                        .font(.headline)
+                    Stepper("\(coffeeNum.formatted()) cap", value: $coffeeNum, in: 1...10)
+                    
+                }
             }
             .navigationTitle("Better Rest")
             .toolbar {
