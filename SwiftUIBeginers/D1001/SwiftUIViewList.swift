@@ -44,6 +44,9 @@ struct SwiftUIViewList: View {
             } message: {
                 Text(errorMsg)
             }
+            .toolbar(content: {
+                Button("startGame",action: startgrame)
+            })
 
             
         }
@@ -65,6 +68,13 @@ struct SwiftUIViewList: View {
         
         guard isPossible(word: word) else{
             showError(title: "isPossible", msg: "from isPossible")
+            return
+        }
+        
+        
+        
+        guard isThreeLetter(word: word) else{
+            showError(title: "isThreeLetter", msg: "from isThreeLetter")
             return
         }
         
@@ -113,6 +123,15 @@ struct SwiftUIViewList: View {
                 return false
             }
         }
+        return true
+    }
+    func isThreeLetter(word: String) -> Bool{
+        var temp = titleWord
+        if temp == word.trimmingCharacters(in: .whitespacesAndNewlines)
+            || temp.prefix(3).contains(word){
+                return false
+        }
+        
         return true
     }
     

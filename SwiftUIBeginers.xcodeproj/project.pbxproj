@@ -16,6 +16,7 @@
 		280E599F2AC1284200DAC8F1 /* SwiftUIBeginersUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280E599E2AC1284200DAC8F1 /* SwiftUIBeginersUITestsLaunchTests.swift */; };
 		280E59AC2AC1286600DAC8F1 /* ChallengeOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280E59AB2AC1286600DAC8F1 /* ChallengeOne.swift */; };
 		2830A1E92ACA5A8F00D10B66 /* start.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2830A1E82ACA5A8F00D10B66 /* start.txt */; };
+		2830A1EC2ACBB89700D10B66 /* SwiftUIViewAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2830A1EB2ACBB89700D10B66 /* SwiftUIViewAnimation.swift */; };
 		285974072AC9607E00A157C3 /* SwiftUIViewList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285974062AC9607E00A157C3 /* SwiftUIViewList.swift */; };
 		285B88872AC1D8640078D3F0 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285B88862AC1D8640078D3F0 /* SwiftUIView.swift */; };
 		285B88892AC2C6C80078D3F0 /* SwiftUIViewGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285B88882AC2C6C80078D3F0 /* SwiftUIViewGradient.swift */; };
@@ -61,6 +62,7 @@
 		280E599E2AC1284200DAC8F1 /* SwiftUIBeginersUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIBeginersUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		280E59AB2AC1286600DAC8F1 /* ChallengeOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeOne.swift; sourceTree = "<group>"; };
 		2830A1E82ACA5A8F00D10B66 /* start.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = start.txt; sourceTree = "<group>"; };
+		2830A1EB2ACBB89700D10B66 /* SwiftUIViewAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewAnimation.swift; sourceTree = "<group>"; };
 		285974062AC9607E00A157C3 /* SwiftUIViewList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewList.swift; sourceTree = "<group>"; };
 		285B88862AC1D8640078D3F0 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		285B88882AC2C6C80078D3F0 /* SwiftUIViewGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewGradient.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				285B88962AC5C8FC0078D3F0 /* ChallengeTwo.swift */,
 				285974052AC9606A00A157C3 /* D1001 */,
 				280E59842AC1284200DAC8F1 /* Assets.xcassets */,
+				2830A1EA2ACBB86600D10B66 /* D1003 */,
 				280E59862AC1284200DAC8F1 /* SwiftUIBeginers.entitlements */,
 				280E59872AC1284200DAC8F1 /* Preview Content */,
 			);
@@ -162,6 +165,14 @@
 				280E599E2AC1284200DAC8F1 /* SwiftUIBeginersUITestsLaunchTests.swift */,
 			);
 			path = SwiftUIBeginersUITests;
+			sourceTree = "<group>";
+		};
+		2830A1EA2ACBB86600D10B66 /* D1003 */ = {
+			isa = PBXGroup;
+			children = (
+				2830A1EB2ACBB89700D10B66 /* SwiftUIViewAnimation.swift */,
+			);
+			path = D1003;
 			sourceTree = "<group>";
 		};
 		285974052AC9606A00A157C3 /* D1001 */ = {
@@ -353,6 +364,7 @@
 				285B888D2AC2D28D0078D3F0 /* SwiftUIViewAlert.swift in Sources */,
 				285B889A2AC72E890078D3F0 /* SwiftUIViewDate.swift in Sources */,
 				285B889C2AC81CB40078D3F0 /* SwiftUIViewBetterRest.swift in Sources */,
+				2830A1EC2ACBB89700D10B66 /* SwiftUIViewAnimation.swift in Sources */,
 				285B88872AC1D8640078D3F0 /* SwiftUIView.swift in Sources */,
 				285B889E2AC820C80078D3F0 /* SleepCalculator.mlmodel in Sources */,
 				285B88972AC5C8FC0078D3F0 /* ChallengeTwo.swift in Sources */,
