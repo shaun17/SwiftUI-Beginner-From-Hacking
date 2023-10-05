@@ -7,52 +7,102 @@
 
 import SwiftUI
 
-struct QuizView: View {
-    @State var symbol: String
-    @State var cardinal: Int
-    @State var questioCount: Int
-    
-    @State private var allAnswers = []
-    
-    @State private var multiplier = 0
+extension Button{
+    func stylediy() -> some View{
+        frame(width: 80, height: 80, alignment: .center)
+            .font(.title)
+            .foregroundColor(.white)
+            .background(.blue)
+            .clipShape(Circle())
+        
+    }
+}
 
-    
+struct QuizView: View {
+    @Environment(\.dismiss) var dismiss
+
+    // 符号
+    @State var symbol: String
+    // 基数
+    @State var cardinal: Int
+    // 答题数量
+    @State var questioCount: Int
+    // 轮次
+    @State var currentNum = 0
+    // 自动生成的答案数量
+    @State private var allAnswers = [Int]()
+    // 被乘数
+    @State private var multiplier = 0
+    // 被乘数
+    @State private var result = 0
+    @State private var defaultAmount = 8
+    @State private var isOver = false
 
     
     var body: some View {
         
         VStack{
-            
-            Text(symbol)
-            Text(String(cardinal))
-            Text(String(questioCount))
-            
-            
-        }
-        
-        
-       
-    }
-    
-    func randomQuestion(){
-        let multiplier = Int.random(in: 0...cardinal)
-        
-    }
-    
-    func allAnswer(_ symbol:String){
-        allAnswers.append(operate(cardinal, multiplier, symbol))
-        
-        ForEach(0 ..< cardinal, id: \.self){
-            var rand = Int.random(in: 0...cardinal)
-            
-            while multiplier == rand {
-                rand = Int.random(in: 0...cardinal)
+            HStack{
+                Text(String(cardinal))
+                Text(symbol)
+                Text("\(multiplier)")
+                Image(systemName: "equal")
             }
-            allAnswers.append(operate(cardinal, rand, symbol))
+            
+            LazyVGrid(columns: [GridItem(.adaptive(minimum: 150, maximum: .infinity))], content: {
+                ForEach(allAnswers, id: \.self){ item in
+                    Button("\(item)"){
+                        checkAnswer(item)
+                    }
+                    .stylediy()
+                    
+                }
+            })
 
+            
+        }.alert("Game Over", isPresented: $isOver, actions: {
+            Button("New Game", role: .cancel) {
+                dismiss()
+            }
+        })
+        .onAppear(){
+            newQuiz()
         }
+        
+
        
     }
+    
+    func checkAnswer(_ item:Int){
+        if item == result{
+            if currentNum == questioCount {
+                isOver = true
+                return
+            }
+            newQuiz()
+        }else{
+            return
+        }
+    }
+    
+    
+    func newQuiz(){
+        currentNum += 1
+        allAnswers.removeAll()
+        multiplier = Int.random(in: 0..<cardinal)
+        result = operate(cardinal, multiplier, symbol)
+        allAnswers.append(result)
+        while allAnswers.count < defaultAmount{
+            var temp = Int.random(in: 0..<(cardinal*cardinal))
+            while temp == multiplier || allAnswers.contains(temp) {
+                temp = Int.random(in: 0..<cardinal)
+            }
+            allAnswers.append(temp)
+        }
+        allAnswers.shuffle()
+    }
+    
+    
     
     func adddiy(_ one:Int, _ two: Int) -> Int{
         one+two
@@ -89,5 +139,5 @@ struct QuizView: View {
 }
 
 #Preview {
-    QuizView(symbol: "➕", cardinal: 3, questioCount: 4)
+    QuizView(symbol: "➕", cardinal: 9, questioCount:5)
 }

@@ -8,11 +8,14 @@
 import SwiftUI
 
 struct ChallengeThree: View {
-    @State private var symbols = ["➕", "➖", "✖️", "➗"]
-    @State private var symbolSelect = "➖"
     
-    @State private var numbs = Array(2 ..< 13)
+    @State private var symbols = ["➕", "➖", "✖️", "➗"]
+    @State private var symbolSelect = "➕"
+    
+    
+    @State private var numbs = Array(5 ..< 13)
     @State private var numSelect = 0
+    
     
     @State private var questionCounts = [5,10,15,20]
     @State private var selectQuestionCount = 0
@@ -25,7 +28,7 @@ struct ChallengeThree: View {
                     Section("chose element") {
                         VStack {
                             Picker("基数范围请选择", selection: $numSelect) {
-                                ForEach(0..<numbs.count) { index in
+                                ForEach(0 ..< numbs.count) { index in
                                     Text("\(numbs[index])")
                                 }
                             }
@@ -40,7 +43,6 @@ struct ChallengeThree: View {
                             Picker(selection: $selectQuestionCount) {
                                 ForEach(0..<questionCounts.count) { index in
                                     Text(String(questionCounts[index]))
-                                    
                                 }
                             } label: {
                                 Text("题目数")
