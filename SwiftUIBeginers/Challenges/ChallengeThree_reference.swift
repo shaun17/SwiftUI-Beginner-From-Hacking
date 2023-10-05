@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ChallengeThree: View {
+struct ChallengeThreeReference: View {
     @State private var disabledUpButton = false
     @State private var disabledDownButton = true
     @State private var multiplicationTable = 2 {
@@ -54,7 +54,7 @@ struct ChallengeThree: View {
                     }
                 }
 
-                NavigationLink(destination: QuizView(multiplicationTable: multiplicationTable, numberOfQuestions: selectedNumberOfQuestions)) {
+                NavigationLink(destination: QuizViewReference(multiplicationTable: multiplicationTable, numberOfQuestions: selectedNumberOfQuestions)) {
                     Text("Let's Go")
                 }
             }.padding()
@@ -73,5 +73,5 @@ extension Text {
 }
 
 #Preview {
-    ChallengeThree()
+    ChallengeThreeReference()
 }

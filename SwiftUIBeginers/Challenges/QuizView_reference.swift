@@ -17,7 +17,7 @@ extension Button {
     }
 }
 
-struct QuizView: View {
+struct QuizViewReference: View {
    
     @Environment(\.dismiss) var dismiss
     
@@ -174,5 +174,5 @@ struct QuizView: View {
 }
 
 #Preview {
-    QuizView(multiplicationTable: 3, numberOfQuestions: 6)
+    QuizViewReference(multiplicationTable: 3, numberOfQuestions: 6)
 }

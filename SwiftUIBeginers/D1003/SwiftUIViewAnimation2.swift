@@ -8,8 +8,19 @@
 import SwiftUI
 
 struct SwiftUIViewAnimation2: View {
+    @State private var enabled = false
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Button("Clike me") {
+            enabled.toggle()
+        }
+        .frame(width: 100, height: 100)
+        .background(enabled ? .blue : .red)
+        .animation(nil, value: enabled)
+
+        .foregroundColor(.white)
+        .clipShape(RoundedRectangle(cornerRadius: enabled ? 60 : 0))
+        .animation(.interpolatingSpring(stiffness: 5, damping: 1), value: enabled)
+
     }
 }
 

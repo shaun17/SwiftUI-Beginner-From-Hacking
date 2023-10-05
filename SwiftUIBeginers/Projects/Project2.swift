@@ -8,11 +8,15 @@
 import SwiftUI
 
 struct Project2: View {
+    
     @State private var scoreTitle = ""
     @State private var showingScore = false
     @State private var correctAnswer = Int.random(in: 0...2)
     @State private var countries = ["Estonia", "France", "Germany", "Ireland", "Italy", "Nigeria", "Poland", "Russia", "Spain", "UK", "US"].shuffled()
 
+    @State private var amount = 0.0
+    @State private var rotatedNumbers = Array(repeating: true, count: 3)
+    @State private var rotatedNumbers2 = Array(repeating: true, count: 3)
     var body: some View {
         ZStack {
             RadialGradient(stops:[
@@ -35,14 +39,32 @@ struct Project2: View {
                         Text(countries[correctAnswer])
                             .font(.largeTitle.weight(.semibold))
                     }
+                    
                     ForEach(0 ..< 3) { number in
                         Button {
+                            
+                            withAnimation(.interpolatingSpring(stiffness: 5, damping: 2,initialVelocity: 3)) {
+                                rotatedNumbers[number].toggle()
+                                rotatedNumbers2 = rotatedNumbers.map{!$0}
+                            }
+                            
                             gussFlag(number)
+                            
+                           
                         } label: {
                             Image(countries[number])
                                 .renderingMode(.original)
                                 .clipShape(Capsule())
                                 .shadow(radius: 20)
+                                .rotation3DEffect(
+                                    .degrees(!rotatedNumbers[number] ? 360 : 0),
+                                                          axis: (x: 1.0, y: 0.0, z: 0.0)
+                                )
+                                .opacity(rotatedNumbers2[number] ? 1 : 0.2)
+
+                                
+                               
+                                
                         }
                     }
                 }
@@ -76,6 +98,10 @@ struct Project2: View {
             scoreTitle = "Wrong❌"
         }
         showingScore = true
+        amount += 360
+        rotatedNumbers = Array(repeating: true, count: 3)
+        rotatedNumbers2 =  Array(repeating: true, count: 3)
+        
     }
 
     func askQuestion() {

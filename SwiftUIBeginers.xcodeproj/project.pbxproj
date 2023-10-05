@@ -17,6 +17,13 @@
 		280E59AC2AC1286600DAC8F1 /* ChallengeOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280E59AB2AC1286600DAC8F1 /* ChallengeOne.swift */; };
 		2830A1E92ACA5A8F00D10B66 /* start.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2830A1E82ACA5A8F00D10B66 /* start.txt */; };
 		2830A1EC2ACBB89700D10B66 /* SwiftUIViewAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2830A1EB2ACBB89700D10B66 /* SwiftUIViewAnimation.swift */; };
+		2830A1EE2ACC0C6B00D10B66 /* SwiftUIViewAnimation2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2830A1ED2ACC0C6B00D10B66 /* SwiftUIViewAnimation2.swift */; };
+		2830A1F02ACC13AF00D10B66 /* SwiftUIViewGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2830A1EF2ACC13AF00D10B66 /* SwiftUIViewGesture.swift */; };
+		2830A1F22ACC882100D10B66 /* SwiftUIViewCornerRotate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2830A1F12ACC882100D10B66 /* SwiftUIViewCornerRotate.swift */; };
+		2830A1F52ACD930300D10B66 /* ChallengeThree_reference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2830A1F42ACD930300D10B66 /* ChallengeThree_reference.swift */; };
+		2830A1F72ACD97B800D10B66 /* QuizView_reference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2830A1F62ACD97B800D10B66 /* QuizView_reference.swift */; };
+		2830A1F92ACDA0E100D10B66 /* ChallengeThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2830A1F82ACDA0E100D10B66 /* ChallengeThree.swift */; };
+		2830A1FB2ACDB89B00D10B66 /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2830A1FA2ACDB89B00D10B66 /* QuizView.swift */; };
 		285974072AC9607E00A157C3 /* SwiftUIViewList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285974062AC9607E00A157C3 /* SwiftUIViewList.swift */; };
 		285B88872AC1D8640078D3F0 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285B88862AC1D8640078D3F0 /* SwiftUIView.swift */; };
 		285B88892AC2C6C80078D3F0 /* SwiftUIViewGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285B88882AC2C6C80078D3F0 /* SwiftUIViewGradient.swift */; };
@@ -63,6 +70,13 @@
 		280E59AB2AC1286600DAC8F1 /* ChallengeOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeOne.swift; sourceTree = "<group>"; };
 		2830A1E82ACA5A8F00D10B66 /* start.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = start.txt; sourceTree = "<group>"; };
 		2830A1EB2ACBB89700D10B66 /* SwiftUIViewAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewAnimation.swift; sourceTree = "<group>"; };
+		2830A1ED2ACC0C6B00D10B66 /* SwiftUIViewAnimation2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewAnimation2.swift; sourceTree = "<group>"; };
+		2830A1EF2ACC13AF00D10B66 /* SwiftUIViewGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewGesture.swift; sourceTree = "<group>"; };
+		2830A1F12ACC882100D10B66 /* SwiftUIViewCornerRotate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewCornerRotate.swift; sourceTree = "<group>"; };
+		2830A1F42ACD930300D10B66 /* ChallengeThree_reference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeThree_reference.swift; sourceTree = "<group>"; };
+		2830A1F62ACD97B800D10B66 /* QuizView_reference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView_reference.swift; sourceTree = "<group>"; };
+		2830A1F82ACDA0E100D10B66 /* ChallengeThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeThree.swift; sourceTree = "<group>"; };
+		2830A1FA2ACDB89B00D10B66 /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
 		285974062AC9607E00A157C3 /* SwiftUIViewList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewList.swift; sourceTree = "<group>"; };
 		285B88862AC1D8640078D3F0 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		285B88882AC2C6C80078D3F0 /* SwiftUIViewGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewGradient.swift; sourceTree = "<group>"; };
@@ -126,16 +140,15 @@
 			isa = PBXGroup;
 			children = (
 				280E59802AC1284100DAC8F1 /* SwiftUIBeginersApp.swift */,
+				2830A1F32ACD12A400D10B66 /* Challenges */,
 				280E59822AC1284100DAC8F1 /* ContentView.swift */,
 				285B888E2AC3FCA10078D3F0 /* Projects */,
 				285B88852AC1D8580078D3F0 /* D0926 */,
 				285B88932AC5B83B0078D3F0 /* D0928 */,
-				280E59AB2AC1286600DAC8F1 /* ChallengeOne.swift */,
 				285B88982AC72E770078D3F0 /* D0930 */,
-				285B88962AC5C8FC0078D3F0 /* ChallengeTwo.swift */,
 				285974052AC9606A00A157C3 /* D1001 */,
-				280E59842AC1284200DAC8F1 /* Assets.xcassets */,
 				2830A1EA2ACBB86600D10B66 /* D1003 */,
+				280E59842AC1284200DAC8F1 /* Assets.xcassets */,
 				280E59862AC1284200DAC8F1 /* SwiftUIBeginers.entitlements */,
 				280E59872AC1284200DAC8F1 /* Preview Content */,
 			);
@@ -171,8 +184,24 @@
 			isa = PBXGroup;
 			children = (
 				2830A1EB2ACBB89700D10B66 /* SwiftUIViewAnimation.swift */,
+				2830A1ED2ACC0C6B00D10B66 /* SwiftUIViewAnimation2.swift */,
+				2830A1EF2ACC13AF00D10B66 /* SwiftUIViewGesture.swift */,
+				2830A1F12ACC882100D10B66 /* SwiftUIViewCornerRotate.swift */,
 			);
 			path = D1003;
+			sourceTree = "<group>";
+		};
+		2830A1F32ACD12A400D10B66 /* Challenges */ = {
+			isa = PBXGroup;
+			children = (
+				280E59AB2AC1286600DAC8F1 /* ChallengeOne.swift */,
+				2830A1F42ACD930300D10B66 /* ChallengeThree_reference.swift */,
+				2830A1FA2ACDB89B00D10B66 /* QuizView.swift */,
+				2830A1F82ACDA0E100D10B66 /* ChallengeThree.swift */,
+				285B88962AC5C8FC0078D3F0 /* ChallengeTwo.swift */,
+				2830A1F62ACD97B800D10B66 /* QuizView_reference.swift */,
+			);
+			path = Challenges;
 			sourceTree = "<group>";
 		};
 		285974052AC9606A00A157C3 /* D1001 */ = {
@@ -359,15 +388,22 @@
 				285B88902AC3FCBD0078D3F0 /* Project1.swift in Sources */,
 				285B88892AC2C6C80078D3F0 /* SwiftUIViewGradient.swift in Sources */,
 				285B888B2AC2CC320078D3F0 /* SwiftUIViewButton.swift in Sources */,
+				2830A1FB2ACDB89B00D10B66 /* QuizView.swift in Sources */,
 				285B88952AC5B87F0078D3F0 /* SwiftUIViewComposition.swift in Sources */,
 				280E59812AC1284100DAC8F1 /* SwiftUIBeginersApp.swift in Sources */,
 				285B888D2AC2D28D0078D3F0 /* SwiftUIViewAlert.swift in Sources */,
 				285B889A2AC72E890078D3F0 /* SwiftUIViewDate.swift in Sources */,
+				2830A1F92ACDA0E100D10B66 /* ChallengeThree.swift in Sources */,
 				285B889C2AC81CB40078D3F0 /* SwiftUIViewBetterRest.swift in Sources */,
+				2830A1F72ACD97B800D10B66 /* QuizView_reference.swift in Sources */,
 				2830A1EC2ACBB89700D10B66 /* SwiftUIViewAnimation.swift in Sources */,
 				285B88872AC1D8640078D3F0 /* SwiftUIView.swift in Sources */,
 				285B889E2AC820C80078D3F0 /* SleepCalculator.mlmodel in Sources */,
+				2830A1F52ACD930300D10B66 /* ChallengeThree_reference.swift in Sources */,
 				285B88972AC5C8FC0078D3F0 /* ChallengeTwo.swift in Sources */,
+				2830A1EE2ACC0C6B00D10B66 /* SwiftUIViewAnimation2.swift in Sources */,
+				2830A1F02ACC13AF00D10B66 /* SwiftUIViewGesture.swift in Sources */,
+				2830A1F22ACC882100D10B66 /* SwiftUIViewCornerRotate.swift in Sources */,
 				280E59AC2AC1286600DAC8F1 /* ChallengeOne.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
