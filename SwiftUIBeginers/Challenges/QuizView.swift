@@ -8,7 +8,7 @@
 import SwiftUI
 
 extension Button{
-    func stylediy() -> some View{
+    func styleCircle() -> some View{
         frame(width: 80, height: 80, alignment: .center)
             .font(.title)
             .foregroundColor(.white)
@@ -16,6 +16,20 @@ extension Button{
             .clipShape(Circle())
         
     }
+    
+    func styleRactangle(_ color: Color) -> some View{
+        frame(width: 40, height: 60, alignment: .center)
+            .font(.title)
+            .foregroundColor(.white)
+            .background(color)
+            .clipShape(RoundedRectangle(cornerRadius: 8)) // 设置矩形圆角
+            .overlay(
+              RoundedRectangle(cornerRadius: 8)
+                .stroke(color, lineWidth: 4) // 添加矩形边框
+            )
+        
+    }
+    
 }
 
 struct QuizView: View {
@@ -35,30 +49,68 @@ struct QuizView: View {
     @State private var multiplier = 0
     // 被乘数
     @State private var result = 0
+    @State private var tempResult = 0
+
     @State private var defaultAmount = 8
     @State private var isOver = false
+    
+    @State private var isHiden = true
+    @State private var goodjob = true
 
     
     var body: some View {
         
         VStack{
+            ProgressView("Question #\(currentNum) out of \(questioCount)", value: Double(currentNum), total: Double(questioCount))
+                .padding(.top,50)
+                .padding(.horizontal)
+                
+            Spacer()
+            
+            
+            
             HStack{
-                Text(String(cardinal))
-                Text(symbol)
-                Text("\(multiplier)")
+                Button(String(cardinal)){}
+                    .styleRactangle(.purple)
+                Text(symbol).font(.title)
+                Button(String(multiplier)){}
+                    .styleRactangle(.purple)
                 Image(systemName: "equal")
+                    .font(.title)
+                    .bold()
+                
+                if isHiden {
+                   
+                Image(systemName: "questionmark")
+                    .font(.title)
+                    .bold()
+                    .animation(.easeIn)
+                  
+                    
+                } else {
+                    if goodjob {
+                        Button(String(tempResult)){}
+                            .styleRactangle(.green)
+                            .animation(.easeOut(duration: 0.75), value: isHiden)
+                    } else{
+                        Button(String(tempResult)){}
+                            .styleRactangle(.red)
+                            .animation(.easeOut(duration: 0.75), value: isHiden)
+                    }
+                }
             }
+            Spacer()
             
             LazyVGrid(columns: [GridItem(.adaptive(minimum: 150, maximum: .infinity))], content: {
                 ForEach(allAnswers, id: \.self){ item in
                     Button("\(item)"){
                         checkAnswer(item)
                     }
-                    .stylediy()
+                    .styleCircle()
                     
                 }
             })
-
+            Spacer()
             
         }.alert("Game Over", isPresented: $isOver, actions: {
             Button("New Game", role: .cancel) {
@@ -66,7 +118,10 @@ struct QuizView: View {
             }
         })
         .onAppear(){
-            newQuiz()
+            withAnimation {
+                newQuiz()
+            }
+           
         }
         
 
@@ -74,23 +129,53 @@ struct QuizView: View {
     }
     
     func checkAnswer(_ item:Int){
+        tempResult = item
         if item == result{
+            withAnimation(.easeInOut(duration: 0.5)) {
+                isHiden = false
+                goodjob = true
+            }
+            
             if currentNum == questioCount {
                 isOver = true
                 return
             }
-            newQuiz()
+            
+           
+            DispatchQueue.main.asyncAfter(deadline: .now()+1){
+                newQuiz()
+            }
         }else{
+            
+            withAnimation(.easeInOut(duration: 0.5)) {
+                isHiden = false
+                goodjob = false
+            }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                withAnimation(.easeOut) {
+                    isHiden = true
+                    goodjob = true
+                }
+            }
             return
         }
     }
     
     
     func newQuiz(){
+        withAnimation{
+            isHiden = true
+        }
+        
+        createQuiz()
+    }
+    
+    func createQuiz(){
         currentNum += 1
         allAnswers.removeAll()
         multiplier = Int.random(in: 0..<cardinal)
         result = operate(cardinal, multiplier, symbol)
+        tempResult = result
         allAnswers.append(result)
         while allAnswers.count < defaultAmount{
             var temp = Int.random(in: 0..<(cardinal*cardinal))

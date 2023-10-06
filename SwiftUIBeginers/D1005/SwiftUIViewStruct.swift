@@ -7,17 +7,33 @@
 
 import SwiftUI
 
-struct User {
+class User {
     var firstName = "Bilbo"
     var lastName = "Baggins"
 }
 
-struct SwiftUIView: View {
+struct SwiftUIViewStruct: View {
+    @State private var user = User()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            Text("Your name \(user.firstName) \(user.lastName)")
+            
+            TextField("the first name", text: $user.firstName)
+            TextField("the last name", text: $user.lastName)
+        }
+        .onAppear(){
+            print(user.firstName)
+        }
+        .onSubmit {
+            print(user.firstName)
+        }
+        
+        
     }
+        
 }
 
 #Preview {
-    SwiftUIView()
+    SwiftUIViewStruct()
 }

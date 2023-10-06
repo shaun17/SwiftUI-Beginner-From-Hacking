@@ -36,6 +36,7 @@
 		285B889A2AC72E890078D3F0 /* SwiftUIViewDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285B88992AC72E890078D3F0 /* SwiftUIViewDate.swift */; };
 		285B889C2AC81CB40078D3F0 /* SwiftUIViewBetterRest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285B889B2AC81CB40078D3F0 /* SwiftUIViewBetterRest.swift */; };
 		285B889E2AC820C80078D3F0 /* SleepCalculator.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 285B889D2AC820C80078D3F0 /* SleepCalculator.mlmodel */; };
+		28D47B6A2ACF040100157652 /* SwiftUIViewStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D47B692ACF040100157652 /* SwiftUIViewStruct.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +90,7 @@
 		285B88992AC72E890078D3F0 /* SwiftUIViewDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewDate.swift; sourceTree = "<group>"; };
 		285B889B2AC81CB40078D3F0 /* SwiftUIViewBetterRest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewBetterRest.swift; sourceTree = "<group>"; };
 		285B889D2AC820C80078D3F0 /* SleepCalculator.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SleepCalculator.mlmodel; sourceTree = "<group>"; };
+		28D47B692ACF040100157652 /* SwiftUIViewStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewStruct.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +151,7 @@
 				285974052AC9606A00A157C3 /* D1001 */,
 				2830A1EA2ACBB86600D10B66 /* D1003 */,
 				280E59842AC1284200DAC8F1 /* Assets.xcassets */,
+				28D47B682ACF03EC00157652 /* D1005 */,
 				280E59862AC1284200DAC8F1 /* SwiftUIBeginers.entitlements */,
 				280E59872AC1284200DAC8F1 /* Preview Content */,
 			);
@@ -249,6 +252,14 @@
 				285B889D2AC820C80078D3F0 /* SleepCalculator.mlmodel */,
 			);
 			path = D0930;
+			sourceTree = "<group>";
+		};
+		28D47B682ACF03EC00157652 /* D1005 */ = {
+			isa = PBXGroup;
+			children = (
+				28D47B692ACF040100157652 /* SwiftUIViewStruct.swift */,
+			);
+			path = D1005;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -384,6 +395,7 @@
 			files = (
 				285B88922AC474780078D3F0 /* Project2.swift in Sources */,
 				280E59832AC1284100DAC8F1 /* ContentView.swift in Sources */,
+				28D47B6A2ACF040100157652 /* SwiftUIViewStruct.swift in Sources */,
 				285974072AC9607E00A157C3 /* SwiftUIViewList.swift in Sources */,
 				285B88902AC3FCBD0078D3F0 /* Project1.swift in Sources */,
 				285B88892AC2C6C80078D3F0 /* SwiftUIViewGradient.swift in Sources */,
