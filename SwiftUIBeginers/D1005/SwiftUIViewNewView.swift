@@ -9,7 +9,7 @@ import SwiftUI
 struct SecondaryView: View {
     @Environment(\.dismiss) var dismiss
     let name: String
-    @State private var numbers = Array(0...10)
+    @State private var numbers = Array(0 ... 10)
     
     var body: some View {
         NavigationView {
@@ -25,18 +25,15 @@ struct SecondaryView: View {
                     })
                 }
                 
-                HStack{
+                HStack {
                     Button("Add one") {
                         numbers.append(Int.random(in: 0 ... 10))
                     }.buttonStyle(.borderedProminent)
-                    
                     
                     Button("Dismiss") {
                         dismiss()
                     }.buttonStyle(.borderedProminent)
                 }
-                
-                
             }
             .toolbar {
                 EditButton()
@@ -56,13 +53,11 @@ struct SwiftUIViewNewView: View {
     var body: some View {
         NavigationView(content: {
             VStack(content: {
+
                 Text("Hello, World!")
                 Button("Show Other Page") {
                     siShow.toggle()
-                }
-                Spacer()
-                
-                    .sheet(isPresented: $siShow, content: {
+                }.sheet(isPresented: $siShow, content: {
                         SecondaryView(name: "Tom")
                     })
                 

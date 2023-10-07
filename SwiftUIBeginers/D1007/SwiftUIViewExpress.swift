@@ -8,8 +8,40 @@
 import SwiftUI
 
 struct SwiftUIViewExpress: View {
+    @StateObject var items = Express()
+    @State private var showView = false
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView{
+            VStack{
+                List{
+                    ForEach(items.expressItems){ item in
+                        HStack{
+                            Text("\(item.id)")
+                            Text(item.name)
+                        }
+                    }
+                    .onDelete(perform: { indexSet in
+                        removeItem(indexSet)
+                    })
+                }
+                .navigationTitle("ExpressItem")
+                .toolbar(content: {
+                    Button{
+                        showView = true
+                    } label: {
+                        Image(systemName: "plus")
+                    }
+                    
+                   
+                })
+                .sheet(isPresented: $showView, content: {
+                    SwiftUIViewAddView(express: items)
+                })
+            }
+        }
+    }
+    func removeItem(_ offsets: IndexSet){
+        items.expressItems.remove(atOffsets: offsets)
     }
 }
 

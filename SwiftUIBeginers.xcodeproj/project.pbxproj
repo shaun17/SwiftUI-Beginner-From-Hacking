@@ -39,6 +39,10 @@
 		28D47B6A2ACF040100157652 /* SwiftUIViewStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D47B692ACF040100157652 /* SwiftUIViewStruct.swift */; };
 		28D47B6C2AD022A200157652 /* SwiftUIViewNewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D47B6B2AD022A200157652 /* SwiftUIViewNewView.swift */; };
 		28D47B6E2AD03E0B00157652 /* SwiftUIViewDelete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D47B6D2AD03E0B00157652 /* SwiftUIViewDelete.swift */; };
+		28D47B712AD1A20000157652 /* ExpressItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D47B702AD1A20000157652 /* ExpressItem.swift */; };
+		28D47B732AD1A23200157652 /* Express.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D47B722AD1A23200157652 /* Express.swift */; };
+		28D47B752AD1A27A00157652 /* SwiftUIViewExpress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D47B742AD1A27A00157652 /* SwiftUIViewExpress.swift */; };
+		28D47B772AD1AA3200157652 /* SwiftUIViewAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D47B762AD1AA3200157652 /* SwiftUIViewAddView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +99,10 @@
 		28D47B692ACF040100157652 /* SwiftUIViewStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewStruct.swift; sourceTree = "<group>"; };
 		28D47B6B2AD022A200157652 /* SwiftUIViewNewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewNewView.swift; sourceTree = "<group>"; };
 		28D47B6D2AD03E0B00157652 /* SwiftUIViewDelete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewDelete.swift; sourceTree = "<group>"; };
+		28D47B702AD1A20000157652 /* ExpressItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpressItem.swift; sourceTree = "<group>"; };
+		28D47B722AD1A23200157652 /* Express.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Express.swift; sourceTree = "<group>"; };
+		28D47B742AD1A27A00157652 /* SwiftUIViewExpress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewExpress.swift; sourceTree = "<group>"; };
+		28D47B762AD1AA3200157652 /* SwiftUIViewAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewAddView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +164,7 @@
 				2830A1EA2ACBB86600D10B66 /* D1003 */,
 				28D47B682ACF03EC00157652 /* D1005 */,
 				280E59862AC1284200DAC8F1 /* SwiftUIBeginers.entitlements */,
+				28D47B6F2AD1A1D100157652 /* D1007 */,
 				280E59842AC1284200DAC8F1 /* Assets.xcassets */,
 				280E59872AC1284200DAC8F1 /* Preview Content */,
 			);
@@ -266,6 +275,17 @@
 				28D47B6D2AD03E0B00157652 /* SwiftUIViewDelete.swift */,
 			);
 			path = D1005;
+			sourceTree = "<group>";
+		};
+		28D47B6F2AD1A1D100157652 /* D1007 */ = {
+			isa = PBXGroup;
+			children = (
+				28D47B702AD1A20000157652 /* ExpressItem.swift */,
+				28D47B742AD1A27A00157652 /* SwiftUIViewExpress.swift */,
+				28D47B762AD1AA3200157652 /* SwiftUIViewAddView.swift */,
+				28D47B722AD1A23200157652 /* Express.swift */,
+			);
+			path = D1007;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -399,12 +419,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28D47B752AD1A27A00157652 /* SwiftUIViewExpress.swift in Sources */,
 				285B88922AC474780078D3F0 /* Project2.swift in Sources */,
 				280E59832AC1284100DAC8F1 /* ContentView.swift in Sources */,
 				28D47B6A2ACF040100157652 /* SwiftUIViewStruct.swift in Sources */,
 				285974072AC9607E00A157C3 /* SwiftUIViewList.swift in Sources */,
 				285B88902AC3FCBD0078D3F0 /* Project1.swift in Sources */,
 				285B88892AC2C6C80078D3F0 /* SwiftUIViewGradient.swift in Sources */,
+				28D47B772AD1AA3200157652 /* SwiftUIViewAddView.swift in Sources */,
+				28D47B712AD1A20000157652 /* ExpressItem.swift in Sources */,
 				285B888B2AC2CC320078D3F0 /* SwiftUIViewButton.swift in Sources */,
 				28D47B6E2AD03E0B00157652 /* SwiftUIViewDelete.swift in Sources */,
 				2830A1FB2ACDB89B00D10B66 /* QuizView.swift in Sources */,
@@ -420,6 +443,7 @@
 				285B88872AC1D8640078D3F0 /* SwiftUIView.swift in Sources */,
 				285B889E2AC820C80078D3F0 /* SleepCalculator.mlmodel in Sources */,
 				2830A1F52ACD930300D10B66 /* ChallengeThree_reference.swift in Sources */,
+				28D47B732AD1A23200157652 /* Express.swift in Sources */,
 				285B88972AC5C8FC0078D3F0 /* ChallengeTwo.swift in Sources */,
 				2830A1EE2ACC0C6B00D10B66 /* SwiftUIViewAnimation2.swift in Sources */,
 				2830A1F02ACC13AF00D10B66 /* SwiftUIViewGesture.swift in Sources */,

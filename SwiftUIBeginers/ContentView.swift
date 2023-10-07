@@ -40,6 +40,12 @@ struct ContentView: View {
                     Project2()
                 } label: {
                     Label("project Two", systemImage: "folder")
+                } 
+                Spacer()
+                NavigationLink {
+                    SwiftUIViewExpress()
+                } label: {
+                    Label("test", systemImage: "folder")
                 }
     
             }
