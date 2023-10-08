@@ -9,7 +9,15 @@ import SwiftUI
 
 struct SwiftUIViewNavigation: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView(content: {
+            List(0..<100){row in
+                NavigationLink(destination: Text("Destination \(row)")) {
+                    Text("Navigate \(row)")
+                }
+            }
+            .navigationTitle("Navigation")
+           
+        })
     }
 }
 

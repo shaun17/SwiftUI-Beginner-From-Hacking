@@ -43,6 +43,8 @@
 		28D47B732AD1A23200157652 /* Express.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D47B722AD1A23200157652 /* Express.swift */; };
 		28D47B752AD1A27A00157652 /* SwiftUIViewExpress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D47B742AD1A27A00157652 /* SwiftUIViewExpress.swift */; };
 		28D47B772AD1AA3200157652 /* SwiftUIViewAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D47B762AD1AA3200157652 /* SwiftUIViewAddView.swift */; };
+		28D47B7A2AD2F25100157652 /* SwiftUIViewScrolleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D47B792AD2F25100157652 /* SwiftUIViewScrolleView.swift */; };
+		28D47B7C2AD2F7B400157652 /* SwiftUIViewNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D47B7B2AD2F7B400157652 /* SwiftUIViewNavigation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +105,8 @@
 		28D47B722AD1A23200157652 /* Express.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Express.swift; sourceTree = "<group>"; };
 		28D47B742AD1A27A00157652 /* SwiftUIViewExpress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewExpress.swift; sourceTree = "<group>"; };
 		28D47B762AD1AA3200157652 /* SwiftUIViewAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewAddView.swift; sourceTree = "<group>"; };
+		28D47B792AD2F25100157652 /* SwiftUIViewScrolleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewScrolleView.swift; sourceTree = "<group>"; };
+		28D47B7B2AD2F7B400157652 /* SwiftUIViewNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewNavigation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,8 +167,9 @@
 				285974052AC9606A00A157C3 /* D1001 */,
 				2830A1EA2ACBB86600D10B66 /* D1003 */,
 				28D47B682ACF03EC00157652 /* D1005 */,
-				280E59862AC1284200DAC8F1 /* SwiftUIBeginers.entitlements */,
 				28D47B6F2AD1A1D100157652 /* D1007 */,
+				280E59862AC1284200DAC8F1 /* SwiftUIBeginers.entitlements */,
+				28D47B782AD2F23100157652 /* D1008 */,
 				280E59842AC1284200DAC8F1 /* Assets.xcassets */,
 				280E59872AC1284200DAC8F1 /* Preview Content */,
 			);
@@ -286,6 +291,15 @@
 				28D47B722AD1A23200157652 /* Express.swift */,
 			);
 			path = D1007;
+			sourceTree = "<group>";
+		};
+		28D47B782AD2F23100157652 /* D1008 */ = {
+			isa = PBXGroup;
+			children = (
+				28D47B792AD2F25100157652 /* SwiftUIViewScrolleView.swift */,
+				28D47B7B2AD2F7B400157652 /* SwiftUIViewNavigation.swift */,
+			);
+			path = D1008;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -421,6 +435,7 @@
 			files = (
 				28D47B752AD1A27A00157652 /* SwiftUIViewExpress.swift in Sources */,
 				285B88922AC474780078D3F0 /* Project2.swift in Sources */,
+				28D47B7A2AD2F25100157652 /* SwiftUIViewScrolleView.swift in Sources */,
 				280E59832AC1284100DAC8F1 /* ContentView.swift in Sources */,
 				28D47B6A2ACF040100157652 /* SwiftUIViewStruct.swift in Sources */,
 				285974072AC9607E00A157C3 /* SwiftUIViewList.swift in Sources */,
@@ -430,6 +445,7 @@
 				28D47B712AD1A20000157652 /* ExpressItem.swift in Sources */,
 				285B888B2AC2CC320078D3F0 /* SwiftUIViewButton.swift in Sources */,
 				28D47B6E2AD03E0B00157652 /* SwiftUIViewDelete.swift in Sources */,
+				28D47B7C2AD2F7B400157652 /* SwiftUIViewNavigation.swift in Sources */,
 				2830A1FB2ACDB89B00D10B66 /* QuizView.swift in Sources */,
 				285B88952AC5B87F0078D3F0 /* SwiftUIViewComposition.swift in Sources */,
 				280E59812AC1284100DAC8F1 /* SwiftUIBeginersApp.swift in Sources */,
