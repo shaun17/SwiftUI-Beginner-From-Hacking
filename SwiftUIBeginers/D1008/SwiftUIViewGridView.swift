@@ -9,7 +9,13 @@ import SwiftUI
 
 struct SwiftUIViewGridView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScrollView{
+            LazyVGrid(columns: [GridItem(.adaptive(minimum: 80, maximum: 120))], content: {
+                ForEach(0..<1000) {
+                    Text("Item \($0)")
+                }
+            })
+        }
     }
 }
 
