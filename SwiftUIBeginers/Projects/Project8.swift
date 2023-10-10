@@ -25,7 +25,8 @@ struct Project8: View {
                                     .resizable()
                                     .scaledToFill()
                                     .frame(width: 100, height: 100)
-                                    .padding()
+                                    .padding(20)
+                                    
                                 
                                 VStack{
                                     Text(mission.displayName)
@@ -51,10 +52,7 @@ struct Project8: View {
                     }
                       
                 })
-                .padding([.horizontal, .bottom])
-
-                
-               
+                .padding([.horizontal, .bottom, .top])
             }
             .navigationTitle("Moonshot")
             .background(.darkBackground)

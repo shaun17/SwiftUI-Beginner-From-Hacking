@@ -53,6 +53,7 @@
 		28D47B8A2AD3109E00157652 /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D47B892AD3109E00157652 /* Bundle-Decodable.swift */; };
 		28D47B8C2AD3B83600157652 /* Mission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D47B8B2AD3B83600157652 /* Mission.swift */; };
 		28D47B8E2AD3BFF700157652 /* ShapeStyle-Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D47B8D2AD3BFF700157652 /* ShapeStyle-Background.swift */; };
+		28D47B902AD4474800157652 /* SwiftUIViewMissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D47B8F2AD4474800157652 /* SwiftUIViewMissionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,6 +124,7 @@
 		28D47B892AD3109E00157652 /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
 		28D47B8B2AD3B83600157652 /* Mission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mission.swift; sourceTree = "<group>"; };
 		28D47B8D2AD3BFF700157652 /* ShapeStyle-Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ShapeStyle-Background.swift"; sourceTree = "<group>"; };
+		28D47B8F2AD4474800157652 /* SwiftUIViewMissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewMissionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,8 +186,8 @@
 				2830A1EA2ACBB86600D10B66 /* D1003 */,
 				28D47B682ACF03EC00157652 /* D1005 */,
 				28D47B6F2AD1A1D100157652 /* D1007 */,
-				280E59862AC1284200DAC8F1 /* SwiftUIBeginers.entitlements */,
 				28D47B782AD2F23100157652 /* D1008 */,
+				280E59862AC1284200DAC8F1 /* SwiftUIBeginers.entitlements */,
 				280E59842AC1284200DAC8F1 /* Assets.xcassets */,
 				280E59872AC1284200DAC8F1 /* Preview Content */,
 			);
@@ -337,6 +339,7 @@
 				28D47B872AD3102F00157652 /* Astronaut.swift */,
 				28D47B8B2AD3B83600157652 /* Mission.swift */,
 				28D47B8D2AD3BFF700157652 /* ShapeStyle-Background.swift */,
+				28D47B8F2AD4474800157652 /* SwiftUIViewMissionView.swift */,
 				28D47B892AD3109E00157652 /* Bundle-Decodable.swift */,
 			);
 			path = "Project8-domain";
@@ -487,6 +490,7 @@
 				28D47B712AD1A20000157652 /* ExpressItem.swift in Sources */,
 				285B888B2AC2CC320078D3F0 /* SwiftUIViewButton.swift in Sources */,
 				28D47B6E2AD03E0B00157652 /* SwiftUIViewDelete.swift in Sources */,
+				28D47B902AD4474800157652 /* SwiftUIViewMissionView.swift in Sources */,
 				28D47B7C2AD2F7B400157652 /* SwiftUIViewNavigation.swift in Sources */,
 				2830A1FB2ACDB89B00D10B66 /* QuizView.swift in Sources */,
 				285B88952AC5B87F0078D3F0 /* SwiftUIViewComposition.swift in Sources */,
