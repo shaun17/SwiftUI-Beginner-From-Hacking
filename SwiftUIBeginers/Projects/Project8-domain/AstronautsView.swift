@@ -8,11 +8,26 @@
 import SwiftUI
 
 struct AstronautsView: View {
+    let astronaut: Astronaut
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScrollView {
+            VStack {
+                Image(astronaut.id)
+                    .resizable()
+                    .scaledToFit()
+                
+                Text(astronaut.description)
+                    .padding()
+            }
+            .navigationTitle(astronaut.id)
+            .background(.darkBackground)
+            .navigationBarTitleDisplayMode(.inline)
+        }
     }
 }
 
 #Preview {
-    AstronautsView()
+    let astronauts: [String: Astronaut] = Bundle.main.decode("astronauts.json")
+
+    return AstronautsView(astronaut: astronauts["white"]!).preferredColorScheme(.dark)
 }

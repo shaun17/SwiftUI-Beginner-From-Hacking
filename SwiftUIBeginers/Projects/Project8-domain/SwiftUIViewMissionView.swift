@@ -6,24 +6,6 @@
 //
 
 import SwiftUI
-struct SwiftUIViewAstronautView: View {
-    let astronaut: Astronaut
-    var body: some View {
-        ScrollView {
-            VStack {
-                Image(astronaut.id)
-                    .resizable()
-                    .scaledToFit()
-                
-                Text(astronaut.description)
-                    .padding()
-            }
-            .navigationTitle(astronaut.id)
-            .background(.darkBackground)
-            .navigationBarTitleDisplayMode(.inline)
-        }
-    }
-}
 
 struct SwiftUIViewMissionView: View {
     let mission: Mission
@@ -71,7 +53,7 @@ struct SwiftUIViewMissionView: View {
                                 ForEach(crews, id: \.rorle) { crew in
                                     
                                     NavigationLink(
-                                        destination: SwiftUIViewAstronautView(astronaut: crew.astronaut),
+                                        destination: AstronautsView(astronaut: crew.astronaut),
                                         label: {
                                             HStack {
                                                 Image(crew.astronaut.id)

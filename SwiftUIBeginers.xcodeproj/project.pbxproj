@@ -54,6 +54,7 @@
 		28D47B8C2AD3B83600157652 /* Mission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D47B8B2AD3B83600157652 /* Mission.swift */; };
 		28D47B8E2AD3BFF700157652 /* ShapeStyle-Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D47B8D2AD3BFF700157652 /* ShapeStyle-Background.swift */; };
 		28D47B902AD4474800157652 /* SwiftUIViewMissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D47B8F2AD4474800157652 /* SwiftUIViewMissionView.swift */; };
+		28D47B922AD596CD00157652 /* AstronautsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D47B912AD596CD00157652 /* AstronautsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,6 +126,7 @@
 		28D47B8B2AD3B83600157652 /* Mission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mission.swift; sourceTree = "<group>"; };
 		28D47B8D2AD3BFF700157652 /* ShapeStyle-Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ShapeStyle-Background.swift"; sourceTree = "<group>"; };
 		28D47B8F2AD4474800157652 /* SwiftUIViewMissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewMissionView.swift; sourceTree = "<group>"; };
+		28D47B912AD596CD00157652 /* AstronautsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronautsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -340,6 +342,7 @@
 				28D47B8B2AD3B83600157652 /* Mission.swift */,
 				28D47B8D2AD3BFF700157652 /* ShapeStyle-Background.swift */,
 				28D47B8F2AD4474800157652 /* SwiftUIViewMissionView.swift */,
+				28D47B912AD596CD00157652 /* AstronautsView.swift */,
 				28D47B892AD3109E00157652 /* Bundle-Decodable.swift */,
 			);
 			path = "Project8-domain";
@@ -516,6 +519,7 @@
 				2830A1F22ACC882100D10B66 /* SwiftUIViewCornerRotate.swift in Sources */,
 				28D47B8E2AD3BFF700157652 /* ShapeStyle-Background.swift in Sources */,
 				280E59AC2AC1286600DAC8F1 /* ChallengeOne.swift in Sources */,
+				28D47B922AD596CD00157652 /* AstronautsView.swift in Sources */,
 				28D47B8C2AD3B83600157652 /* Mission.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
