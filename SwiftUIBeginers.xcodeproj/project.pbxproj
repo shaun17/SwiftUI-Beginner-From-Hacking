@@ -24,6 +24,8 @@
 		2830A1F72ACD97B800D10B66 /* QuizView_reference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2830A1F62ACD97B800D10B66 /* QuizView_reference.swift */; };
 		2830A1F92ACDA0E100D10B66 /* ChallengeThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2830A1F82ACDA0E100D10B66 /* ChallengeThree.swift */; };
 		2830A1FB2ACDB89B00D10B66 /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2830A1FA2ACDB89B00D10B66 /* QuizView.swift */; };
+		284612EC2ADBFF3100E284B7 /* SwiftUIViewPathDeom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284612EB2ADBFF3100E284B7 /* SwiftUIViewPathDeom.swift */; };
+		284612EE2ADC281E00E284B7 /* SwiftUIViewBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284612ED2ADC281E00E284B7 /* SwiftUIViewBoard.swift */; };
 		285974072AC9607E00A157C3 /* SwiftUIViewList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285974062AC9607E00A157C3 /* SwiftUIViewList.swift */; };
 		285B88872AC1D8640078D3F0 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285B88862AC1D8640078D3F0 /* SwiftUIView.swift */; };
 		285B88892AC2C6C80078D3F0 /* SwiftUIViewGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285B88882AC2C6C80078D3F0 /* SwiftUIViewGradient.swift */; };
@@ -96,6 +98,8 @@
 		2830A1F62ACD97B800D10B66 /* QuizView_reference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView_reference.swift; sourceTree = "<group>"; };
 		2830A1F82ACDA0E100D10B66 /* ChallengeThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeThree.swift; sourceTree = "<group>"; };
 		2830A1FA2ACDB89B00D10B66 /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
+		284612EB2ADBFF3100E284B7 /* SwiftUIViewPathDeom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewPathDeom.swift; sourceTree = "<group>"; };
+		284612ED2ADC281E00E284B7 /* SwiftUIViewBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewBoard.swift; sourceTree = "<group>"; };
 		285974062AC9607E00A157C3 /* SwiftUIViewList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewList.swift; sourceTree = "<group>"; };
 		285B88862AC1D8640078D3F0 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		285B88882AC2C6C80078D3F0 /* SwiftUIViewGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewGradient.swift; sourceTree = "<group>"; };
@@ -189,6 +193,7 @@
 				28D47B682ACF03EC00157652 /* D1005 */,
 				28D47B6F2AD1A1D100157652 /* D1007 */,
 				28D47B782AD2F23100157652 /* D1008 */,
+				284612EA2ADBFD0500E284B7 /* D1015 */,
 				280E59862AC1284200DAC8F1 /* SwiftUIBeginers.entitlements */,
 				280E59842AC1284200DAC8F1 /* Assets.xcassets */,
 				280E59872AC1284200DAC8F1 /* Preview Content */,
@@ -243,6 +248,15 @@
 				2830A1F62ACD97B800D10B66 /* QuizView_reference.swift */,
 			);
 			path = Challenges;
+			sourceTree = "<group>";
+		};
+		284612EA2ADBFD0500E284B7 /* D1015 */ = {
+			isa = PBXGroup;
+			children = (
+				284612EB2ADBFF3100E284B7 /* SwiftUIViewPathDeom.swift */,
+				284612ED2ADC281E00E284B7 /* SwiftUIViewBoard.swift */,
+			);
+			path = D1015;
 			sourceTree = "<group>";
 		};
 		285974052AC9606A00A157C3 /* D1001 */ = {
@@ -512,7 +526,9 @@
 				285B889E2AC820C80078D3F0 /* SleepCalculator.mlmodel in Sources */,
 				2830A1F52ACD930300D10B66 /* ChallengeThree_reference.swift in Sources */,
 				28D47B732AD1A23200157652 /* Express.swift in Sources */,
+				284612EC2ADBFF3100E284B7 /* SwiftUIViewPathDeom.swift in Sources */,
 				28D47B802AD30C5400157652 /* Project8.swift in Sources */,
+				284612EE2ADC281E00E284B7 /* SwiftUIViewBoard.swift in Sources */,
 				285B88972AC5C8FC0078D3F0 /* ChallengeTwo.swift in Sources */,
 				2830A1EE2ACC0C6B00D10B66 /* SwiftUIViewAnimation2.swift in Sources */,
 				2830A1F02ACC13AF00D10B66 /* SwiftUIViewGesture.swift in Sources */,

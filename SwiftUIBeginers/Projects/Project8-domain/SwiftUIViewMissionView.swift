@@ -26,6 +26,9 @@ struct SwiftUIViewMissionView: View {
                             .scaledToFit()
                             .frame(maxWidth: geomtry.size.width * 0.6)
                             .padding(.top)
+                        Text(mission.launchDate?.formatted(date: .complete, time: .standard) ?? "N/A")
+                            .font(.subheadline)
+                            .foregroundColor(.gray)
                      
                         VStack {
                             Rectangle().frame(height: 2)
@@ -70,6 +73,10 @@ struct SwiftUIViewMissionView: View {
                                                     Text(crew.rorle)
                                                         .foregroundColor(.secondary)
                                                 }
+                                                
+                                                Rectangle().frame(width: 2)
+                                                    .foregroundColor(.lightBackground)
+                                                    .padding(.horizontal)
                                             }
                                             .padding(.horizontal)
                                         })
@@ -111,7 +118,7 @@ struct SwiftUIViewMissionView_Previews: PreviewProvider {
     static let astronauts: [String: Astronaut] = Bundle.main.decode("astronauts.json")
 
     static var previews: some View {
-        SwiftUIViewMissionView(mission: mission[0], astronauts: astronauts)
+        SwiftUIViewMissionView(mission: mission[1], astronauts: astronauts)
             .preferredColorScheme(.dark)
     }
 }
