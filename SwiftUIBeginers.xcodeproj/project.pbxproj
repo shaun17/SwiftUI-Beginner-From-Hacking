@@ -26,6 +26,7 @@
 		2830A1FB2ACDB89B00D10B66 /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2830A1FA2ACDB89B00D10B66 /* QuizView.swift */; };
 		284612EC2ADBFF3100E284B7 /* SwiftUIViewPathDeom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284612EB2ADBFF3100E284B7 /* SwiftUIViewPathDeom.swift */; };
 		284612EE2ADC281E00E284B7 /* SwiftUIViewBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284612ED2ADC281E00E284B7 /* SwiftUIViewBoard.swift */; };
+		284612F02ADD88F700E284B7 /* SwiftUIViewCG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284612EF2ADD88F700E284B7 /* SwiftUIViewCG.swift */; };
 		285974072AC9607E00A157C3 /* SwiftUIViewList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285974062AC9607E00A157C3 /* SwiftUIViewList.swift */; };
 		285B88872AC1D8640078D3F0 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285B88862AC1D8640078D3F0 /* SwiftUIView.swift */; };
 		285B88892AC2C6C80078D3F0 /* SwiftUIViewGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285B88882AC2C6C80078D3F0 /* SwiftUIViewGradient.swift */; };
@@ -100,6 +101,7 @@
 		2830A1FA2ACDB89B00D10B66 /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
 		284612EB2ADBFF3100E284B7 /* SwiftUIViewPathDeom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewPathDeom.swift; sourceTree = "<group>"; };
 		284612ED2ADC281E00E284B7 /* SwiftUIViewBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewBoard.swift; sourceTree = "<group>"; };
+		284612EF2ADD88F700E284B7 /* SwiftUIViewCG.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewCG.swift; sourceTree = "<group>"; };
 		285974062AC9607E00A157C3 /* SwiftUIViewList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewList.swift; sourceTree = "<group>"; };
 		285B88862AC1D8640078D3F0 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		285B88882AC2C6C80078D3F0 /* SwiftUIViewGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewGradient.swift; sourceTree = "<group>"; };
@@ -255,6 +257,7 @@
 			children = (
 				284612EB2ADBFF3100E284B7 /* SwiftUIViewPathDeom.swift */,
 				284612ED2ADC281E00E284B7 /* SwiftUIViewBoard.swift */,
+				284612EF2ADD88F700E284B7 /* SwiftUIViewCG.swift */,
 			);
 			path = D1015;
 			sourceTree = "<group>";
@@ -533,6 +536,7 @@
 				2830A1EE2ACC0C6B00D10B66 /* SwiftUIViewAnimation2.swift in Sources */,
 				2830A1F02ACC13AF00D10B66 /* SwiftUIViewGesture.swift in Sources */,
 				2830A1F22ACC882100D10B66 /* SwiftUIViewCornerRotate.swift in Sources */,
+				284612F02ADD88F700E284B7 /* SwiftUIViewCG.swift in Sources */,
 				28D47B8E2AD3BFF700157652 /* ShapeStyle-Background.swift in Sources */,
 				280E59AC2AC1286600DAC8F1 /* ChallengeOne.swift in Sources */,
 				28D47B922AD596CD00157652 /* AstronautsView.swift in Sources */,

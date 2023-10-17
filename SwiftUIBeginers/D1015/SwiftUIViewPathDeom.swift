@@ -18,13 +18,26 @@ struct Triangle: Shape{
     }
 }
 
+struct Rectanglediy: Shape{
+    func path(in rect: CGRect) -> Path {
+        let path = Path()
+        
+        return path
+    }
+}
+
 struct SwiftUIViewPathDeom: View {
     var body: some View {
         
         Triangle()
             .stroke(.blue, style: StrokeStyle(lineWidth: 15,lineCap: .round, lineJoin: .round))
             .frame(width: 100, height: 100  )
+            .border(.green)
         
+        Rectanglediy()
+            .fill(.red)
+//            .stroke(style: StrokeStyle(lineWidth: 10,lineCap: .round, lineJoin: .round))
+            .border(.pink)
          
         Path{ path in
             path.move(to: CGPoint(x: 200, y: 100))
