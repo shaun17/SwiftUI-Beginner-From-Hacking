@@ -28,6 +28,12 @@
 		284612EE2ADC281E00E284B7 /* SwiftUIViewBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284612ED2ADC281E00E284B7 /* SwiftUIViewBoard.swift */; };
 		284612F02ADD88F700E284B7 /* SwiftUIViewCG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284612EF2ADD88F700E284B7 /* SwiftUIViewCG.swift */; };
 		284612F22ADEDB3F00E284B7 /* SwiftUIViewImagePaint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284612F12ADEDB3F00E284B7 /* SwiftUIViewImagePaint.swift */; };
+		284612F42AE4F9A900E284B7 /* SwiftUIViewColorCircular.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284612F32AE4F9A900E284B7 /* SwiftUIViewColorCircular.swift */; };
+		284612F72AE501BB00E284B7 /* SwiftUIViewBlurs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284612F62AE501BB00E284B7 /* SwiftUIViewBlurs.swift */; };
+		284612F92AE51D2300E284B7 /* SwiftUIViewPicBlurs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284612F82AE51D2300E284B7 /* SwiftUIViewPicBlurs.swift */; };
+		284612FB2AE5236700E284B7 /* SwiftUIViewShapeAnimatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284612FA2AE5236700E284B7 /* SwiftUIViewShapeAnimatable.swift */; };
+		284612FD2AE5256F00E284B7 /* SwiftUIViewPentagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284612FC2AE5256F00E284B7 /* SwiftUIViewPentagram.swift */; };
+		284612FF2AE585E100E284B7 /* SwiftUIViewRactangleAnimatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284612FE2AE585E100E284B7 /* SwiftUIViewRactangleAnimatable.swift */; };
 		285974072AC9607E00A157C3 /* SwiftUIViewList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285974062AC9607E00A157C3 /* SwiftUIViewList.swift */; };
 		285B88872AC1D8640078D3F0 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285B88862AC1D8640078D3F0 /* SwiftUIView.swift */; };
 		285B88892AC2C6C80078D3F0 /* SwiftUIViewGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285B88882AC2C6C80078D3F0 /* SwiftUIViewGradient.swift */; };
@@ -104,6 +110,12 @@
 		284612ED2ADC281E00E284B7 /* SwiftUIViewBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewBoard.swift; sourceTree = "<group>"; };
 		284612EF2ADD88F700E284B7 /* SwiftUIViewCG.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewCG.swift; sourceTree = "<group>"; };
 		284612F12ADEDB3F00E284B7 /* SwiftUIViewImagePaint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewImagePaint.swift; sourceTree = "<group>"; };
+		284612F32AE4F9A900E284B7 /* SwiftUIViewColorCircular.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewColorCircular.swift; sourceTree = "<group>"; };
+		284612F62AE501BB00E284B7 /* SwiftUIViewBlurs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewBlurs.swift; sourceTree = "<group>"; };
+		284612F82AE51D2300E284B7 /* SwiftUIViewPicBlurs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewPicBlurs.swift; sourceTree = "<group>"; };
+		284612FA2AE5236700E284B7 /* SwiftUIViewShapeAnimatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewShapeAnimatable.swift; sourceTree = "<group>"; };
+		284612FC2AE5256F00E284B7 /* SwiftUIViewPentagram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewPentagram.swift; sourceTree = "<group>"; };
+		284612FE2AE585E100E284B7 /* SwiftUIViewRactangleAnimatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewRactangleAnimatable.swift; sourceTree = "<group>"; };
 		285974062AC9607E00A157C3 /* SwiftUIViewList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewList.swift; sourceTree = "<group>"; };
 		285B88862AC1D8640078D3F0 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		285B88882AC2C6C80078D3F0 /* SwiftUIViewGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewGradient.swift; sourceTree = "<group>"; };
@@ -198,6 +210,7 @@
 				28D47B6F2AD1A1D100157652 /* D1007 */,
 				28D47B782AD2F23100157652 /* D1008 */,
 				284612EA2ADBFD0500E284B7 /* D1015 */,
+				284612F52AE5019600E284B7 /* D1022 */,
 				280E59862AC1284200DAC8F1 /* SwiftUIBeginers.entitlements */,
 				280E59842AC1284200DAC8F1 /* Assets.xcassets */,
 				280E59872AC1284200DAC8F1 /* Preview Content */,
@@ -258,11 +271,24 @@
 			isa = PBXGroup;
 			children = (
 				284612EB2ADBFF3100E284B7 /* SwiftUIViewPathDeom.swift */,
+				284612F32AE4F9A900E284B7 /* SwiftUIViewColorCircular.swift */,
 				284612ED2ADC281E00E284B7 /* SwiftUIViewBoard.swift */,
 				284612EF2ADD88F700E284B7 /* SwiftUIViewCG.swift */,
 				284612F12ADEDB3F00E284B7 /* SwiftUIViewImagePaint.swift */,
 			);
 			path = D1015;
+			sourceTree = "<group>";
+		};
+		284612F52AE5019600E284B7 /* D1022 */ = {
+			isa = PBXGroup;
+			children = (
+				284612F62AE501BB00E284B7 /* SwiftUIViewBlurs.swift */,
+				284612FA2AE5236700E284B7 /* SwiftUIViewShapeAnimatable.swift */,
+				284612F82AE51D2300E284B7 /* SwiftUIViewPicBlurs.swift */,
+				284612FE2AE585E100E284B7 /* SwiftUIViewRactangleAnimatable.swift */,
+				284612FC2AE5256F00E284B7 /* SwiftUIViewPentagram.swift */,
+			);
+			path = D1022;
 			sourceTree = "<group>";
 		};
 		285974052AC9606A00A157C3 /* D1001 */ = {
@@ -501,6 +527,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				284612F42AE4F9A900E284B7 /* SwiftUIViewColorCircular.swift in Sources */,
 				28D47B752AD1A27A00157652 /* SwiftUIViewExpress.swift in Sources */,
 				285B88922AC474780078D3F0 /* Project2.swift in Sources */,
 				28D47B7A2AD2F25100157652 /* SwiftUIViewScrolleView.swift in Sources */,
@@ -516,9 +543,11 @@
 				28D47B902AD4474800157652 /* SwiftUIViewMissionView.swift in Sources */,
 				28D47B7C2AD2F7B400157652 /* SwiftUIViewNavigation.swift in Sources */,
 				2830A1FB2ACDB89B00D10B66 /* QuizView.swift in Sources */,
+				284612FB2AE5236700E284B7 /* SwiftUIViewShapeAnimatable.swift in Sources */,
 				284612F22ADEDB3F00E284B7 /* SwiftUIViewImagePaint.swift in Sources */,
 				285B88952AC5B87F0078D3F0 /* SwiftUIViewComposition.swift in Sources */,
 				280E59812AC1284100DAC8F1 /* SwiftUIBeginersApp.swift in Sources */,
+				284612F72AE501BB00E284B7 /* SwiftUIViewBlurs.swift in Sources */,
 				285B888D2AC2D28D0078D3F0 /* SwiftUIViewAlert.swift in Sources */,
 				28D47B882AD3102F00157652 /* Astronaut.swift in Sources */,
 				285B889A2AC72E890078D3F0 /* SwiftUIViewDate.swift in Sources */,
@@ -526,10 +555,12 @@
 				28D47B6C2AD022A200157652 /* SwiftUIViewNewView.swift in Sources */,
 				285B889C2AC81CB40078D3F0 /* SwiftUIViewBetterRest.swift in Sources */,
 				2830A1F72ACD97B800D10B66 /* QuizView_reference.swift in Sources */,
+				284612FF2AE585E100E284B7 /* SwiftUIViewRactangleAnimatable.swift in Sources */,
 				28D47B8A2AD3109E00157652 /* Bundle-Decodable.swift in Sources */,
 				2830A1EC2ACBB89700D10B66 /* SwiftUIViewAnimation.swift in Sources */,
 				285B88872AC1D8640078D3F0 /* SwiftUIView.swift in Sources */,
 				28D47B7E2AD305DF00157652 /* SwiftUIViewGridView.swift in Sources */,
+				284612F92AE51D2300E284B7 /* SwiftUIViewPicBlurs.swift in Sources */,
 				285B889E2AC820C80078D3F0 /* SleepCalculator.mlmodel in Sources */,
 				2830A1F52ACD930300D10B66 /* ChallengeThree_reference.swift in Sources */,
 				28D47B732AD1A23200157652 /* Express.swift in Sources */,
@@ -543,6 +574,7 @@
 				284612F02ADD88F700E284B7 /* SwiftUIViewCG.swift in Sources */,
 				28D47B8E2AD3BFF700157652 /* ShapeStyle-Background.swift in Sources */,
 				280E59AC2AC1286600DAC8F1 /* ChallengeOne.swift in Sources */,
+				284612FD2AE5256F00E284B7 /* SwiftUIViewPentagram.swift in Sources */,
 				28D47B922AD596CD00157652 /* AstronautsView.swift in Sources */,
 				28D47B8C2AD3B83600157652 /* Mission.swift in Sources */,
 			);
