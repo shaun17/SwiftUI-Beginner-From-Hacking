@@ -32,8 +32,9 @@ struct SwiftUIViewCG: View {
     var body: some View {
         
         Flower(petalOffset: petalOffset, petalWidth: petalWidth)
-            .fill(.green,style: FillStyle(eoFill: true))
+            .fill(.green, style: FillStyle(eoFill: true))
             .frame(width: 200, height: 200)
+            .border(.black)
         
         Text("OffSet")
         Slider(value: $petalOffset, in: -40...20)

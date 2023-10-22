@@ -20,8 +20,12 @@ struct Triangle: Shape{
 
 struct Rectanglediy: Shape{
     func path(in rect: CGRect) -> Path {
-        let path = Path()
-        
+        var path = Path()
+        path.move(to: CGPoint(x: rect.minX, y: rect.minY))
+        path.addLine(to: CGPoint(x: rect.minX, y: rect.maxY))
+        path.addLine(to: CGPoint(x: rect.maxX, y: rect.maxY))
+        path.addLine(to: CGPoint(x: rect.maxX, y: rect.minY))
+
         return path
     }
 }
@@ -37,7 +41,7 @@ struct SwiftUIViewPathDeom: View {
         Rectanglediy()
             .fill(.red)
 //            .stroke(style: StrokeStyle(lineWidth: 10,lineCap: .round, lineJoin: .round))
-            .border(.pink)
+//            .border(.green, width: 10)
          
         Path{ path in
             path.move(to: CGPoint(x: 200, y: 100))
