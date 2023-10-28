@@ -9,7 +9,18 @@ import SwiftUI
 
 struct SwiftUIViewTest: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+             Rectangle()
+               .fill(Color.blue)
+
+             Circle()
+               .fill(Color.red)
+               .overlay(
+                 Text("Hello World")
+                   .font(.largeTitle)
+               )
+           }
+           .drawingGroup()
     }
 }
 
