@@ -49,6 +49,12 @@
 		285B889A2AC72E890078D3F0 /* SwiftUIViewDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285B88992AC72E890078D3F0 /* SwiftUIViewDate.swift */; };
 		285B889C2AC81CB40078D3F0 /* SwiftUIViewBetterRest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285B889B2AC81CB40078D3F0 /* SwiftUIViewBetterRest.swift */; };
 		285B889E2AC820C80078D3F0 /* SleepCalculator.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 285B889D2AC820C80078D3F0 /* SleepCalculator.mlmodel */; };
+		287CA0422AF38668004DC41A /* HabitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287CA0412AF38668004DC41A /* HabitView.swift */; };
+		2885AF3D2AED5F6E00E89B0C /* SwiftUIViewColorCyclingRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2885AF3C2AED5F6E00E89B0C /* SwiftUIViewColorCyclingRectangle.swift */; };
+		2885AF402AEE9CF600E89B0C /* Challenge47Days.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2885AF3F2AEE9CF600E89B0C /* Challenge47Days.swift */; };
+		2885AF422AEFF76600E89B0C /* Habit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2885AF412AEFF76600E89B0C /* Habit.swift */; };
+		2885AF442AEFFA3700E89B0C /* HabitItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2885AF432AEFFA3700E89B0C /* HabitItem.swift */; };
+		2885AF462AEFFBDB00E89B0C /* HabitItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2885AF452AEFFBDB00E89B0C /* HabitItemView.swift */; };
 		28D47B6A2ACF040100157652 /* SwiftUIViewStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D47B692ACF040100157652 /* SwiftUIViewStruct.swift */; };
 		28D47B6C2AD022A200157652 /* SwiftUIViewNewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D47B6B2AD022A200157652 /* SwiftUIViewNewView.swift */; };
 		28D47B6E2AD03E0B00157652 /* SwiftUIViewDelete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D47B6D2AD03E0B00157652 /* SwiftUIViewDelete.swift */; };
@@ -134,6 +140,12 @@
 		285B88992AC72E890078D3F0 /* SwiftUIViewDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewDate.swift; sourceTree = "<group>"; };
 		285B889B2AC81CB40078D3F0 /* SwiftUIViewBetterRest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewBetterRest.swift; sourceTree = "<group>"; };
 		285B889D2AC820C80078D3F0 /* SleepCalculator.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SleepCalculator.mlmodel; sourceTree = "<group>"; };
+		287CA0412AF38668004DC41A /* HabitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitView.swift; sourceTree = "<group>"; };
+		2885AF3C2AED5F6E00E89B0C /* SwiftUIViewColorCyclingRectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewColorCyclingRectangle.swift; sourceTree = "<group>"; };
+		2885AF3F2AEE9CF600E89B0C /* Challenge47Days.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge47Days.swift; sourceTree = "<group>"; };
+		2885AF412AEFF76600E89B0C /* Habit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Habit.swift; sourceTree = "<group>"; };
+		2885AF432AEFFA3700E89B0C /* HabitItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitItem.swift; sourceTree = "<group>"; };
+		2885AF452AEFFBDB00E89B0C /* HabitItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitItemView.swift; sourceTree = "<group>"; };
 		28D47B692ACF040100157652 /* SwiftUIViewStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewStruct.swift; sourceTree = "<group>"; };
 		28D47B6B2AD022A200157652 /* SwiftUIViewNewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewNewView.swift; sourceTree = "<group>"; };
 		28D47B6D2AD03E0B00157652 /* SwiftUIViewDelete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewDelete.swift; sourceTree = "<group>"; };
@@ -263,6 +275,7 @@
 		2830A1F32ACD12A400D10B66 /* Challenges */ = {
 			isa = PBXGroup;
 			children = (
+				2885AF3E2AEE9CCD00E89B0C /* Challenge47 */,
 				280E59AB2AC1286600DAC8F1 /* ChallengeOne.swift */,
 				2830A1F42ACD930300D10B66 /* ChallengeThree_reference.swift */,
 				2830A1FA2ACDB89B00D10B66 /* QuizView.swift */,
@@ -294,6 +307,7 @@
 				284612F82AE51D2300E284B7 /* SwiftUIViewPicBlurs.swift */,
 				284613022AEAB32E00E284B7 /* SwiftUIViewTest.swift */,
 				284612FE2AE585E100E284B7 /* SwiftUIViewRactangleAnimatable.swift */,
+				2885AF3C2AED5F6E00E89B0C /* SwiftUIViewColorCyclingRectangle.swift */,
 				284613002AE6C57100E284B7 /* SwiftUIViewAmazingSpirograph.swift */,
 				284612FC2AE5256F00E284B7 /* SwiftUIViewPentagram.swift */,
 			);
@@ -348,6 +362,18 @@
 				285B889D2AC820C80078D3F0 /* SleepCalculator.mlmodel */,
 			);
 			path = D0930;
+			sourceTree = "<group>";
+		};
+		2885AF3E2AEE9CCD00E89B0C /* Challenge47 */ = {
+			isa = PBXGroup;
+			children = (
+				2885AF3F2AEE9CF600E89B0C /* Challenge47Days.swift */,
+				2885AF412AEFF76600E89B0C /* Habit.swift */,
+				2885AF432AEFFA3700E89B0C /* HabitItem.swift */,
+				2885AF452AEFFBDB00E89B0C /* HabitItemView.swift */,
+				287CA0412AF38668004DC41A /* HabitView.swift */,
+			);
+			path = Challenge47;
 			sourceTree = "<group>";
 		};
 		28D47B682ACF03EC00157652 /* D1005 */ = {
@@ -543,6 +569,7 @@
 				280E59832AC1284100DAC8F1 /* ContentView.swift in Sources */,
 				28D47B6A2ACF040100157652 /* SwiftUIViewStruct.swift in Sources */,
 				285974072AC9607E00A157C3 /* SwiftUIViewList.swift in Sources */,
+				287CA0422AF38668004DC41A /* HabitView.swift in Sources */,
 				285B88902AC3FCBD0078D3F0 /* Project1.swift in Sources */,
 				284613052AEABEA500E284B7 /* ChallengeNineArrow.swift in Sources */,
 				285B88892AC2C6C80078D3F0 /* SwiftUIViewGradient.swift in Sources */,
@@ -552,6 +579,7 @@
 				28D47B6E2AD03E0B00157652 /* SwiftUIViewDelete.swift in Sources */,
 				28D47B902AD4474800157652 /* SwiftUIViewMissionView.swift in Sources */,
 				28D47B7C2AD2F7B400157652 /* SwiftUIViewNavigation.swift in Sources */,
+				2885AF402AEE9CF600E89B0C /* Challenge47Days.swift in Sources */,
 				2830A1FB2ACDB89B00D10B66 /* QuizView.swift in Sources */,
 				284612FB2AE5236700E284B7 /* SwiftUIViewShapeAnimatable.swift in Sources */,
 				284612F22ADEDB3F00E284B7 /* SwiftUIViewImagePaint.swift in Sources */,
@@ -571,7 +599,11 @@
 				284613012AE6C57100E284B7 /* SwiftUIViewAmazingSpirograph.swift in Sources */,
 				285B88872AC1D8640078D3F0 /* SwiftUIView.swift in Sources */,
 				28D47B7E2AD305DF00157652 /* SwiftUIViewGridView.swift in Sources */,
+				2885AF462AEFFBDB00E89B0C /* HabitItemView.swift in Sources */,
 				284612F92AE51D2300E284B7 /* SwiftUIViewPicBlurs.swift in Sources */,
+				2885AF3D2AED5F6E00E89B0C /* SwiftUIViewColorCyclingRectangle.swift in Sources */,
+				2885AF442AEFFA3700E89B0C /* HabitItem.swift in Sources */,
+				2885AF422AEFF76600E89B0C /* Habit.swift in Sources */,
 				285B889E2AC820C80078D3F0 /* SleepCalculator.mlmodel in Sources */,
 				2830A1F52ACD930300D10B66 /* ChallengeThree_reference.swift in Sources */,
 				28D47B732AD1A23200157652 /* Express.swift in Sources */,

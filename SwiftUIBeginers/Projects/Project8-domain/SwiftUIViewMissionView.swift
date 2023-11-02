@@ -24,7 +24,7 @@ struct SwiftUIViewMissionView: View {
                         Image(mission.image)
                             .resizable()
                             .scaledToFit()
-                            .frame(maxWidth: geomtry.size.width * 0.6)
+                            .frame(maxWidth: geomtry.size.width * 0.5)
                             .padding(.top)
                         Text(mission.launchDate?.formatted(date: .complete, time: .standard) ?? "N/A")
                             .font(.subheadline)

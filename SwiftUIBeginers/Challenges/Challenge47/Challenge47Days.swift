@@ -8,11 +8,31 @@
 import SwiftUI
 
 struct Challenge47Days: View {
+    var tracking: [Habit]
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView(content: {
+            VStack(content: {
+                List {
+                    ForEach(tracking) { habit in
+                        NavigationLink {
+                            HabitView(habit: habit)
+                        }
+                        label: {
+                            Text(habit.topic)
+                        }
+                    }
+                }
+            
+            })
+            .navigationTitle("My Habits")
+           
+        })
     }
 }
 
-#Preview {
-    Challenge47Days()
+struct Challenge47Days_Preview: PreviewProvider {
+    static var previews: some View {
+        Challenge47Days(tracking: [Habit("跑步", []), Habit("游泳", [])])
+    }
 }
