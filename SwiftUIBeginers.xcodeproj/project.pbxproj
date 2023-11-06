@@ -55,6 +55,10 @@
 		2885AF422AEFF76600E89B0C /* Habit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2885AF412AEFF76600E89B0C /* Habit.swift */; };
 		2885AF442AEFFA3700E89B0C /* HabitItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2885AF432AEFFA3700E89B0C /* HabitItem.swift */; };
 		2885AF462AEFFBDB00E89B0C /* HabitItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2885AF452AEFFBDB00E89B0C /* HabitItemView.swift */; };
+		28B30AFB2AF7E2D000307467 /* SwiftUIViewCodableToLearn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B30AFA2AF7E2D000307467 /* SwiftUIViewCodableToLearn.swift */; };
+		28B30AFD2AF8CBE500307467 /* SwiftUIViewResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B30AFC2AF8CBE500307467 /* SwiftUIViewResponse.swift */; };
+		28B30AFF2AF8D7A900307467 /* SwiftUIViewAsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B30AFE2AF8D7A900307467 /* SwiftUIViewAsyncImage.swift */; };
+		28B30B012AF8DF2800307467 /* SwiftUIViewFromDisable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B30B002AF8DF2800307467 /* SwiftUIViewFromDisable.swift */; };
 		28D47B6A2ACF040100157652 /* SwiftUIViewStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D47B692ACF040100157652 /* SwiftUIViewStruct.swift */; };
 		28D47B6C2AD022A200157652 /* SwiftUIViewNewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D47B6B2AD022A200157652 /* SwiftUIViewNewView.swift */; };
 		28D47B6E2AD03E0B00157652 /* SwiftUIViewDelete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D47B6D2AD03E0B00157652 /* SwiftUIViewDelete.swift */; };
@@ -146,6 +150,10 @@
 		2885AF412AEFF76600E89B0C /* Habit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Habit.swift; sourceTree = "<group>"; };
 		2885AF432AEFFA3700E89B0C /* HabitItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitItem.swift; sourceTree = "<group>"; };
 		2885AF452AEFFBDB00E89B0C /* HabitItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitItemView.swift; sourceTree = "<group>"; };
+		28B30AFA2AF7E2D000307467 /* SwiftUIViewCodableToLearn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewCodableToLearn.swift; sourceTree = "<group>"; };
+		28B30AFC2AF8CBE500307467 /* SwiftUIViewResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewResponse.swift; sourceTree = "<group>"; };
+		28B30AFE2AF8D7A900307467 /* SwiftUIViewAsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewAsyncImage.swift; sourceTree = "<group>"; };
+		28B30B002AF8DF2800307467 /* SwiftUIViewFromDisable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewFromDisable.swift; sourceTree = "<group>"; };
 		28D47B692ACF040100157652 /* SwiftUIViewStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewStruct.swift; sourceTree = "<group>"; };
 		28D47B6B2AD022A200157652 /* SwiftUIViewNewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewNewView.swift; sourceTree = "<group>"; };
 		28D47B6D2AD03E0B00157652 /* SwiftUIViewDelete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewDelete.swift; sourceTree = "<group>"; };
@@ -217,6 +225,7 @@
 			children = (
 				280E59802AC1284100DAC8F1 /* SwiftUIBeginersApp.swift */,
 				280E59822AC1284100DAC8F1 /* ContentView.swift */,
+				287CA0432AF3F95D004DC41A /* Project10 */,
 				2830A1F32ACD12A400D10B66 /* Challenges */,
 				285B888E2AC3FCA10078D3F0 /* Projects */,
 				285B88852AC1D8580078D3F0 /* D0926 */,
@@ -362,6 +371,17 @@
 				285B889D2AC820C80078D3F0 /* SleepCalculator.mlmodel */,
 			);
 			path = D0930;
+			sourceTree = "<group>";
+		};
+		287CA0432AF3F95D004DC41A /* Project10 */ = {
+			isa = PBXGroup;
+			children = (
+				28B30AFA2AF7E2D000307467 /* SwiftUIViewCodableToLearn.swift */,
+				28B30B002AF8DF2800307467 /* SwiftUIViewFromDisable.swift */,
+				28B30AFC2AF8CBE500307467 /* SwiftUIViewResponse.swift */,
+				28B30AFE2AF8D7A900307467 /* SwiftUIViewAsyncImage.swift */,
+			);
+			path = Project10;
 			sourceTree = "<group>";
 		};
 		2885AF3E2AEE9CCD00E89B0C /* Challenge47 */ = {
@@ -579,6 +599,7 @@
 				28D47B6E2AD03E0B00157652 /* SwiftUIViewDelete.swift in Sources */,
 				28D47B902AD4474800157652 /* SwiftUIViewMissionView.swift in Sources */,
 				28D47B7C2AD2F7B400157652 /* SwiftUIViewNavigation.swift in Sources */,
+				28B30AFF2AF8D7A900307467 /* SwiftUIViewAsyncImage.swift in Sources */,
 				2885AF402AEE9CF600E89B0C /* Challenge47Days.swift in Sources */,
 				2830A1FB2ACDB89B00D10B66 /* QuizView.swift in Sources */,
 				284612FB2AE5236700E284B7 /* SwiftUIViewShapeAnimatable.swift in Sources */,
@@ -589,12 +610,14 @@
 				285B888D2AC2D28D0078D3F0 /* SwiftUIViewAlert.swift in Sources */,
 				28D47B882AD3102F00157652 /* Astronaut.swift in Sources */,
 				285B889A2AC72E890078D3F0 /* SwiftUIViewDate.swift in Sources */,
+				28B30B012AF8DF2800307467 /* SwiftUIViewFromDisable.swift in Sources */,
 				2830A1F92ACDA0E100D10B66 /* ChallengeThree.swift in Sources */,
 				28D47B6C2AD022A200157652 /* SwiftUIViewNewView.swift in Sources */,
 				285B889C2AC81CB40078D3F0 /* SwiftUIViewBetterRest.swift in Sources */,
 				2830A1F72ACD97B800D10B66 /* QuizView_reference.swift in Sources */,
 				284612FF2AE585E100E284B7 /* SwiftUIViewRactangleAnimatable.swift in Sources */,
 				28D47B8A2AD3109E00157652 /* Bundle-Decodable.swift in Sources */,
+				28B30AFD2AF8CBE500307467 /* SwiftUIViewResponse.swift in Sources */,
 				2830A1EC2ACBB89700D10B66 /* SwiftUIViewAnimation.swift in Sources */,
 				284613012AE6C57100E284B7 /* SwiftUIViewAmazingSpirograph.swift in Sources */,
 				285B88872AC1D8640078D3F0 /* SwiftUIView.swift in Sources */,
@@ -602,6 +625,7 @@
 				2885AF462AEFFBDB00E89B0C /* HabitItemView.swift in Sources */,
 				284612F92AE51D2300E284B7 /* SwiftUIViewPicBlurs.swift in Sources */,
 				2885AF3D2AED5F6E00E89B0C /* SwiftUIViewColorCyclingRectangle.swift in Sources */,
+				28B30AFB2AF7E2D000307467 /* SwiftUIViewCodableToLearn.swift in Sources */,
 				2885AF442AEFFA3700E89B0C /* HabitItem.swift in Sources */,
 				2885AF422AEFF76600E89B0C /* Habit.swift in Sources */,
 				285B889E2AC820C80078D3F0 /* SleepCalculator.mlmodel in Sources */,

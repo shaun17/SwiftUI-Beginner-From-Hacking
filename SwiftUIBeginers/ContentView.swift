@@ -43,7 +43,7 @@ struct ContentView: View {
                 } 
                 Spacer()
                 NavigationLink {
-                    SwiftUIViewExpress()
+                    SwiftUIViewResponse()
                 } label: {
                     Label("test", systemImage: "folder")
                 }
