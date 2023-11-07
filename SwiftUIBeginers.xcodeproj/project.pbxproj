@@ -59,6 +59,8 @@
 		28B30AFD2AF8CBE500307467 /* SwiftUIViewResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B30AFC2AF8CBE500307467 /* SwiftUIViewResponse.swift */; };
 		28B30AFF2AF8D7A900307467 /* SwiftUIViewAsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B30AFE2AF8D7A900307467 /* SwiftUIViewAsyncImage.swift */; };
 		28B30B012AF8DF2800307467 /* SwiftUIViewFromDisable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B30B002AF8DF2800307467 /* SwiftUIViewFromDisable.swift */; };
+		28B30B042AFA91DB00307467 /* Order_Project10.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B30B032AFA91DB00307467 /* Order_Project10.swift */; };
+		28B30B062AFA931000307467 /* SwiftUIViewOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B30B052AFA931000307467 /* SwiftUIViewOrder.swift */; };
 		28D47B6A2ACF040100157652 /* SwiftUIViewStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D47B692ACF040100157652 /* SwiftUIViewStruct.swift */; };
 		28D47B6C2AD022A200157652 /* SwiftUIViewNewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D47B6B2AD022A200157652 /* SwiftUIViewNewView.swift */; };
 		28D47B6E2AD03E0B00157652 /* SwiftUIViewDelete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D47B6D2AD03E0B00157652 /* SwiftUIViewDelete.swift */; };
@@ -154,6 +156,8 @@
 		28B30AFC2AF8CBE500307467 /* SwiftUIViewResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewResponse.swift; sourceTree = "<group>"; };
 		28B30AFE2AF8D7A900307467 /* SwiftUIViewAsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewAsyncImage.swift; sourceTree = "<group>"; };
 		28B30B002AF8DF2800307467 /* SwiftUIViewFromDisable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewFromDisable.swift; sourceTree = "<group>"; };
+		28B30B032AFA91DB00307467 /* Order_Project10.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order_Project10.swift; sourceTree = "<group>"; };
+		28B30B052AFA931000307467 /* SwiftUIViewOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewOrder.swift; sourceTree = "<group>"; };
 		28D47B692ACF040100157652 /* SwiftUIViewStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewStruct.swift; sourceTree = "<group>"; };
 		28D47B6B2AD022A200157652 /* SwiftUIViewNewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewNewView.swift; sourceTree = "<group>"; };
 		28D47B6D2AD03E0B00157652 /* SwiftUIViewDelete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewDelete.swift; sourceTree = "<group>"; };
@@ -376,10 +380,9 @@
 		287CA0432AF3F95D004DC41A /* Project10 */ = {
 			isa = PBXGroup;
 			children = (
-				28B30AFA2AF7E2D000307467 /* SwiftUIViewCodableToLearn.swift */,
-				28B30B002AF8DF2800307467 /* SwiftUIViewFromDisable.swift */,
-				28B30AFC2AF8CBE500307467 /* SwiftUIViewResponse.swift */,
-				28B30AFE2AF8D7A900307467 /* SwiftUIViewAsyncImage.swift */,
+				28B30B022AF8E1F600307467 /* Feature */,
+				28B30B032AFA91DB00307467 /* Order_Project10.swift */,
+				28B30B052AFA931000307467 /* SwiftUIViewOrder.swift */,
 			);
 			path = Project10;
 			sourceTree = "<group>";
@@ -394,6 +397,17 @@
 				287CA0412AF38668004DC41A /* HabitView.swift */,
 			);
 			path = Challenge47;
+			sourceTree = "<group>";
+		};
+		28B30B022AF8E1F600307467 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				28B30AFA2AF7E2D000307467 /* SwiftUIViewCodableToLearn.swift */,
+				28B30B002AF8DF2800307467 /* SwiftUIViewFromDisable.swift */,
+				28B30AFC2AF8CBE500307467 /* SwiftUIViewResponse.swift */,
+				28B30AFE2AF8D7A900307467 /* SwiftUIViewAsyncImage.swift */,
+			);
+			path = Feature;
 			sourceTree = "<group>";
 		};
 		28D47B682ACF03EC00157652 /* D1005 */ = {
@@ -585,6 +599,7 @@
 				284612F42AE4F9A900E284B7 /* SwiftUIViewColorCircular.swift in Sources */,
 				28D47B752AD1A27A00157652 /* SwiftUIViewExpress.swift in Sources */,
 				285B88922AC474780078D3F0 /* Project2.swift in Sources */,
+				28B30B042AFA91DB00307467 /* Order_Project10.swift in Sources */,
 				28D47B7A2AD2F25100157652 /* SwiftUIViewScrolleView.swift in Sources */,
 				280E59832AC1284100DAC8F1 /* ContentView.swift in Sources */,
 				28D47B6A2ACF040100157652 /* SwiftUIViewStruct.swift in Sources */,
@@ -599,6 +614,7 @@
 				28D47B6E2AD03E0B00157652 /* SwiftUIViewDelete.swift in Sources */,
 				28D47B902AD4474800157652 /* SwiftUIViewMissionView.swift in Sources */,
 				28D47B7C2AD2F7B400157652 /* SwiftUIViewNavigation.swift in Sources */,
+				28B30B062AFA931000307467 /* SwiftUIViewOrder.swift in Sources */,
 				28B30AFF2AF8D7A900307467 /* SwiftUIViewAsyncImage.swift in Sources */,
 				2885AF402AEE9CF600E89B0C /* Challenge47Days.swift in Sources */,
 				2830A1FB2ACDB89B00D10B66 /* QuizView.swift in Sources */,
