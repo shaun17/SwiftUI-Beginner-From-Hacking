@@ -8,11 +8,32 @@
 import SwiftUI
 
 struct CheckoutView_Project10: View {
+    @ObservedObject var order: Order
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScrollView {
+            AsyncImage(url: URL(string:  "https://hws.dev/img/cupcakes@3x.jpg"), scale: 3){  image in
+                image
+                    .resizable()
+                    .scaledToFill()
+            }
+            placeholder: {
+                ProgressView()
+            }
+            .frame(height: 300)
+            
+            
+            Text("Your total is \(order.cost, format: .currency(code: "USD"))")
+                .font(.title)
+            Button("Place Order") {
+                
+            }
+            .padding()
+        }
+        .navigationTitle("Check Out")
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
 #Preview {
-    CheckoutView_Project10()
+    CheckoutView_Project10(order: Order())
 }

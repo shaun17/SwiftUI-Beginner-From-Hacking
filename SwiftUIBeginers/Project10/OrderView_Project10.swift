@@ -36,7 +36,7 @@ struct OrderView_Project10: View {
                 
                 Section {
                     NavigationLink {
-                        SwiftUIViewAddressView(order: order)
+                        AddressView_Project10(order: order)
                     } label: {
                         Text("Delivery details")
                     }
@@ -50,5 +50,5 @@ struct OrderView_Project10: View {
 }
 
 #Preview {
-    SwiftUIViewOrder()
+    OrderView_Project10()
 }

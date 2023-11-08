@@ -60,7 +60,9 @@
 		28B30AFF2AF8D7A900307467 /* SwiftUIViewAsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B30AFE2AF8D7A900307467 /* SwiftUIViewAsyncImage.swift */; };
 		28B30B012AF8DF2800307467 /* SwiftUIViewFromDisable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B30B002AF8DF2800307467 /* SwiftUIViewFromDisable.swift */; };
 		28B30B042AFA91DB00307467 /* Order_Project10.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B30B032AFA91DB00307467 /* Order_Project10.swift */; };
-		28B30B062AFA931000307467 /* SwiftUIViewOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B30B052AFA931000307467 /* SwiftUIViewOrder.swift */; };
+		28B30B062AFA931000307467 /* OrderView_Project10.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B30B052AFA931000307467 /* OrderView_Project10.swift */; };
+		28B30B082AFB2B9D00307467 /* AddressView_Project10.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B30B072AFB2B9D00307467 /* AddressView_Project10.swift */; };
+		28B30B0A2AFB302500307467 /* CheckoutView_Project10.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B30B092AFB302500307467 /* CheckoutView_Project10.swift */; };
 		28D47B6A2ACF040100157652 /* SwiftUIViewStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D47B692ACF040100157652 /* SwiftUIViewStruct.swift */; };
 		28D47B6C2AD022A200157652 /* SwiftUIViewNewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D47B6B2AD022A200157652 /* SwiftUIViewNewView.swift */; };
 		28D47B6E2AD03E0B00157652 /* SwiftUIViewDelete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D47B6D2AD03E0B00157652 /* SwiftUIViewDelete.swift */; };
@@ -157,7 +159,9 @@
 		28B30AFE2AF8D7A900307467 /* SwiftUIViewAsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewAsyncImage.swift; sourceTree = "<group>"; };
 		28B30B002AF8DF2800307467 /* SwiftUIViewFromDisable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewFromDisable.swift; sourceTree = "<group>"; };
 		28B30B032AFA91DB00307467 /* Order_Project10.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order_Project10.swift; sourceTree = "<group>"; };
-		28B30B052AFA931000307467 /* SwiftUIViewOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewOrder.swift; sourceTree = "<group>"; };
+		28B30B052AFA931000307467 /* OrderView_Project10.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView_Project10.swift; sourceTree = "<group>"; };
+		28B30B072AFB2B9D00307467 /* AddressView_Project10.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressView_Project10.swift; sourceTree = "<group>"; };
+		28B30B092AFB302500307467 /* CheckoutView_Project10.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView_Project10.swift; sourceTree = "<group>"; };
 		28D47B692ACF040100157652 /* SwiftUIViewStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewStruct.swift; sourceTree = "<group>"; };
 		28D47B6B2AD022A200157652 /* SwiftUIViewNewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewNewView.swift; sourceTree = "<group>"; };
 		28D47B6D2AD03E0B00157652 /* SwiftUIViewDelete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewDelete.swift; sourceTree = "<group>"; };
@@ -382,7 +386,9 @@
 			children = (
 				28B30B022AF8E1F600307467 /* Feature */,
 				28B30B032AFA91DB00307467 /* Order_Project10.swift */,
-				28B30B052AFA931000307467 /* SwiftUIViewOrder.swift */,
+				28B30B052AFA931000307467 /* OrderView_Project10.swift */,
+				28B30B092AFB302500307467 /* CheckoutView_Project10.swift */,
+				28B30B072AFB2B9D00307467 /* AddressView_Project10.swift */,
 			);
 			path = Project10;
 			sourceTree = "<group>";
@@ -611,10 +617,11 @@
 				28D47B772AD1AA3200157652 /* SwiftUIViewAddView.swift in Sources */,
 				28D47B712AD1A20000157652 /* ExpressItem.swift in Sources */,
 				285B888B2AC2CC320078D3F0 /* SwiftUIViewButton.swift in Sources */,
+				28B30B0A2AFB302500307467 /* CheckoutView_Project10.swift in Sources */,
 				28D47B6E2AD03E0B00157652 /* SwiftUIViewDelete.swift in Sources */,
 				28D47B902AD4474800157652 /* SwiftUIViewMissionView.swift in Sources */,
 				28D47B7C2AD2F7B400157652 /* SwiftUIViewNavigation.swift in Sources */,
-				28B30B062AFA931000307467 /* SwiftUIViewOrder.swift in Sources */,
+				28B30B062AFA931000307467 /* OrderView_Project10.swift in Sources */,
 				28B30AFF2AF8D7A900307467 /* SwiftUIViewAsyncImage.swift in Sources */,
 				2885AF402AEE9CF600E89B0C /* Challenge47Days.swift in Sources */,
 				2830A1FB2ACDB89B00D10B66 /* QuizView.swift in Sources */,
@@ -652,6 +659,7 @@
 				284612EE2ADC281E00E284B7 /* SwiftUIViewBoard.swift in Sources */,
 				285B88972AC5C8FC0078D3F0 /* ChallengeTwo.swift in Sources */,
 				2830A1EE2ACC0C6B00D10B66 /* SwiftUIViewAnimation2.swift in Sources */,
+				28B30B082AFB2B9D00307467 /* AddressView_Project10.swift in Sources */,
 				2830A1F02ACC13AF00D10B66 /* SwiftUIViewGesture.swift in Sources */,
 				2830A1F22ACC882100D10B66 /* SwiftUIViewCornerRotate.swift in Sources */,
 				284612F02ADD88F700E284B7 /* SwiftUIViewCG.swift in Sources */,
