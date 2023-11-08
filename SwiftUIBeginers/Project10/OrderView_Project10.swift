@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct SwiftUIViewOrder: View {
+struct OrderView_Project10: View {
     @StateObject var order = Order()
     
     var body: some View {
@@ -26,19 +26,25 @@ struct SwiftUIViewOrder: View {
                 }
                 
                 Section{
-                    Toggle("Any special requests?", isOn: $order.specialRequestEnable)
+                    Toggle("Any special requests?", isOn: $order.specialRequestEnable.animation())
                     
                     if order.specialRequestEnable {
                         Toggle("Add extra frosting", isOn: $order.extraFrosting)
                         Toggle("Add extra sprinkles", isOn: $order.addSprinkles)
                     }
                 }
+                
+                Section {
+                    NavigationLink {
+                        SwiftUIViewAddressView(order: order)
+                    } label: {
+                        Text("Delivery details")
+                    }
+
+                    
+                }
+                
             })
-            
-            
-        
-            
-            
         })
     }
 }
