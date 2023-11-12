@@ -71,6 +71,8 @@
 		28B30B192AFFD11A00307467 /* AddBookView_Project11.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B30B182AFFD11A00307467 /* AddBookView_Project11.swift */; };
 		28B30B1B2AFFD38100307467 /* BooksView_Project11.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B30B1A2AFFD38100307467 /* BooksView_Project11.swift */; };
 		28B30B1D2B00D59F00307467 /* RatingView_Project11.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B30B1C2B00D59F00307467 /* RatingView_Project11.swift */; };
+		28B30B1F2B00E25F00307467 /* EmojiRatingView_Project11.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B30B1E2B00E25F00307467 /* EmojiRatingView_Project11.swift */; };
+		28B30B212B011B3B00307467 /* DetailView_Project11.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B30B202B011B3B00307467 /* DetailView_Project11.swift */; };
 		28D47B6A2ACF040100157652 /* SwiftUIViewStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D47B692ACF040100157652 /* SwiftUIViewStruct.swift */; };
 		28D47B6C2AD022A200157652 /* SwiftUIViewNewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D47B6B2AD022A200157652 /* SwiftUIViewNewView.swift */; };
 		28D47B6E2AD03E0B00157652 /* SwiftUIViewDelete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D47B6D2AD03E0B00157652 /* SwiftUIViewDelete.swift */; };
@@ -178,6 +180,8 @@
 		28B30B182AFFD11A00307467 /* AddBookView_Project11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBookView_Project11.swift; sourceTree = "<group>"; };
 		28B30B1A2AFFD38100307467 /* BooksView_Project11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksView_Project11.swift; sourceTree = "<group>"; };
 		28B30B1C2B00D59F00307467 /* RatingView_Project11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView_Project11.swift; sourceTree = "<group>"; };
+		28B30B1E2B00E25F00307467 /* EmojiRatingView_Project11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiRatingView_Project11.swift; sourceTree = "<group>"; };
+		28B30B202B011B3B00307467 /* DetailView_Project11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView_Project11.swift; sourceTree = "<group>"; };
 		28D47B692ACF040100157652 /* SwiftUIViewStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewStruct.swift; sourceTree = "<group>"; };
 		28D47B6B2AD022A200157652 /* SwiftUIViewNewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewNewView.swift; sourceTree = "<group>"; };
 		28D47B6D2AD03E0B00157652 /* SwiftUIViewDelete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewDelete.swift; sourceTree = "<group>"; };
@@ -440,6 +444,8 @@
 				28B30B0C2AFDE3A300307467 /* Feature */,
 				28B30B182AFFD11A00307467 /* AddBookView_Project11.swift */,
 				28B30B1A2AFFD38100307467 /* BooksView_Project11.swift */,
+				28B30B1E2B00E25F00307467 /* EmojiRatingView_Project11.swift */,
+				28B30B202B011B3B00307467 /* DetailView_Project11.swift */,
 				28B30B1C2B00D59F00307467 /* RatingView_Project11.swift */,
 			);
 			path = Project11;
@@ -684,10 +690,12 @@
 				28B30B1B2AFFD38100307467 /* BooksView_Project11.swift in Sources */,
 				284612FF2AE585E100E284B7 /* SwiftUIViewRactangleAnimatable.swift in Sources */,
 				28D47B8A2AD3109E00157652 /* Bundle-Decodable.swift in Sources */,
+				28B30B1F2B00E25F00307467 /* EmojiRatingView_Project11.swift in Sources */,
 				28B30AFD2AF8CBE500307467 /* SwiftUIViewResponse.swift in Sources */,
 				2830A1EC2ACBB89700D10B66 /* SwiftUIViewAnimation.swift in Sources */,
 				284613012AE6C57100E284B7 /* SwiftUIViewAmazingSpirograph.swift in Sources */,
 				285B88872AC1D8640078D3F0 /* SwiftUIView.swift in Sources */,
+				28B30B212B011B3B00307467 /* DetailView_Project11.swift in Sources */,
 				28D47B7E2AD305DF00157652 /* SwiftUIViewGridView.swift in Sources */,
 				2885AF462AEFFBDB00E89B0C /* HabitItemView.swift in Sources */,
 				284612F92AE51D2300E284B7 /* SwiftUIViewPicBlurs.swift in Sources */,
