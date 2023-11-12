@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject private var dataController = DataController()
+
     @State var isNavPush = false
 
     var body: some View {
@@ -43,9 +45,19 @@ struct ContentView: View {
                 } 
                 Spacer()
                 NavigationLink {
-                    SwiftUIViewResponse()
+                    
+                    CoreData_Project11()
+                        .environment(\.managedObjectContext, dataController.container.viewContext)
                 } label: {
                     Label("test", systemImage: "folder")
+                }
+                NavigationLink {
+                    
+                    BooksView_Project11()
+                        .environment(\.managedObjectContext, dataController.container.viewContext)
+
+                } label: {
+                    Label("BooksView", systemImage: "folder")
                 }
     
             }

@@ -8,8 +8,24 @@
 import SwiftUI
 
 struct MultipleText_Project11: View {
+    @AppStorage("notes") private var note = ""
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView(content: {
+            VStack(content: {
+                Section {
+                    TextEditor(text: $note)
+                        .navigationTitle("Notes")
+                        .padding()
+                }
+                Section {
+                    TextEditor(text: $note)
+                        .navigationTitle("Notes")
+                        .padding()
+                }
+                
+            })
+        
+        })
     }
 }
 

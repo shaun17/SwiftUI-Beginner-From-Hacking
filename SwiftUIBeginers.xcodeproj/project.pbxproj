@@ -63,6 +63,14 @@
 		28B30B062AFA931000307467 /* OrderView_Project10.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B30B052AFA931000307467 /* OrderView_Project10.swift */; };
 		28B30B082AFB2B9D00307467 /* AddressView_Project10.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B30B072AFB2B9D00307467 /* AddressView_Project10.swift */; };
 		28B30B0A2AFB302500307467 /* CheckoutView_Project10.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B30B092AFB302500307467 /* CheckoutView_Project10.swift */; };
+		28B30B0E2AFDE3BA00307467 /* SwiftUIViewCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B30B0D2AFDE3BA00307467 /* SwiftUIViewCustom.swift */; };
+		28B30B102AFDFFCD00307467 /* MultipleText_Project11.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B30B0F2AFDFFCD00307467 /* MultipleText_Project11.swift */; };
+		28B30B122AFE076700307467 /* CoreData_Project11.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B30B112AFE076700307467 /* CoreData_Project11.swift */; };
+		28B30B152AFF7A8800307467 /* Bookworm.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 28B30B132AFF7A8800307467 /* Bookworm.xcdatamodeld */; };
+		28B30B172AFF7ABF00307467 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B30B162AFF7ABF00307467 /* DataController.swift */; };
+		28B30B192AFFD11A00307467 /* AddBookView_Project11.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B30B182AFFD11A00307467 /* AddBookView_Project11.swift */; };
+		28B30B1B2AFFD38100307467 /* BooksView_Project11.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B30B1A2AFFD38100307467 /* BooksView_Project11.swift */; };
+		28B30B1D2B00D59F00307467 /* RatingView_Project11.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B30B1C2B00D59F00307467 /* RatingView_Project11.swift */; };
 		28D47B6A2ACF040100157652 /* SwiftUIViewStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D47B692ACF040100157652 /* SwiftUIViewStruct.swift */; };
 		28D47B6C2AD022A200157652 /* SwiftUIViewNewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D47B6B2AD022A200157652 /* SwiftUIViewNewView.swift */; };
 		28D47B6E2AD03E0B00157652 /* SwiftUIViewDelete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D47B6D2AD03E0B00157652 /* SwiftUIViewDelete.swift */; };
@@ -162,6 +170,14 @@
 		28B30B052AFA931000307467 /* OrderView_Project10.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView_Project10.swift; sourceTree = "<group>"; };
 		28B30B072AFB2B9D00307467 /* AddressView_Project10.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressView_Project10.swift; sourceTree = "<group>"; };
 		28B30B092AFB302500307467 /* CheckoutView_Project10.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView_Project10.swift; sourceTree = "<group>"; };
+		28B30B0D2AFDE3BA00307467 /* SwiftUIViewCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewCustom.swift; sourceTree = "<group>"; };
+		28B30B0F2AFDFFCD00307467 /* MultipleText_Project11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleText_Project11.swift; sourceTree = "<group>"; };
+		28B30B112AFE076700307467 /* CoreData_Project11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreData_Project11.swift; sourceTree = "<group>"; };
+		28B30B142AFF7A8800307467 /* Bookworm.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Bookworm.xcdatamodel; sourceTree = "<group>"; };
+		28B30B162AFF7ABF00307467 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		28B30B182AFFD11A00307467 /* AddBookView_Project11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBookView_Project11.swift; sourceTree = "<group>"; };
+		28B30B1A2AFFD38100307467 /* BooksView_Project11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksView_Project11.swift; sourceTree = "<group>"; };
+		28B30B1C2B00D59F00307467 /* RatingView_Project11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView_Project11.swift; sourceTree = "<group>"; };
 		28D47B692ACF040100157652 /* SwiftUIViewStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewStruct.swift; sourceTree = "<group>"; };
 		28D47B6B2AD022A200157652 /* SwiftUIViewNewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewNewView.swift; sourceTree = "<group>"; };
 		28D47B6D2AD03E0B00157652 /* SwiftUIViewDelete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewDelete.swift; sourceTree = "<group>"; };
@@ -234,6 +250,7 @@
 				280E59802AC1284100DAC8F1 /* SwiftUIBeginersApp.swift */,
 				280E59822AC1284100DAC8F1 /* ContentView.swift */,
 				287CA0432AF3F95D004DC41A /* Project10 */,
+				28B30B0B2AFD385000307467 /* Project11 */,
 				2830A1F32ACD12A400D10B66 /* Challenges */,
 				285B888E2AC3FCA10078D3F0 /* Projects */,
 				285B88852AC1D8580078D3F0 /* D0926 */,
@@ -412,6 +429,29 @@
 				28B30B002AF8DF2800307467 /* SwiftUIViewFromDisable.swift */,
 				28B30AFC2AF8CBE500307467 /* SwiftUIViewResponse.swift */,
 				28B30AFE2AF8D7A900307467 /* SwiftUIViewAsyncImage.swift */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		28B30B0B2AFD385000307467 /* Project11 */ = {
+			isa = PBXGroup;
+			children = (
+				28B30B132AFF7A8800307467 /* Bookworm.xcdatamodeld */,
+				28B30B0C2AFDE3A300307467 /* Feature */,
+				28B30B182AFFD11A00307467 /* AddBookView_Project11.swift */,
+				28B30B1A2AFFD38100307467 /* BooksView_Project11.swift */,
+				28B30B1C2B00D59F00307467 /* RatingView_Project11.swift */,
+			);
+			path = Project11;
+			sourceTree = "<group>";
+		};
+		28B30B0C2AFDE3A300307467 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				28B30B0D2AFDE3BA00307467 /* SwiftUIViewCustom.swift */,
+				28B30B0F2AFDFFCD00307467 /* MultipleText_Project11.swift */,
+				28B30B162AFF7ABF00307467 /* DataController.swift */,
+				28B30B112AFE076700307467 /* CoreData_Project11.swift */,
 			);
 			path = Feature;
 			sourceTree = "<group>";
@@ -607,6 +647,7 @@
 				285B88922AC474780078D3F0 /* Project2.swift in Sources */,
 				28B30B042AFA91DB00307467 /* Order_Project10.swift in Sources */,
 				28D47B7A2AD2F25100157652 /* SwiftUIViewScrolleView.swift in Sources */,
+				28B30B152AFF7A8800307467 /* Bookworm.xcdatamodeld in Sources */,
 				280E59832AC1284100DAC8F1 /* ContentView.swift in Sources */,
 				28D47B6A2ACF040100157652 /* SwiftUIViewStruct.swift in Sources */,
 				285974072AC9607E00A157C3 /* SwiftUIViewList.swift in Sources */,
@@ -614,6 +655,7 @@
 				285B88902AC3FCBD0078D3F0 /* Project1.swift in Sources */,
 				284613052AEABEA500E284B7 /* ChallengeNineArrow.swift in Sources */,
 				285B88892AC2C6C80078D3F0 /* SwiftUIViewGradient.swift in Sources */,
+				28B30B172AFF7ABF00307467 /* DataController.swift in Sources */,
 				28D47B772AD1AA3200157652 /* SwiftUIViewAddView.swift in Sources */,
 				28D47B712AD1A20000157652 /* ExpressItem.swift in Sources */,
 				285B888B2AC2CC320078D3F0 /* SwiftUIViewButton.swift in Sources */,
@@ -633,11 +675,13 @@
 				285B888D2AC2D28D0078D3F0 /* SwiftUIViewAlert.swift in Sources */,
 				28D47B882AD3102F00157652 /* Astronaut.swift in Sources */,
 				285B889A2AC72E890078D3F0 /* SwiftUIViewDate.swift in Sources */,
+				28B30B0E2AFDE3BA00307467 /* SwiftUIViewCustom.swift in Sources */,
 				28B30B012AF8DF2800307467 /* SwiftUIViewFromDisable.swift in Sources */,
 				2830A1F92ACDA0E100D10B66 /* ChallengeThree.swift in Sources */,
 				28D47B6C2AD022A200157652 /* SwiftUIViewNewView.swift in Sources */,
 				285B889C2AC81CB40078D3F0 /* SwiftUIViewBetterRest.swift in Sources */,
 				2830A1F72ACD97B800D10B66 /* QuizView_reference.swift in Sources */,
+				28B30B1B2AFFD38100307467 /* BooksView_Project11.swift in Sources */,
 				284612FF2AE585E100E284B7 /* SwiftUIViewRactangleAnimatable.swift in Sources */,
 				28D47B8A2AD3109E00157652 /* Bundle-Decodable.swift in Sources */,
 				28B30AFD2AF8CBE500307467 /* SwiftUIViewResponse.swift in Sources */,
@@ -651,11 +695,13 @@
 				28B30AFB2AF7E2D000307467 /* SwiftUIViewCodableToLearn.swift in Sources */,
 				2885AF442AEFFA3700E89B0C /* HabitItem.swift in Sources */,
 				2885AF422AEFF76600E89B0C /* Habit.swift in Sources */,
+				28B30B102AFDFFCD00307467 /* MultipleText_Project11.swift in Sources */,
 				285B889E2AC820C80078D3F0 /* SleepCalculator.mlmodel in Sources */,
 				2830A1F52ACD930300D10B66 /* ChallengeThree_reference.swift in Sources */,
 				28D47B732AD1A23200157652 /* Express.swift in Sources */,
 				284612EC2ADBFF3100E284B7 /* SwiftUIViewPathDeom.swift in Sources */,
 				28D47B802AD30C5400157652 /* Project8.swift in Sources */,
+				28B30B1D2B00D59F00307467 /* RatingView_Project11.swift in Sources */,
 				284612EE2ADC281E00E284B7 /* SwiftUIViewBoard.swift in Sources */,
 				285B88972AC5C8FC0078D3F0 /* ChallengeTwo.swift in Sources */,
 				2830A1EE2ACC0C6B00D10B66 /* SwiftUIViewAnimation2.swift in Sources */,
@@ -664,8 +710,10 @@
 				2830A1F22ACC882100D10B66 /* SwiftUIViewCornerRotate.swift in Sources */,
 				284612F02ADD88F700E284B7 /* SwiftUIViewCG.swift in Sources */,
 				284613032AEAB32E00E284B7 /* SwiftUIViewTest.swift in Sources */,
+				28B30B192AFFD11A00307467 /* AddBookView_Project11.swift in Sources */,
 				28D47B8E2AD3BFF700157652 /* ShapeStyle-Background.swift in Sources */,
 				280E59AC2AC1286600DAC8F1 /* ChallengeOne.swift in Sources */,
+				28B30B122AFE076700307467 /* CoreData_Project11.swift in Sources */,
 				284612FD2AE5256F00E284B7 /* SwiftUIViewPentagram.swift in Sources */,
 				28D47B922AD596CD00157652 /* AstronautsView.swift in Sources */,
 				28D47B8C2AD3B83600157652 /* Mission.swift in Sources */,
@@ -1020,6 +1068,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		28B30B132AFF7A8800307467 /* Bookworm.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				28B30B142AFF7A8800307467 /* Bookworm.xcdatamodel */,
+			);
+			currentVersion = 28B30B142AFF7A8800307467 /* Bookworm.xcdatamodel */;
+			path = Bookworm.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 280E59752AC1284100DAC8F1 /* Project object */;
 }

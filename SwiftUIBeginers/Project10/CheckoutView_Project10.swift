@@ -19,8 +19,7 @@ struct CheckoutView_Project10: View {
                 image
                     .resizable()
                     .scaledToFill()
-            }
-            placeholder: {
+            } placeholder: {
                 ProgressView()
             }
             .frame(height: 300)
@@ -59,7 +58,7 @@ struct CheckoutView_Project10: View {
             let (data, _) = try await URLSession.shared.upload(for: request, from: encoded)
             print(String(data: data, encoding: .utf8) ?? "")
             let decoder = try JSONDecoder().decode(Order.self, from: data)
-            confirmationMessage = "Yout order for \(decoder.quantity) x \(Order.types[decoder.type].lowercased()) cupcakes is on its way"
+            confirmationMessage = "Yout order for \(decoder.quantity)x \(Order.types[decoder.type].lowercased()) cupcakes is on its way"
             showingConfirmation = true
             
         } catch {
