@@ -9,6 +9,9 @@ import CoreData
 import SwiftUI
 
 struct DetailView_Project11: View {
+    @Environment(\.managedObjectContext) var moc
+    @Environment(\.dismiss) var dismiss
+    @State var showingDeleteAlert = false
     var book: Book
     var body: some View {
         ScrollView {
@@ -34,12 +37,34 @@ struct DetailView_Project11: View {
             
             Text(book.review ?? "No review")
                 .padding()
+            Text(book.genre ?? "No genre")
+                .padding()
+            
             
             RatingView_Project11(rating: .constant(Int(book.rating)))
                 .font(.largeTitle)
 
 
         }
+        .alert("Delete Book", isPresented: $showingDeleteAlert) {
+            Button("Delete", role: .destructive, action: deleteBook)
+            Button("Cancel", role: .cancel, action: {})
+        }
+        .toolbar(content: {
+            Button{
+                showingDeleteAlert.toggle()
+            } label: {
+                Label("Delete this book", systemImage: "trash")
+
+            }
+        })
+        
+    }
+    
+    func deleteBook(){
+        moc.delete(book)
+        try? moc.save()
+        dismiss()
     }
 }
 

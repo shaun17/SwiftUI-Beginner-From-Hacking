@@ -9,10 +9,14 @@ import SwiftUI
 
 struct BooksView_Project11: View {
     @Environment(\.managedObjectContext) var moc
-    @FetchRequest(sortDescriptors: []) var books: FetchedResults<Book>
+    @FetchRequest(sortDescriptors: [
+        SortDescriptor(\.title),
+        SortDescriptor(\.author)
+    ]) var books: FetchedResults<Book>
     
     
     @State private var showAddScren = false
+    @State private var editingStaut = false
     var body: some View {
         NavigationView(content: {
             
@@ -33,24 +37,45 @@ struct BooksView_Project11: View {
                     })
                         
                 }
+                .onDelete(perform: { indexSet in
+                    deletBook(at: indexSet)
+                })
+                
             }
             .navigationTitle("Bookworm")
             .toolbar(content: {
+                ToolbarItem(placement: .navigationBarLeading) {
+                    EditButton()
+                       
+                }
                 ToolbarItem {
                     Button{
                         showAddScren.toggle()
+                        
                     }label: {
                         Label("Add Book", systemImage: "plus")
                     }
                 }
+               
             })
             .sheet(isPresented: $showAddScren, content: {
                 AddBookViewProject11()
             })
+        
             
             
            
         })
+    }
+    
+    func deletBook(at offsets: IndexSet) {
+        for offset in offsets{
+            let book = books[offset]
+            moc.delete(book)
+            
+        }
+        try? moc.save()
+        
     }
 }
 

@@ -13,7 +13,7 @@ struct AddBookViewProject11: View {
     @State private var title = ""
     @State private var author = ""
     @State private var rating = 3
-    @State private var genre = ""
+    @State private var genre = "Fantasy"
     @State private var review = ""
     let genres = ["Fantasy", "Horror", "Kids", "Mystery", "Poetry", "Romance", "Thriller"]
     var body: some View {
@@ -55,10 +55,12 @@ struct AddBookViewProject11: View {
                 }
             })
             .navigationTitle("Add A Book")
-           
+            
         })
         
     }
+    
+
 }
 
 #Preview {
