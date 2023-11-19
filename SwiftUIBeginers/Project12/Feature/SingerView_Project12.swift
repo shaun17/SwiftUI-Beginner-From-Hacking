@@ -14,7 +14,9 @@ struct SingerView_Project12: View {
     var body: some View {
         VStack{
             
-            FilterView_Project12(filter: lastNameFilter)
+            FilterView_Project12(filterKey: "lastName", filterVal: lastNameFilter) { (singer: Singer) in
+                Text("\(singer.wrappedFirstName) \(singer.wrappedLastName)")
+            }
 
             Button("Add Example"){
                 let taylor = Singer(context: moc)

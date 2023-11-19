@@ -103,6 +103,11 @@
 		28FB288B2B09143B003A737E /* FilterView_Project12.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FB288A2B09143B003A737E /* FilterView_Project12.swift */; };
 		28FB288E2B0914A9003A737E /* Singer+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FB288C2B0914A9003A737E /* Singer+CoreDataClass.swift */; };
 		28FB288F2B0914A9003A737E /* Singer+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FB288D2B0914A9003A737E /* Singer+CoreDataProperties.swift */; };
+		28FB28942B0A5759003A737E /* Candy+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FB28902B0A5759003A737E /* Candy+CoreDataClass.swift */; };
+		28FB28952B0A5759003A737E /* Candy+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FB28912B0A5759003A737E /* Candy+CoreDataProperties.swift */; };
+		28FB28962B0A5759003A737E /* Country+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FB28922B0A5759003A737E /* Country+CoreDataClass.swift */; };
+		28FB28972B0A5759003A737E /* Country+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FB28932B0A5759003A737E /* Country+CoreDataProperties.swift */; };
+		28FB28992B0A5E19003A737E /* ConuntryCandyView_Project12.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FB28982B0A5E19003A737E /* ConuntryCandyView_Project12.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -223,6 +228,11 @@
 		28FB288A2B09143B003A737E /* FilterView_Project12.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView_Project12.swift; sourceTree = "<group>"; };
 		28FB288C2B0914A9003A737E /* Singer+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Singer+CoreDataClass.swift"; sourceTree = "<group>"; };
 		28FB288D2B0914A9003A737E /* Singer+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Singer+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		28FB28902B0A5759003A737E /* Candy+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Candy+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		28FB28912B0A5759003A737E /* Candy+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Candy+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		28FB28922B0A5759003A737E /* Country+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Country+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		28FB28932B0A5759003A737E /* Country+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Country+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		28FB28982B0A5E19003A737E /* ConuntryCandyView_Project12.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConuntryCandyView_Project12.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -541,6 +551,11 @@
 		28FB28692B03BE6D003A737E /* Project12 */ = {
 			isa = PBXGroup;
 			children = (
+				28FB28902B0A5759003A737E /* Candy+CoreDataClass.swift */,
+				28FB28912B0A5759003A737E /* Candy+CoreDataProperties.swift */,
+				28FB28922B0A5759003A737E /* Country+CoreDataClass.swift */,
+				28FB28932B0A5759003A737E /* Country+CoreDataProperties.swift */,
+				28FB28982B0A5E19003A737E /* ConuntryCandyView_Project12.swift */,
 				28FB28812B08C542003A737E /* CoreDataProject.xcdatamodeld */,
 				28FB286A2B03C2E1003A737E /* Feature */,
 			);
@@ -704,6 +719,7 @@
 				28B30B042AFA91DB00307467 /* Order_Project10.swift in Sources */,
 				28D47B7A2AD2F25100157652 /* SwiftUIViewScrolleView.swift in Sources */,
 				28FB286C2B03C2FD003A737E /* HashValue_Project.swift in Sources */,
+				28FB28942B0A5759003A737E /* Candy+CoreDataClass.swift in Sources */,
 				28FB288B2B09143B003A737E /* FilterView_Project12.swift in Sources */,
 				28FB288E2B0914A9003A737E /* Singer+CoreDataClass.swift in Sources */,
 				28B30B152AFF7A8800307467 /* Bookworm.xcdatamodeld in Sources */,
@@ -728,6 +744,7 @@
 				2830A1FB2ACDB89B00D10B66 /* QuizView.swift in Sources */,
 				284612FB2AE5236700E284B7 /* SwiftUIViewShapeAnimatable.swift in Sources */,
 				284612F22ADEDB3F00E284B7 /* SwiftUIViewImagePaint.swift in Sources */,
+				28FB28962B0A5759003A737E /* Country+CoreDataClass.swift in Sources */,
 				285B88952AC5B87F0078D3F0 /* SwiftUIViewComposition.swift in Sources */,
 				280E59812AC1284100DAC8F1 /* SwiftUIBeginersApp.swift in Sources */,
 				284612F72AE501BB00E284B7 /* SwiftUIViewBlurs.swift in Sources */,
@@ -747,6 +764,7 @@
 				28B30B1B2AFFD38100307467 /* BooksView_Project11.swift in Sources */,
 				284612FF2AE585E100E284B7 /* SwiftUIViewRactangleAnimatable.swift in Sources */,
 				28D47B8A2AD3109E00157652 /* Bundle-Decodable.swift in Sources */,
+				28FB28952B0A5759003A737E /* Candy+CoreDataProperties.swift in Sources */,
 				28B30B1F2B00E25F00307467 /* EmojiRatingView_Project11.swift in Sources */,
 				28B30AFD2AF8CBE500307467 /* SwiftUIViewResponse.swift in Sources */,
 				2830A1EC2ACBB89700D10B66 /* SwiftUIViewAnimation.swift in Sources */,
@@ -756,12 +774,14 @@
 				28D47B7E2AD305DF00157652 /* SwiftUIViewGridView.swift in Sources */,
 				2885AF462AEFFBDB00E89B0C /* HabitItemView.swift in Sources */,
 				284612F92AE51D2300E284B7 /* SwiftUIViewPicBlurs.swift in Sources */,
+				28FB28992B0A5E19003A737E /* ConuntryCandyView_Project12.swift in Sources */,
 				2885AF3D2AED5F6E00E89B0C /* SwiftUIViewColorCyclingRectangle.swift in Sources */,
 				28B30AFB2AF7E2D000307467 /* SwiftUIViewCodableToLearn.swift in Sources */,
 				2885AF442AEFFA3700E89B0C /* HabitItem.swift in Sources */,
 				2885AF422AEFF76600E89B0C /* Habit.swift in Sources */,
 				28B30B102AFDFFCD00307467 /* MultipleText_Project11.swift in Sources */,
 				285B889E2AC820C80078D3F0 /* SleepCalculator.mlmodel in Sources */,
+				28FB28972B0A5759003A737E /* Country+CoreDataProperties.swift in Sources */,
 				2830A1F52ACD930300D10B66 /* ChallengeThree_reference.swift in Sources */,
 				28D47B732AD1A23200157652 /* Express.swift in Sources */,
 				284612EC2ADBFF3100E284B7 /* SwiftUIViewPathDeom.swift in Sources */,
