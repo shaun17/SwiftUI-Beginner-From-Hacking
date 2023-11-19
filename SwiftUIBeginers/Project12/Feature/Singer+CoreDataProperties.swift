@@ -18,6 +18,15 @@ extension Singer {
 
     @NSManaged public var firstName: String?
     @NSManaged public var lastName: String?
+    
+    var wrappedFirstName: String{
+        firstName ?? "unknow"
+    }
+    
+    var wrappedLastName: String{
+        lastName ?? "unknow"
+    }
+    
 
 }
 

@@ -7,9 +7,18 @@
 
 import SwiftUI
 
+struct People: Hashable{
+    var name: String
+}
 struct HashValue_Project: View {
+    var students = [People(name: "Tom Jecsion"), People(name: "Yilian Deton")]
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List{
+            ForEach(students, id: \.self){ student in
+                Text(student.name)
+            }
+        }
     }
 }
 

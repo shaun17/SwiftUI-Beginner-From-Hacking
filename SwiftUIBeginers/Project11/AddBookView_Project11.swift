@@ -62,7 +62,15 @@ struct AddBookViewProject11: View {
     
 
 }
+    
 
-#Preview {
-    AddBookViewProject11()
+struct AddBookViewProject11_PreView: PreviewProvider {
+    
+    static var dataController = DataController()
+
+    static var previews: some View{
+
+        AddBookViewProject11()
+                .environment(\.managedObjectContext, dataController.container.viewContext)
+    }
 }

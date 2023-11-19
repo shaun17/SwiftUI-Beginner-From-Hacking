@@ -8,11 +8,17 @@
 import SwiftUI
 
 struct FilterView_Project12: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+    @FetchRequest var fetchRequest: FetchedResults<Singer>
+    
+    init(filter: String) {
+        _fetchRequest = FetchRequest<Singer>(sortDescriptors: [], predicate: NSPredicate(format: "lastName BEGINSWITH %@", filter))
     }
-}
+    var body: some View {
+        List{
+            ForEach(fetchRequest, id: \.self){ singer in
+                Text("\(singer.wrappedFirstName) \(singer.wrappedLastName)")
 
-#Preview {
-    FilterView_Project12()
+            }
+        }
+    }
 }

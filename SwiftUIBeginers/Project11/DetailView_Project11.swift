@@ -62,29 +62,33 @@ struct DetailView_Project11: View {
     }
     
     func deleteBook(){
-        moc.delete(book)
+//        moc.delete(book)
         try? moc.save()
         dismiss()
     }
 }
 
 struct DetailView_PreView: PreviewProvider {
-    static let moc = NSManagedObjectContext(concurrencyType: .mainQueueConcurrencyType)
+//    static let moc = NSManagedObjectContext(concurrencyType: .mainQueueConcurrencyType)
+
+    static let moc = DataController().container.viewContext
     
-    static var dataController = DataController()
 
     static var previews: some View {
-        
-        let book = Book(context: dataController.container.viewContext)
+        let book = Book(context: moc)
         
         book.title = "Test book"
         book.author = "Test author"
         book.genre = "Fantasy"
-        book.rating = 4
+        book.rating = 1
         book.review = "This was a great book; I really enjoyed it."
+//        try? moc.save()
+        print(11111)
         
         return NavigationView(content: {
+            
             DetailView_Project11(book: book)
+                .environment(\.managedObjectContext, moc)
         })
     }
 }

@@ -92,6 +92,17 @@
 		28D47B8E2AD3BFF700157652 /* ShapeStyle-Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D47B8D2AD3BFF700157652 /* ShapeStyle-Background.swift */; };
 		28D47B902AD4474800157652 /* SwiftUIViewMissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D47B8F2AD4474800157652 /* SwiftUIViewMissionView.swift */; };
 		28D47B922AD596CD00157652 /* AstronautsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D47B912AD596CD00157652 /* AstronautsView.swift */; };
+		28FB286C2B03C2FD003A737E /* HashValue_Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FB286B2B03C2FD003A737E /* HashValue_Project.swift */; };
+		28FB28752B03CF7B003A737E /* MovieView_Project12.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FB28742B03CF7B003A737E /* MovieView_Project12.swift */; };
+		28FB28772B08B843003A737E /* MivewListView_Project12.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FB28762B08B843003A737E /* MivewListView_Project12.swift */; };
+		28FB28792B08BF32003A737E /* SpaceListView_Project12.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FB28782B08BF32003A737E /* SpaceListView_Project12.swift */; };
+		28FB28832B08C542003A737E /* CoreDataProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 28FB28812B08C542003A737E /* CoreDataProject.xcdatamodeld */; };
+		28FB28862B08C5DF003A737E /* Movie+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FB28842B08C5DF003A737E /* Movie+CoreDataClass.swift */; };
+		28FB28872B08C5DF003A737E /* Movie+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FB28852B08C5DF003A737E /* Movie+CoreDataProperties.swift */; };
+		28FB28892B09140E003A737E /* SingerView_Project12.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FB28882B09140E003A737E /* SingerView_Project12.swift */; };
+		28FB288B2B09143B003A737E /* FilterView_Project12.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FB288A2B09143B003A737E /* FilterView_Project12.swift */; };
+		28FB288E2B0914A9003A737E /* Singer+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FB288C2B0914A9003A737E /* Singer+CoreDataClass.swift */; };
+		28FB288F2B0914A9003A737E /* Singer+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FB288D2B0914A9003A737E /* Singer+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -201,6 +212,17 @@
 		28D47B8D2AD3BFF700157652 /* ShapeStyle-Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ShapeStyle-Background.swift"; sourceTree = "<group>"; };
 		28D47B8F2AD4474800157652 /* SwiftUIViewMissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewMissionView.swift; sourceTree = "<group>"; };
 		28D47B912AD596CD00157652 /* AstronautsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronautsView.swift; sourceTree = "<group>"; };
+		28FB286B2B03C2FD003A737E /* HashValue_Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashValue_Project.swift; sourceTree = "<group>"; };
+		28FB28742B03CF7B003A737E /* MovieView_Project12.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieView_Project12.swift; sourceTree = "<group>"; };
+		28FB28762B08B843003A737E /* MivewListView_Project12.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MivewListView_Project12.swift; sourceTree = "<group>"; };
+		28FB28782B08BF32003A737E /* SpaceListView_Project12.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceListView_Project12.swift; sourceTree = "<group>"; };
+		28FB28822B08C542003A737E /* CoreDataProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataProject.xcdatamodel; sourceTree = "<group>"; };
+		28FB28842B08C5DF003A737E /* Movie+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+CoreDataClass.swift"; sourceTree = "<group>"; };
+		28FB28852B08C5DF003A737E /* Movie+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		28FB28882B09140E003A737E /* SingerView_Project12.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingerView_Project12.swift; sourceTree = "<group>"; };
+		28FB288A2B09143B003A737E /* FilterView_Project12.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView_Project12.swift; sourceTree = "<group>"; };
+		28FB288C2B0914A9003A737E /* Singer+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Singer+CoreDataClass.swift"; sourceTree = "<group>"; };
+		28FB288D2B0914A9003A737E /* Singer+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Singer+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -255,6 +277,7 @@
 				280E59822AC1284100DAC8F1 /* ContentView.swift */,
 				287CA0432AF3F95D004DC41A /* Project10 */,
 				28B30B0B2AFD385000307467 /* Project11 */,
+				28FB28692B03BE6D003A737E /* Project12 */,
 				2830A1F32ACD12A400D10B66 /* Challenges */,
 				285B888E2AC3FCA10078D3F0 /* Projects */,
 				285B88852AC1D8580078D3F0 /* D0926 */,
@@ -515,6 +538,32 @@
 			path = "Project8-domain";
 			sourceTree = "<group>";
 		};
+		28FB28692B03BE6D003A737E /* Project12 */ = {
+			isa = PBXGroup;
+			children = (
+				28FB28812B08C542003A737E /* CoreDataProject.xcdatamodeld */,
+				28FB286A2B03C2E1003A737E /* Feature */,
+			);
+			path = Project12;
+			sourceTree = "<group>";
+		};
+		28FB286A2B03C2E1003A737E /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				28FB288C2B0914A9003A737E /* Singer+CoreDataClass.swift */,
+				28FB288D2B0914A9003A737E /* Singer+CoreDataProperties.swift */,
+				28FB28842B08C5DF003A737E /* Movie+CoreDataClass.swift */,
+				28FB28852B08C5DF003A737E /* Movie+CoreDataProperties.swift */,
+				28FB286B2B03C2FD003A737E /* HashValue_Project.swift */,
+				28FB28742B03CF7B003A737E /* MovieView_Project12.swift */,
+				28FB28782B08BF32003A737E /* SpaceListView_Project12.swift */,
+				28FB28882B09140E003A737E /* SingerView_Project12.swift */,
+				28FB288A2B09143B003A737E /* FilterView_Project12.swift */,
+				28FB28762B08B843003A737E /* MivewListView_Project12.swift */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -648,11 +697,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28FB28792B08BF32003A737E /* SpaceListView_Project12.swift in Sources */,
 				284612F42AE4F9A900E284B7 /* SwiftUIViewColorCircular.swift in Sources */,
 				28D47B752AD1A27A00157652 /* SwiftUIViewExpress.swift in Sources */,
 				285B88922AC474780078D3F0 /* Project2.swift in Sources */,
 				28B30B042AFA91DB00307467 /* Order_Project10.swift in Sources */,
 				28D47B7A2AD2F25100157652 /* SwiftUIViewScrolleView.swift in Sources */,
+				28FB286C2B03C2FD003A737E /* HashValue_Project.swift in Sources */,
+				28FB288B2B09143B003A737E /* FilterView_Project12.swift in Sources */,
+				28FB288E2B0914A9003A737E /* Singer+CoreDataClass.swift in Sources */,
 				28B30B152AFF7A8800307467 /* Bookworm.xcdatamodeld in Sources */,
 				280E59832AC1284100DAC8F1 /* ContentView.swift in Sources */,
 				28D47B6A2ACF040100157652 /* SwiftUIViewStruct.swift in Sources */,
@@ -678,13 +731,17 @@
 				285B88952AC5B87F0078D3F0 /* SwiftUIViewComposition.swift in Sources */,
 				280E59812AC1284100DAC8F1 /* SwiftUIBeginersApp.swift in Sources */,
 				284612F72AE501BB00E284B7 /* SwiftUIViewBlurs.swift in Sources */,
+				28FB28892B09140E003A737E /* SingerView_Project12.swift in Sources */,
+				28FB28832B08C542003A737E /* CoreDataProject.xcdatamodeld in Sources */,
 				285B888D2AC2D28D0078D3F0 /* SwiftUIViewAlert.swift in Sources */,
+				28FB288F2B0914A9003A737E /* Singer+CoreDataProperties.swift in Sources */,
 				28D47B882AD3102F00157652 /* Astronaut.swift in Sources */,
 				285B889A2AC72E890078D3F0 /* SwiftUIViewDate.swift in Sources */,
 				28B30B0E2AFDE3BA00307467 /* SwiftUIViewCustom.swift in Sources */,
 				28B30B012AF8DF2800307467 /* SwiftUIViewFromDisable.swift in Sources */,
 				2830A1F92ACDA0E100D10B66 /* ChallengeThree.swift in Sources */,
 				28D47B6C2AD022A200157652 /* SwiftUIViewNewView.swift in Sources */,
+				28FB28872B08C5DF003A737E /* Movie+CoreDataProperties.swift in Sources */,
 				285B889C2AC81CB40078D3F0 /* SwiftUIViewBetterRest.swift in Sources */,
 				2830A1F72ACD97B800D10B66 /* QuizView_reference.swift in Sources */,
 				28B30B1B2AFFD38100307467 /* BooksView_Project11.swift in Sources */,
@@ -710,8 +767,10 @@
 				284612EC2ADBFF3100E284B7 /* SwiftUIViewPathDeom.swift in Sources */,
 				28D47B802AD30C5400157652 /* Project8.swift in Sources */,
 				28B30B1D2B00D59F00307467 /* RatingView_Project11.swift in Sources */,
+				28FB28772B08B843003A737E /* MivewListView_Project12.swift in Sources */,
 				284612EE2ADC281E00E284B7 /* SwiftUIViewBoard.swift in Sources */,
 				285B88972AC5C8FC0078D3F0 /* ChallengeTwo.swift in Sources */,
+				28FB28862B08C5DF003A737E /* Movie+CoreDataClass.swift in Sources */,
 				2830A1EE2ACC0C6B00D10B66 /* SwiftUIViewAnimation2.swift in Sources */,
 				28B30B082AFB2B9D00307467 /* AddressView_Project10.swift in Sources */,
 				2830A1F02ACC13AF00D10B66 /* SwiftUIViewGesture.swift in Sources */,
@@ -724,6 +783,7 @@
 				28B30B122AFE076700307467 /* CoreData_Project11.swift in Sources */,
 				284612FD2AE5256F00E284B7 /* SwiftUIViewPentagram.swift in Sources */,
 				28D47B922AD596CD00157652 /* AstronautsView.swift in Sources */,
+				28FB28752B03CF7B003A737E /* MovieView_Project12.swift in Sources */,
 				28D47B8C2AD3B83600157652 /* Mission.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1085,6 +1145,16 @@
 			);
 			currentVersion = 28B30B142AFF7A8800307467 /* Bookworm.xcdatamodel */;
 			path = Bookworm.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		28FB28812B08C542003A737E /* CoreDataProject.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				28FB28822B08C542003A737E /* CoreDataProject.xcdatamodel */,
+			);
+			currentVersion = 28FB28822B08C542003A737E /* CoreDataProject.xcdatamodel */;
+			path = CoreDataProject.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

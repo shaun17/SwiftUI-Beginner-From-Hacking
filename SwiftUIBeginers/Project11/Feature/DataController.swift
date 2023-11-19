@@ -12,9 +12,15 @@ import Foundation
 class DataController: ObservableObject{
     
     let container = NSPersistentContainer(name: "Bookworm")
-    
+    let container2 = NSPersistentContainer(name: "CoreDataProject")
+
     init(){
         container.loadPersistentStores { descript, error in
+            if let error = error {
+                print("Core Data failed to load \(error.localizedDescription)")
+            }
+        } 
+        container2.loadPersistentStores { descript, error in
             if let error = error {
                 print("Core Data failed to load \(error.localizedDescription)")
             }

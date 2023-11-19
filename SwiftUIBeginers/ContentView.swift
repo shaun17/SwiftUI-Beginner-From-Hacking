@@ -6,10 +6,9 @@
 //
 
 import SwiftUI
-
+import CoreData
 struct ContentView: View {
     @StateObject private var dataController = DataController()
-
     @State var isNavPush = false
 
     var body: some View {
@@ -53,11 +52,10 @@ struct ContentView: View {
                 }
                 NavigationLink {
                     
-                    BooksView_Project11()
-                        .environment(\.managedObjectContext, dataController.container.viewContext)
-
+                    SpaceListView_Project12()
+                        .environment(\.managedObjectContext,dataController.container2.viewContext)
                 } label: {
-                    Label("BooksView", systemImage: "folder")
+                    Label("Space", systemImage: "folder")
                 }
     
             }
