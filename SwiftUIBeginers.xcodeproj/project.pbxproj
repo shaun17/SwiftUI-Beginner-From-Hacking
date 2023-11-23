@@ -108,6 +108,8 @@
 		28FB28962B0A5759003A737E /* Country+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FB28922B0A5759003A737E /* Country+CoreDataClass.swift */; };
 		28FB28972B0A5759003A737E /* Country+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FB28932B0A5759003A737E /* Country+CoreDataProperties.swift */; };
 		28FB28992B0A5E19003A737E /* ConuntryCandyView_Project12.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FB28982B0A5E19003A737E /* ConuntryCandyView_Project12.swift */; };
+		28FB289E2B0E434B003A737E /* ViewBuilderTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FB289D2B0E434B003A737E /* ViewBuilderTestView.swift */; };
+		28FB28A02B0F5BDB003A737E /* JSONDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FB289F2B0F5BDB003A737E /* JSONDemoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -233,6 +235,8 @@
 		28FB28922B0A5759003A737E /* Country+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Country+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
 		28FB28932B0A5759003A737E /* Country+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Country+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		28FB28982B0A5E19003A737E /* ConuntryCandyView_Project12.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConuntryCandyView_Project12.swift; sourceTree = "<group>"; };
+		28FB289D2B0E434B003A737E /* ViewBuilderTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewBuilderTestView.swift; sourceTree = "<group>"; };
+		28FB289F2B0F5BDB003A737E /* JSONDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDemoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -283,6 +287,7 @@
 		280E597F2AC1284100DAC8F1 /* SwiftUIBeginers */ = {
 			isa = PBXGroup;
 			children = (
+				28FB289A2B0CFE01003A737E /* Milestone_10-12 */,
 				280E59802AC1284100DAC8F1 /* SwiftUIBeginersApp.swift */,
 				280E59822AC1284100DAC8F1 /* ContentView.swift */,
 				287CA0432AF3F95D004DC41A /* Project10 */,
@@ -579,6 +584,15 @@
 			path = Feature;
 			sourceTree = "<group>";
 		};
+		28FB289A2B0CFE01003A737E /* Milestone_10-12 */ = {
+			isa = PBXGroup;
+			children = (
+				28FB289D2B0E434B003A737E /* ViewBuilderTestView.swift */,
+				28FB289F2B0F5BDB003A737E /* JSONDemoView.swift */,
+			);
+			path = "Milestone_10-12";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -763,6 +777,7 @@
 				2830A1F72ACD97B800D10B66 /* QuizView_reference.swift in Sources */,
 				28B30B1B2AFFD38100307467 /* BooksView_Project11.swift in Sources */,
 				284612FF2AE585E100E284B7 /* SwiftUIViewRactangleAnimatable.swift in Sources */,
+				28FB28A02B0F5BDB003A737E /* JSONDemoView.swift in Sources */,
 				28D47B8A2AD3109E00157652 /* Bundle-Decodable.swift in Sources */,
 				28FB28952B0A5759003A737E /* Candy+CoreDataProperties.swift in Sources */,
 				28B30B1F2B00E25F00307467 /* EmojiRatingView_Project11.swift in Sources */,
@@ -785,6 +800,7 @@
 				2830A1F52ACD930300D10B66 /* ChallengeThree_reference.swift in Sources */,
 				28D47B732AD1A23200157652 /* Express.swift in Sources */,
 				284612EC2ADBFF3100E284B7 /* SwiftUIViewPathDeom.swift in Sources */,
+				28FB289E2B0E434B003A737E /* ViewBuilderTestView.swift in Sources */,
 				28D47B802AD30C5400157652 /* Project8.swift in Sources */,
 				28B30B1D2B00D59F00307467 /* RatingView_Project11.swift in Sources */,
 				28FB28772B08B843003A737E /* MivewListView_Project12.swift in Sources */,
