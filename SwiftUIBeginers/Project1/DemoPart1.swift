@@ -3,11 +3,13 @@
 //  SwiftUIBeginers
 //
 //  Created by shaun on 2024/3/11.
-//
+
+
+// @State NavigationStack Form
 
 import SwiftUI
 
-struct D16Form: View {
+struct DemoPart1: View {
     @State var tap = 0
     let students = ["Harry", "Hermione", "Ron","Hermione"]
     @State private var selectedStudent = "Harry"
@@ -51,5 +53,5 @@ struct D16Form: View {
 }
 
 #Preview {
-    D16Form()
+    DemoPart1()
 }

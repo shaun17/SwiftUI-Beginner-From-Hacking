@@ -55,7 +55,8 @@
 		2885AF422AEFF76600E89B0C /* Habit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2885AF412AEFF76600E89B0C /* Habit.swift */; };
 		2885AF442AEFFA3700E89B0C /* HabitItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2885AF432AEFFA3700E89B0C /* HabitItem.swift */; };
 		2885AF462AEFFBDB00E89B0C /* HabitItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2885AF452AEFFBDB00E89B0C /* HabitItemView.swift */; };
-		28AD564F2B9EE6360016627E /* D16FormState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AD564E2B9EE6360016627E /* D16FormState.swift */; };
+		28AD564F2B9EE6360016627E /* DemoPart1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AD564E2B9EE6360016627E /* DemoPart1.swift */; };
+		28AD56522B9EF9A90016627E /* DemoPart2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AD56512B9EF9A90016627E /* DemoPart2.swift */; };
 		28B30AFB2AF7E2D000307467 /* SwiftUIViewCodableToLearn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B30AFA2AF7E2D000307467 /* SwiftUIViewCodableToLearn.swift */; };
 		28B30AFD2AF8CBE500307467 /* SwiftUIViewResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B30AFC2AF8CBE500307467 /* SwiftUIViewResponse.swift */; };
 		28B30AFF2AF8D7A900307467 /* SwiftUIViewAsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B30AFE2AF8D7A900307467 /* SwiftUIViewAsyncImage.swift */; };
@@ -186,7 +187,8 @@
 		2885AF412AEFF76600E89B0C /* Habit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Habit.swift; sourceTree = "<group>"; };
 		2885AF432AEFFA3700E89B0C /* HabitItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitItem.swift; sourceTree = "<group>"; };
 		2885AF452AEFFBDB00E89B0C /* HabitItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitItemView.swift; sourceTree = "<group>"; };
-		28AD564E2B9EE6360016627E /* D16FormState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = D16FormState.swift; sourceTree = "<group>"; };
+		28AD564E2B9EE6360016627E /* DemoPart1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoPart1.swift; sourceTree = "<group>"; };
+		28AD56512B9EF9A90016627E /* DemoPart2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoPart2.swift; sourceTree = "<group>"; };
 		28B30AFA2AF7E2D000307467 /* SwiftUIViewCodableToLearn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewCodableToLearn.swift; sourceTree = "<group>"; };
 		28B30AFC2AF8CBE500307467 /* SwiftUIViewResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewResponse.swift; sourceTree = "<group>"; };
 		28B30AFE2AF8D7A900307467 /* SwiftUIViewAsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewAsyncImage.swift; sourceTree = "<group>"; };
@@ -295,7 +297,7 @@
 		280E597F2AC1284100DAC8F1 /* SwiftUIBeginers */ = {
 			isa = PBXGroup;
 			children = (
-				28AD564D2B9EE5E80016627E /* Base */,
+				28AD56502B9EF8B30016627E /* Project1 */,
 				28FB289A2B0CFE01003A737E /* Milestone_10-12 */,
 				280E59802AC1284100DAC8F1 /* SwiftUIBeginersApp.swift */,
 				280E59822AC1284100DAC8F1 /* ContentView.swift */,
@@ -474,12 +476,13 @@
 			path = Challenge47;
 			sourceTree = "<group>";
 		};
-		28AD564D2B9EE5E80016627E /* Base */ = {
+		28AD56502B9EF8B30016627E /* Project1 */ = {
 			isa = PBXGroup;
 			children = (
-				28AD564E2B9EE6360016627E /* D16FormState.swift */,
+				28AD564E2B9EE6360016627E /* DemoPart1.swift */,
+				28AD56512B9EF9A90016627E /* DemoPart2.swift */,
 			);
-			path = Base;
+			path = Project1;
 			sourceTree = "<group>";
 		};
 		28B30B022AF8E1F600307467 /* Feature */ = {
@@ -782,6 +785,7 @@
 				28D47B902AD4474800157652 /* SwiftUIViewMissionView.swift in Sources */,
 				28D47B7C2AD2F7B400157652 /* SwiftUIViewNavigation.swift in Sources */,
 				28B30B062AFA931000307467 /* OrderView_Project10.swift in Sources */,
+				28AD56522B9EF9A90016627E /* DemoPart2.swift in Sources */,
 				28B30AFF2AF8D7A900307467 /* SwiftUIViewAsyncImage.swift in Sources */,
 				2885AF402AEE9CF600E89B0C /* Challenge47Days.swift in Sources */,
 				2830A1FB2ACDB89B00D10B66 /* QuizView.swift in Sources */,
@@ -831,7 +835,7 @@
 				28D47B732AD1A23200157652 /* Express.swift in Sources */,
 				28FB28A72B0FB3FB003A737E /* ChallengeUserView.swift in Sources */,
 				284612EC2ADBFF3100E284B7 /* SwiftUIViewPathDeom.swift in Sources */,
-				28AD564F2B9EE6360016627E /* D16FormState.swift in Sources */,
+				28AD564F2B9EE6360016627E /* DemoPart1.swift in Sources */,
 				28FB289E2B0E434B003A737E /* ViewBuilderTestView.swift in Sources */,
 				28D47B802AD30C5400157652 /* Project8.swift in Sources */,
 				28B30B1D2B00D59F00307467 /* RatingView_Project11.swift in Sources */,
