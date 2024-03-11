@@ -21,9 +21,9 @@ struct ContentView: View {
                     
                 }
                 NavigationLink {
-                    ChallengeOne()
+                    Challenge1()
                 } label: {
-                    Label("Challenge One", systemImage: "folder")
+                    Label("Challenge1", systemImage: "folder")
                 }
                 NavigationLink {
                     ChallengeTwo()

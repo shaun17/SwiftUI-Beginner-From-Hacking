@@ -9,13 +9,11 @@ import SwiftUI
 
 @main
 struct SwiftUIBeginersApp: App {
-
     var body: some Scene {
         WindowGroup {
-            VStack{
+            VStack {
                 ContentView()
-                          }
-            
+            }
         }
     }
 }
