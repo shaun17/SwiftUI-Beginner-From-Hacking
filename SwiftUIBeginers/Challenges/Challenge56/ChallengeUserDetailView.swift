@@ -8,11 +8,16 @@
 import SwiftUI
 
 struct ChallengeUserDetailView: View {
+    let user: ChallengeUser
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List{
+            Section {
+                Text("Registered: \(user.formattedDate)")
+                Text("Age: \(user.age)")
+                Text("Email: \(user.email)")
+                Text("Address: \(user.address)")
+                Text("Works for: \(user.company)")
+            }
+        }
     }
-}
-
-#Preview {
-    ChallengeUserDetailView()
 }

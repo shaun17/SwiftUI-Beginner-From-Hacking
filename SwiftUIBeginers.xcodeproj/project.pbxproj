@@ -55,6 +55,7 @@
 		2885AF422AEFF76600E89B0C /* Habit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2885AF412AEFF76600E89B0C /* Habit.swift */; };
 		2885AF442AEFFA3700E89B0C /* HabitItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2885AF432AEFFA3700E89B0C /* HabitItem.swift */; };
 		2885AF462AEFFBDB00E89B0C /* HabitItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2885AF452AEFFBDB00E89B0C /* HabitItemView.swift */; };
+		28AD564F2B9EE6360016627E /* D16FormState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AD564E2B9EE6360016627E /* D16FormState.swift */; };
 		28B30AFB2AF7E2D000307467 /* SwiftUIViewCodableToLearn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B30AFA2AF7E2D000307467 /* SwiftUIViewCodableToLearn.swift */; };
 		28B30AFD2AF8CBE500307467 /* SwiftUIViewResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B30AFC2AF8CBE500307467 /* SwiftUIViewResponse.swift */; };
 		28B30AFF2AF8D7A900307467 /* SwiftUIViewAsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B30AFE2AF8D7A900307467 /* SwiftUIViewAsyncImage.swift */; };
@@ -110,6 +111,9 @@
 		28FB28992B0A5E19003A737E /* ConuntryCandyView_Project12.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FB28982B0A5E19003A737E /* ConuntryCandyView_Project12.swift */; };
 		28FB289E2B0E434B003A737E /* ViewBuilderTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FB289D2B0E434B003A737E /* ViewBuilderTestView.swift */; };
 		28FB28A02B0F5BDB003A737E /* JSONDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FB289F2B0F5BDB003A737E /* JSONDemoView.swift */; };
+		28FB28A52B0FB348003A737E /* ChallengeUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FB28A42B0FB348003A737E /* ChallengeUser.swift */; };
+		28FB28A72B0FB3FB003A737E /* ChallengeUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FB28A62B0FB3FB003A737E /* ChallengeUserView.swift */; };
+		28FB28A92B121687003A737E /* ChallengeUserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FB28A82B121687003A737E /* ChallengeUserDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -182,6 +186,7 @@
 		2885AF412AEFF76600E89B0C /* Habit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Habit.swift; sourceTree = "<group>"; };
 		2885AF432AEFFA3700E89B0C /* HabitItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitItem.swift; sourceTree = "<group>"; };
 		2885AF452AEFFBDB00E89B0C /* HabitItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitItemView.swift; sourceTree = "<group>"; };
+		28AD564E2B9EE6360016627E /* D16FormState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = D16FormState.swift; sourceTree = "<group>"; };
 		28B30AFA2AF7E2D000307467 /* SwiftUIViewCodableToLearn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewCodableToLearn.swift; sourceTree = "<group>"; };
 		28B30AFC2AF8CBE500307467 /* SwiftUIViewResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewResponse.swift; sourceTree = "<group>"; };
 		28B30AFE2AF8D7A900307467 /* SwiftUIViewAsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewAsyncImage.swift; sourceTree = "<group>"; };
@@ -237,6 +242,9 @@
 		28FB28982B0A5E19003A737E /* ConuntryCandyView_Project12.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConuntryCandyView_Project12.swift; sourceTree = "<group>"; };
 		28FB289D2B0E434B003A737E /* ViewBuilderTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewBuilderTestView.swift; sourceTree = "<group>"; };
 		28FB289F2B0F5BDB003A737E /* JSONDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDemoView.swift; sourceTree = "<group>"; };
+		28FB28A42B0FB348003A737E /* ChallengeUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeUser.swift; sourceTree = "<group>"; };
+		28FB28A62B0FB3FB003A737E /* ChallengeUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeUserView.swift; sourceTree = "<group>"; };
+		28FB28A82B121687003A737E /* ChallengeUserDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeUserDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -287,6 +295,7 @@
 		280E597F2AC1284100DAC8F1 /* SwiftUIBeginers */ = {
 			isa = PBXGroup;
 			children = (
+				28AD564D2B9EE5E80016627E /* Base */,
 				28FB289A2B0CFE01003A737E /* Milestone_10-12 */,
 				280E59802AC1284100DAC8F1 /* SwiftUIBeginersApp.swift */,
 				280E59822AC1284100DAC8F1 /* ContentView.swift */,
@@ -351,6 +360,7 @@
 		2830A1F32ACD12A400D10B66 /* Challenges */ = {
 			isa = PBXGroup;
 			children = (
+				28FB28A12B0FB218003A737E /* Challenge56 */,
 				2885AF3E2AEE9CCD00E89B0C /* Challenge47 */,
 				280E59AB2AC1286600DAC8F1 /* ChallengeOne.swift */,
 				2830A1F42ACD930300D10B66 /* ChallengeThree_reference.swift */,
@@ -462,6 +472,14 @@
 				287CA0412AF38668004DC41A /* HabitView.swift */,
 			);
 			path = Challenge47;
+			sourceTree = "<group>";
+		};
+		28AD564D2B9EE5E80016627E /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				28AD564E2B9EE6360016627E /* D16FormState.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 		28B30B022AF8E1F600307467 /* Feature */ = {
@@ -591,6 +609,16 @@
 				28FB289F2B0F5BDB003A737E /* JSONDemoView.swift */,
 			);
 			path = "Milestone_10-12";
+			sourceTree = "<group>";
+		};
+		28FB28A12B0FB218003A737E /* Challenge56 */ = {
+			isa = PBXGroup;
+			children = (
+				28FB28A42B0FB348003A737E /* ChallengeUser.swift */,
+				28FB28A62B0FB3FB003A737E /* ChallengeUserView.swift */,
+				28FB28A82B121687003A737E /* ChallengeUserDetailView.swift */,
+			);
+			path = Challenge56;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -742,6 +770,7 @@
 				285974072AC9607E00A157C3 /* SwiftUIViewList.swift in Sources */,
 				287CA0422AF38668004DC41A /* HabitView.swift in Sources */,
 				285B88902AC3FCBD0078D3F0 /* Project1.swift in Sources */,
+				28FB28A52B0FB348003A737E /* ChallengeUser.swift in Sources */,
 				284613052AEABEA500E284B7 /* ChallengeNineArrow.swift in Sources */,
 				285B88892AC2C6C80078D3F0 /* SwiftUIViewGradient.swift in Sources */,
 				28B30B172AFF7ABF00307467 /* DataController.swift in Sources */,
@@ -779,6 +808,7 @@
 				284612FF2AE585E100E284B7 /* SwiftUIViewRactangleAnimatable.swift in Sources */,
 				28FB28A02B0F5BDB003A737E /* JSONDemoView.swift in Sources */,
 				28D47B8A2AD3109E00157652 /* Bundle-Decodable.swift in Sources */,
+				28FB28A92B121687003A737E /* ChallengeUserDetailView.swift in Sources */,
 				28FB28952B0A5759003A737E /* Candy+CoreDataProperties.swift in Sources */,
 				28B30B1F2B00E25F00307467 /* EmojiRatingView_Project11.swift in Sources */,
 				28B30AFD2AF8CBE500307467 /* SwiftUIViewResponse.swift in Sources */,
@@ -799,7 +829,9 @@
 				28FB28972B0A5759003A737E /* Country+CoreDataProperties.swift in Sources */,
 				2830A1F52ACD930300D10B66 /* ChallengeThree_reference.swift in Sources */,
 				28D47B732AD1A23200157652 /* Express.swift in Sources */,
+				28FB28A72B0FB3FB003A737E /* ChallengeUserView.swift in Sources */,
 				284612EC2ADBFF3100E284B7 /* SwiftUIViewPathDeom.swift in Sources */,
+				28AD564F2B9EE6360016627E /* D16FormState.swift in Sources */,
 				28FB289E2B0E434B003A737E /* ViewBuilderTestView.swift in Sources */,
 				28D47B802AD30C5400157652 /* Project8.swift in Sources */,
 				28B30B1D2B00D59F00307467 /* RatingView_Project11.swift in Sources */,
