@@ -21,6 +21,8 @@ struct Challenge2: View {
         @State private var round = 0
         @State private var chose = 0
 
+    
+        
         var body: some View {
             ZStack{
                 
@@ -31,8 +33,9 @@ struct Challenge2: View {
                 VStack{
                     Spacer()
                     Text("Guess the Flag")
-                        .font(.largeTitle.bold())
-                        .foregroundColor(.white)
+//                        .font(.largeTitle.bold())
+//                        .foregroundColor(.white)
+                        .diyLargeTitle()
                     
                     VStack(spacing: 15, content: {
                         VStack{
@@ -48,10 +51,11 @@ struct Challenge2: View {
                             Button {
                                 flagTapped(number)
                             } label: {
-                                Image(countries[number])
-                                    .clipShape(.capsule)
-                                    .shadow(color: .purple, radius: 5)
-                                    
+                                FlagImage(countries: countries, number: number)
+//                                Image(countries[number])
+//                                    .clipShape(.capsule)
+//                                    .shadow(color: .purple, radius: 5)
+//                                    
                             }
                         }
                     })
@@ -120,6 +124,35 @@ struct Challenge2: View {
             askQuestion()
         }
     }
+
+
+struct FlagImage: View{
+    var countries :[String]
+    var number: Int
+    
+    var body: some View{
+        Image(countries[number])
+            .clipShape(.capsule)
+            .shadow(color: .purple, radius: 5)
+    }
+}
+
+struct LargeTitle: ViewModifier{
+    
+    func body(content: Content) -> some View {
+        content
+            .font(.largeTitle.bold())
+            .foregroundColor(.blue)
+    }
+}
+
+extension View{
+    
+    func diyLargeTitle() ->some View{
+        modifier(LargeTitle())
+    }
+}
+
 
 
 #Preview {

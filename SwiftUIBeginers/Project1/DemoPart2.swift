@@ -21,7 +21,6 @@ struct DemoPart2: View {
         return needPay/peopleCount
     }
     var total: Double {
-       
          (Double(tipPercentage)/100+1)*checkAmount
     }
 
@@ -59,6 +58,7 @@ struct DemoPart2: View {
                 
                 Section ("Total:"){
                     Text(total, format: .currency(code: Locale.current.currency?.identifier ?? "USD"))
+                        .foregroundStyle(total == checkAmount ? .red : .black)
                 }
 
             })

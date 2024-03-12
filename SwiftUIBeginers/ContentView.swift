@@ -15,7 +15,7 @@ struct ContentView: View {
         NavigationView {
             VStack {
                 NavigationLink {
-                    DemoPart2()
+                    Pro3Part1()
                 } label: {
                     Label("Project demo", systemImage: "folder")
                     
