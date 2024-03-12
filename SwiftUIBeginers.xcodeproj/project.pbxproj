@@ -16,6 +16,8 @@
 		280E599F2AC1284200DAC8F1 /* SwiftUIBeginersUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280E599E2AC1284200DAC8F1 /* SwiftUIBeginersUITestsLaunchTests.swift */; };
 		280E59AC2AC1286600DAC8F1 /* ChallengeOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280E59AB2AC1286600DAC8F1 /* ChallengeOne.swift */; };
 		282E59052B9F437A000C78A7 /* Challenge1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282E59042B9F437A000C78A7 /* Challenge1.swift */; };
+		282E59082B9F54D2000C78A7 /* Pro2Part1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282E59072B9F54D2000C78A7 /* Pro2Part1.swift */; };
+		282E590A2B9FFA1A000C78A7 /* ProPart2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282E59092B9FFA1A000C78A7 /* ProPart2.swift */; };
 		2830A1E92ACA5A8F00D10B66 /* start.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2830A1E82ACA5A8F00D10B66 /* start.txt */; };
 		2830A1EC2ACBB89700D10B66 /* SwiftUIViewAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2830A1EB2ACBB89700D10B66 /* SwiftUIViewAnimation.swift */; };
 		2830A1EE2ACC0C6B00D10B66 /* SwiftUIViewAnimation2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2830A1ED2ACC0C6B00D10B66 /* SwiftUIViewAnimation2.swift */; };
@@ -149,6 +151,8 @@
 		280E599E2AC1284200DAC8F1 /* SwiftUIBeginersUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIBeginersUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		280E59AB2AC1286600DAC8F1 /* ChallengeOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeOne.swift; sourceTree = "<group>"; };
 		282E59042B9F437A000C78A7 /* Challenge1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge1.swift; sourceTree = "<group>"; };
+		282E59072B9F54D2000C78A7 /* Pro2Part1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pro2Part1.swift; sourceTree = "<group>"; };
+		282E59092B9FFA1A000C78A7 /* ProPart2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProPart2.swift; sourceTree = "<group>"; };
 		2830A1E82ACA5A8F00D10B66 /* start.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = start.txt; sourceTree = "<group>"; };
 		2830A1EB2ACBB89700D10B66 /* SwiftUIViewAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewAnimation.swift; sourceTree = "<group>"; };
 		2830A1ED2ACC0C6B00D10B66 /* SwiftUIViewAnimation2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewAnimation2.swift; sourceTree = "<group>"; };
@@ -300,6 +304,7 @@
 			isa = PBXGroup;
 			children = (
 				28AD56502B9EF8B30016627E /* Project1 */,
+				282E59062B9F54A8000C78A7 /* Project2 */,
 				282E59032B9F4350000C78A7 /* Challenges */,
 				28FB289A2B0CFE01003A737E /* Milestone_10-12 */,
 				280E59802AC1284100DAC8F1 /* SwiftUIBeginersApp.swift */,
@@ -357,6 +362,15 @@
 				282E59042B9F437A000C78A7 /* Challenge1.swift */,
 			);
 			path = Challenges;
+			sourceTree = "<group>";
+		};
+		282E59062B9F54A8000C78A7 /* Project2 */ = {
+			isa = PBXGroup;
+			children = (
+				282E59072B9F54D2000C78A7 /* Pro2Part1.swift */,
+				282E59092B9FFA1A000C78A7 /* ProPart2.swift */,
+			);
+			path = Project2;
 			sourceTree = "<group>";
 		};
 		2830A1EA2ACBB86600D10B66 /* D1003 */ = {
@@ -853,7 +867,9 @@
 				28B30B1D2B00D59F00307467 /* RatingView_Project11.swift in Sources */,
 				28FB28772B08B843003A737E /* MivewListView_Project12.swift in Sources */,
 				284612EE2ADC281E00E284B7 /* SwiftUIViewBoard.swift in Sources */,
+				282E59082B9F54D2000C78A7 /* Pro2Part1.swift in Sources */,
 				285B88972AC5C8FC0078D3F0 /* ChallengeTwo.swift in Sources */,
+				282E590A2B9FFA1A000C78A7 /* ProPart2.swift in Sources */,
 				28FB28862B08C5DF003A737E /* Movie+CoreDataClass.swift in Sources */,
 				2830A1EE2ACC0C6B00D10B66 /* SwiftUIViewAnimation2.swift in Sources */,
 				28B30B082AFB2B9D00307467 /* AddressView_Project10.swift in Sources */,
