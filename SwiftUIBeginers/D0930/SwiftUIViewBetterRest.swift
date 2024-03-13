@@ -14,7 +14,7 @@ struct SwiftUIViewBetterRest: View {
     @State private var wakeup = defaultWakeUpTime
     
     static var defaultWakeUpTime: Date{
-        var component = DateComponents(hour: 7, minute: 0)
+        let component = DateComponents(hour: 7, minute: 0)
         return Calendar.current.date(from: component) ?? Date.now
     }
     
