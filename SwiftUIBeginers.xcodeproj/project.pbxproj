@@ -24,6 +24,7 @@
 		282E59152BA16F53000C78A7 /* Pro4Part1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282E59142BA16F53000C78A7 /* Pro4Part1.swift */; };
 		282E59172BA19CF1000C78A7 /* Pro4Part2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282E59162BA19CF1000C78A7 /* Pro4Part2.swift */; };
 		282E591A2BA202C4000C78A7 /* Pro5Part1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282E59192BA202C4000C78A7 /* Pro5Part1.swift */; };
+		282E591C2BA3538A000C78A7 /* Pro5Part2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282E591B2BA3538A000C78A7 /* Pro5Part2.swift */; };
 		2830A1E92ACA5A8F00D10B66 /* start.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2830A1E82ACA5A8F00D10B66 /* start.txt */; };
 		2830A1EC2ACBB89700D10B66 /* SwiftUIViewAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2830A1EB2ACBB89700D10B66 /* SwiftUIViewAnimation.swift */; };
 		2830A1EE2ACC0C6B00D10B66 /* SwiftUIViewAnimation2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2830A1ED2ACC0C6B00D10B66 /* SwiftUIViewAnimation2.swift */; };
@@ -160,6 +161,7 @@
 		282E59142BA16F53000C78A7 /* Pro4Part1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pro4Part1.swift; sourceTree = "<group>"; };
 		282E59162BA19CF1000C78A7 /* Pro4Part2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pro4Part2.swift; sourceTree = "<group>"; };
 		282E59192BA202C4000C78A7 /* Pro5Part1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pro5Part1.swift; sourceTree = "<group>"; };
+		282E591B2BA3538A000C78A7 /* Pro5Part2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pro5Part2.swift; sourceTree = "<group>"; };
 		2830A1E82ACA5A8F00D10B66 /* start.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = start.txt; sourceTree = "<group>"; };
 		2830A1EB2ACBB89700D10B66 /* SwiftUIViewAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewAnimation.swift; sourceTree = "<group>"; };
 		2830A1ED2ACC0C6B00D10B66 /* SwiftUIViewAnimation2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewAnimation2.swift; sourceTree = "<group>"; };
@@ -328,6 +330,7 @@
 				284612EA2ADBFD0500E284B7 /* D1015 */,
 				284612F52AE5019600E284B7 /* D1022 */,
 				280E59862AC1284200DAC8F1 /* SwiftUIBeginers.entitlements */,
+				2830A1E82ACA5A8F00D10B66 /* start.txt */,
 				285B889D2AC820C80078D3F0 /* SleepCalculator.mlmodel */,
 				280E59842AC1284200DAC8F1 /* Assets.xcassets */,
 				280E59872AC1284200DAC8F1 /* Preview Content */,
@@ -400,6 +403,7 @@
 			isa = PBXGroup;
 			children = (
 				282E59192BA202C4000C78A7 /* Pro5Part1.swift */,
+				282E591B2BA3538A000C78A7 /* Pro5Part2.swift */,
 			);
 			path = Project5;
 			sourceTree = "<group>";
@@ -461,7 +465,6 @@
 		285974052AC9606A00A157C3 /* D1001 */ = {
 			isa = PBXGroup;
 			children = (
-				2830A1E82ACA5A8F00D10B66 /* start.txt */,
 				285974062AC9607E00A157C3 /* SwiftUIViewList.swift */,
 			);
 			path = D1001;
@@ -847,6 +850,7 @@
 				2830A1F72ACD97B800D10B66 /* QuizView_reference.swift in Sources */,
 				28B30B1B2AFFD38100307467 /* BooksView_Project11.swift in Sources */,
 				284612FF2AE585E100E284B7 /* SwiftUIViewRactangleAnimatable.swift in Sources */,
+				282E591C2BA3538A000C78A7 /* Pro5Part2.swift in Sources */,
 				28FB28A02B0F5BDB003A737E /* JSONDemoView.swift in Sources */,
 				28D47B8A2AD3109E00157652 /* Bundle-Decodable.swift in Sources */,
 				28FB28A92B121687003A737E /* ChallengeUserDetailView.swift in Sources */,
