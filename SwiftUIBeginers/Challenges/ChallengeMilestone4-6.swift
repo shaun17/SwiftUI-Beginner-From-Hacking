@@ -3,6 +3,7 @@
 //  SwiftUIBeginers
 //
 //  Created by shaun on 2024/3/16.
+// actully, created by Preplexity. TKX AI
 //
 
 import SwiftUI
@@ -39,7 +40,7 @@ struct Challeng4_6: View {
                         .pickerStyle(SegmentedPickerStyle())
                     }
                     
-                    NavigationLink(destination: QuizzView(multiplicationRange: multiplicationRange, numberOfQuestions: numberOfQuestionsOptions[numberOfQuestionsIndex] + 1)) {
+                    NavigationLink(destination: QuizzView(multiplicationRange: multiplicationRange, numberOfQuestions: numberOfQuestionsOptions[numberOfQuestionsIndex])) {
                         Text("开始")
                             .foregroundColor(.white)
                             .padding()
@@ -100,7 +101,7 @@ struct Challeng4_6: View {
         
         func nextQuestion() {
             print(currentQuestion,questions.count)
-            if currentQuestion >= questions.count-1 {
+            if currentQuestion >= questions.count {
                 // 异步更新状态，避免在视图更新过程中直接修改状态
 //                DispatchQueue.main.async {
                     self.showAlert = true
@@ -127,7 +128,7 @@ struct Challeng4_6: View {
                     .edgesIgnoringSafeArea(.all)
                 
                 VStack(spacing: 20) {
-                    Text(questions.isEmpty ? "加载中..." : questions[currentQuestion].question)
+                    Text(questions.isEmpty || currentQuestion >= questions.count ? "加载中..." : questions[currentQuestion].question )
                         .font(.largeTitle)
                         .foregroundColor(showAnswer && !answerCorrect ? .red : .white)
                         .scaleEffect(showAnswer && !answerCorrect ? 1.2 : 1)
