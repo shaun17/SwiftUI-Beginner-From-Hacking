@@ -26,6 +26,8 @@
 		282E591A2BA202C4000C78A7 /* Pro5Part1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282E59192BA202C4000C78A7 /* Pro5Part1.swift */; };
 		282E591C2BA3538A000C78A7 /* Pro5Part2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282E591B2BA3538A000C78A7 /* Pro5Part2.swift */; };
 		282E591E2BA424D4000C78A7 /* Challenge3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282E591D2BA424D4000C78A7 /* Challenge3.swift */; };
+		282E59212BA43941000C78A7 /* Pro6Part1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282E59202BA43941000C78A7 /* Pro6Part1.swift */; };
+		282E59232BA4A0C4000C78A7 /* Pro6Part2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282E59222BA4A0C4000C78A7 /* Pro6Part2.swift */; };
 		2830A1E92ACA5A8F00D10B66 /* start.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2830A1E82ACA5A8F00D10B66 /* start.txt */; };
 		2830A1EC2ACBB89700D10B66 /* SwiftUIViewAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2830A1EB2ACBB89700D10B66 /* SwiftUIViewAnimation.swift */; };
 		2830A1EE2ACC0C6B00D10B66 /* SwiftUIViewAnimation2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2830A1ED2ACC0C6B00D10B66 /* SwiftUIViewAnimation2.swift */; };
@@ -164,6 +166,8 @@
 		282E59192BA202C4000C78A7 /* Pro5Part1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pro5Part1.swift; sourceTree = "<group>"; };
 		282E591B2BA3538A000C78A7 /* Pro5Part2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pro5Part2.swift; sourceTree = "<group>"; };
 		282E591D2BA424D4000C78A7 /* Challenge3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge3.swift; sourceTree = "<group>"; };
+		282E59202BA43941000C78A7 /* Pro6Part1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pro6Part1.swift; sourceTree = "<group>"; };
+		282E59222BA4A0C4000C78A7 /* Pro6Part2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pro6Part2.swift; sourceTree = "<group>"; };
 		2830A1E82ACA5A8F00D10B66 /* start.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = start.txt; sourceTree = "<group>"; };
 		2830A1EB2ACBB89700D10B66 /* SwiftUIViewAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewAnimation.swift; sourceTree = "<group>"; };
 		2830A1ED2ACC0C6B00D10B66 /* SwiftUIViewAnimation2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewAnimation2.swift; sourceTree = "<group>"; };
@@ -314,6 +318,7 @@
 				282E590D2BA08E09000C78A7 /* Project3 */,
 				282E59132BA16F34000C78A7 /* Project4 */,
 				282E59182BA202AC000C78A7 /* Project5 */,
+				282E591F2BA4392C000C78A7 /* Project6 */,
 				282E59032B9F4350000C78A7 /* Challenges */,
 				280E59802AC1284100DAC8F1 /* SwiftUIBeginersApp.swift */,
 				280E59822AC1284100DAC8F1 /* ContentView.swift */,
@@ -409,6 +414,15 @@
 				282E591B2BA3538A000C78A7 /* Pro5Part2.swift */,
 			);
 			path = Project5;
+			sourceTree = "<group>";
+		};
+		282E591F2BA4392C000C78A7 /* Project6 */ = {
+			isa = PBXGroup;
+			children = (
+				282E59202BA43941000C78A7 /* Pro6Part1.swift */,
+				282E59222BA4A0C4000C78A7 /* Pro6Part2.swift */,
+			);
+			path = Project6;
 			sourceTree = "<group>";
 		};
 		2830A1EA2ACBB86600D10B66 /* D1003 */ = {
@@ -845,6 +859,7 @@
 				285B889A2AC72E890078D3F0 /* SwiftUIViewDate.swift in Sources */,
 				282E59052B9F437A000C78A7 /* Challenge1.swift in Sources */,
 				28B30B0E2AFDE3BA00307467 /* SwiftUIViewCustom.swift in Sources */,
+				282E59232BA4A0C4000C78A7 /* Pro6Part2.swift in Sources */,
 				28B30B012AF8DF2800307467 /* SwiftUIViewFromDisable.swift in Sources */,
 				282E59152BA16F53000C78A7 /* Pro4Part1.swift in Sources */,
 				2830A1F92ACDA0E100D10B66 /* ChallengeThree.swift in Sources */,
@@ -856,6 +871,7 @@
 				284612FF2AE585E100E284B7 /* SwiftUIViewRactangleAnimatable.swift in Sources */,
 				282E591C2BA3538A000C78A7 /* Pro5Part2.swift in Sources */,
 				28FB28A02B0F5BDB003A737E /* JSONDemoView.swift in Sources */,
+				282E59212BA43941000C78A7 /* Pro6Part1.swift in Sources */,
 				28D47B8A2AD3109E00157652 /* Bundle-Decodable.swift in Sources */,
 				28FB28A92B121687003A737E /* ChallengeUserDetailView.swift in Sources */,
 				28FB28952B0A5759003A737E /* Candy+CoreDataProperties.swift in Sources */,
