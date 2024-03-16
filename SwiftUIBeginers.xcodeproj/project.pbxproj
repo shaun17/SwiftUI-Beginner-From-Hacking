@@ -20,7 +20,7 @@
 		282E590A2B9FFA1A000C78A7 /* Pro2Part2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282E59092B9FFA1A000C78A7 /* Pro2Part2.swift */; };
 		282E590C2BA03E8F000C78A7 /* Challenge2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282E590B2BA03E8F000C78A7 /* Challenge2.swift */; };
 		282E590F2BA08E55000C78A7 /* Pro3Part1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282E590E2BA08E55000C78A7 /* Pro3Part1.swift */; };
-		282E59122BA14420000C78A7 /* ChallengeMilestone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282E59112BA14420000C78A7 /* ChallengeMilestone.swift */; };
+		282E59122BA14420000C78A7 /* ChallengeMilestone1-3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282E59112BA14420000C78A7 /* ChallengeMilestone1-3.swift */; };
 		282E59152BA16F53000C78A7 /* Pro4Part1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282E59142BA16F53000C78A7 /* Pro4Part1.swift */; };
 		282E59172BA19CF1000C78A7 /* Pro4Part2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282E59162BA19CF1000C78A7 /* Pro4Part2.swift */; };
 		282E591A2BA202C4000C78A7 /* Pro5Part1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282E59192BA202C4000C78A7 /* Pro5Part1.swift */; };
@@ -28,6 +28,7 @@
 		282E591E2BA424D4000C78A7 /* Challenge3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282E591D2BA424D4000C78A7 /* Challenge3.swift */; };
 		282E59212BA43941000C78A7 /* Pro6Part1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282E59202BA43941000C78A7 /* Pro6Part1.swift */; };
 		282E59232BA4A0C4000C78A7 /* Pro6Part2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282E59222BA4A0C4000C78A7 /* Pro6Part2.swift */; };
+		282E59252BA599AE000C78A7 /* ChallengeMilestone4-6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282E59242BA599AE000C78A7 /* ChallengeMilestone4-6.swift */; };
 		2830A1E92ACA5A8F00D10B66 /* start.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2830A1E82ACA5A8F00D10B66 /* start.txt */; };
 		2830A1EC2ACBB89700D10B66 /* SwiftUIViewAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2830A1EB2ACBB89700D10B66 /* SwiftUIViewAnimation.swift */; };
 		2830A1EE2ACC0C6B00D10B66 /* SwiftUIViewAnimation2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2830A1ED2ACC0C6B00D10B66 /* SwiftUIViewAnimation2.swift */; };
@@ -160,7 +161,7 @@
 		282E59092B9FFA1A000C78A7 /* Pro2Part2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pro2Part2.swift; sourceTree = "<group>"; };
 		282E590B2BA03E8F000C78A7 /* Challenge2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge2.swift; sourceTree = "<group>"; };
 		282E590E2BA08E55000C78A7 /* Pro3Part1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pro3Part1.swift; sourceTree = "<group>"; };
-		282E59112BA14420000C78A7 /* ChallengeMilestone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeMilestone.swift; sourceTree = "<group>"; };
+		282E59112BA14420000C78A7 /* ChallengeMilestone1-3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChallengeMilestone1-3.swift"; sourceTree = "<group>"; };
 		282E59142BA16F53000C78A7 /* Pro4Part1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pro4Part1.swift; sourceTree = "<group>"; };
 		282E59162BA19CF1000C78A7 /* Pro4Part2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pro4Part2.swift; sourceTree = "<group>"; };
 		282E59192BA202C4000C78A7 /* Pro5Part1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pro5Part1.swift; sourceTree = "<group>"; };
@@ -168,6 +169,7 @@
 		282E591D2BA424D4000C78A7 /* Challenge3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge3.swift; sourceTree = "<group>"; };
 		282E59202BA43941000C78A7 /* Pro6Part1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pro6Part1.swift; sourceTree = "<group>"; };
 		282E59222BA4A0C4000C78A7 /* Pro6Part2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pro6Part2.swift; sourceTree = "<group>"; };
+		282E59242BA599AE000C78A7 /* ChallengeMilestone4-6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChallengeMilestone4-6.swift"; sourceTree = "<group>"; };
 		2830A1E82ACA5A8F00D10B66 /* start.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = start.txt; sourceTree = "<group>"; };
 		2830A1EB2ACBB89700D10B66 /* SwiftUIViewAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewAnimation.swift; sourceTree = "<group>"; };
 		2830A1ED2ACC0C6B00D10B66 /* SwiftUIViewAnimation2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewAnimation2.swift; sourceTree = "<group>"; };
@@ -374,9 +376,10 @@
 			isa = PBXGroup;
 			children = (
 				282E59042B9F437A000C78A7 /* Challenge1.swift */,
-				282E59112BA14420000C78A7 /* ChallengeMilestone.swift */,
+				282E59112BA14420000C78A7 /* ChallengeMilestone1-3.swift */,
 				282E590B2BA03E8F000C78A7 /* Challenge2.swift */,
 				282E591D2BA424D4000C78A7 /* Challenge3.swift */,
+				282E59242BA599AE000C78A7 /* ChallengeMilestone4-6.swift */,
 			);
 			path = Challenges;
 			sourceTree = "<group>";
@@ -853,6 +856,7 @@
 				280E59812AC1284100DAC8F1 /* SwiftUIBeginersApp.swift in Sources */,
 				284612F72AE501BB00E284B7 /* SwiftUIViewBlurs.swift in Sources */,
 				28FB28892B09140E003A737E /* SingerView_Project12.swift in Sources */,
+				282E59252BA599AE000C78A7 /* ChallengeMilestone4-6.swift in Sources */,
 				28FB28832B08C542003A737E /* CoreDataProject.xcdatamodeld in Sources */,
 				28FB288F2B0914A9003A737E /* Singer+CoreDataProperties.swift in Sources */,
 				28D47B882AD3102F00157652 /* Astronaut.swift in Sources */,
@@ -894,7 +898,7 @@
 				28FB28972B0A5759003A737E /* Country+CoreDataProperties.swift in Sources */,
 				2830A1F52ACD930300D10B66 /* ChallengeThree_reference.swift in Sources */,
 				28D47B732AD1A23200157652 /* Express.swift in Sources */,
-				282E59122BA14420000C78A7 /* ChallengeMilestone.swift in Sources */,
+				282E59122BA14420000C78A7 /* ChallengeMilestone1-3.swift in Sources */,
 				28FB28A72B0FB3FB003A737E /* ChallengeUserView.swift in Sources */,
 				284612EC2ADBFF3100E284B7 /* SwiftUIViewPathDeom.swift in Sources */,
 				28AD564F2B9EE6360016627E /* DemoPart1.swift in Sources */,

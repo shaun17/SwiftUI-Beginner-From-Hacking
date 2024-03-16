@@ -18,7 +18,11 @@ struct DemoPart1: View {
     var body: some View {
         
         NavigationStack{
+            ForEach(0..<5) {
+               Text("Row \($0)")
+            }
 
+            
             Button("Tap Count: \(tap)") {
                 tap += 1
             }
