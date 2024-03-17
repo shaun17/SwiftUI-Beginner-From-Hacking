@@ -6,8 +6,28 @@
 	<dict>
 		<key>SwiftUIBeginers.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<true/>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>280E597C2AC1284100DAC8F1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>280E598D2AC1284200DAC8F1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>280E59972AC1284200DAC8F1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

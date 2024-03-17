@@ -76,9 +76,13 @@ struct CardView<Content: View>: View {
 struct QuizzView: View {
     var multiplicationRange: Int
     var numberOfQuestions: Int
+    // 每次初始化全部的问题，和每个问题的答案
     @State private var questions: [(question: String, answer: Int)] = []
+    // 计数，当前问题索引
     @State private var currentQuestion = 0
+    // 每个问题的答案选项，随机生成
     @State private var answerOptions: [Int] = []
+    // 选择的答案
     @State private var selectedAnswer: Int? = nil
     @State private var showAnswer = false
     @State private var answerCorrect = false

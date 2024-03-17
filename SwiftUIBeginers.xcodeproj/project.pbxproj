@@ -29,11 +29,10 @@
 		282E59212BA43941000C78A7 /* Pro6Part1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282E59202BA43941000C78A7 /* Pro6Part1.swift */; };
 		282E59232BA4A0C4000C78A7 /* Pro6Part2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282E59222BA4A0C4000C78A7 /* Pro6Part2.swift */; };
 		282E59252BA599AE000C78A7 /* ChallengeMilestone4-6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282E59242BA599AE000C78A7 /* ChallengeMilestone4-6.swift */; };
+		282E59282BA5F0AF000C78A7 /* Pro7Part1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282E59272BA5F0AF000C78A7 /* Pro7Part1.swift */; };
+		282E592A2BA6996A000C78A7 /* Pro7Part2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282E59292BA6996A000C78A7 /* Pro7Part2.swift */; };
+		282E592C2BA6B32F000C78A7 /* Pro7Part3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282E592B2BA6B32F000C78A7 /* Pro7Part3.swift */; };
 		2830A1E92ACA5A8F00D10B66 /* start.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2830A1E82ACA5A8F00D10B66 /* start.txt */; };
-		2830A1EC2ACBB89700D10B66 /* SwiftUIViewAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2830A1EB2ACBB89700D10B66 /* SwiftUIViewAnimation.swift */; };
-		2830A1EE2ACC0C6B00D10B66 /* SwiftUIViewAnimation2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2830A1ED2ACC0C6B00D10B66 /* SwiftUIViewAnimation2.swift */; };
-		2830A1F02ACC13AF00D10B66 /* SwiftUIViewGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2830A1EF2ACC13AF00D10B66 /* SwiftUIViewGesture.swift */; };
-		2830A1F22ACC882100D10B66 /* SwiftUIViewCornerRotate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2830A1F12ACC882100D10B66 /* SwiftUIViewCornerRotate.swift */; };
 		2830A1F52ACD930300D10B66 /* ChallengeThree_reference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2830A1F42ACD930300D10B66 /* ChallengeThree_reference.swift */; };
 		2830A1F72ACD97B800D10B66 /* QuizView_reference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2830A1F62ACD97B800D10B66 /* QuizView_reference.swift */; };
 		2830A1F92ACDA0E100D10B66 /* ChallengeThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2830A1F82ACDA0E100D10B66 /* ChallengeThree.swift */; };
@@ -51,7 +50,6 @@
 		284613012AE6C57100E284B7 /* SwiftUIViewAmazingSpirograph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284613002AE6C57100E284B7 /* SwiftUIViewAmazingSpirograph.swift */; };
 		284613032AEAB32E00E284B7 /* SwiftUIViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284613022AEAB32E00E284B7 /* SwiftUIViewTest.swift */; };
 		284613052AEABEA500E284B7 /* ChallengeNineArrow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284613042AEABEA500E284B7 /* ChallengeNineArrow.swift */; };
-		285974072AC9607E00A157C3 /* SwiftUIViewList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285974062AC9607E00A157C3 /* SwiftUIViewList.swift */; };
 		285B88902AC3FCBD0078D3F0 /* Project1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285B888F2AC3FCBD0078D3F0 /* Project1.swift */; };
 		285B88922AC474780078D3F0 /* Project2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285B88912AC474780078D3F0 /* Project2.swift */; };
 		285B88972AC5C8FC0078D3F0 /* ChallengeTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285B88962AC5C8FC0078D3F0 /* ChallengeTwo.swift */; };
@@ -84,13 +82,6 @@
 		28B30B1D2B00D59F00307467 /* RatingView_Project11.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B30B1C2B00D59F00307467 /* RatingView_Project11.swift */; };
 		28B30B1F2B00E25F00307467 /* EmojiRatingView_Project11.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B30B1E2B00E25F00307467 /* EmojiRatingView_Project11.swift */; };
 		28B30B212B011B3B00307467 /* DetailView_Project11.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B30B202B011B3B00307467 /* DetailView_Project11.swift */; };
-		28D47B6A2ACF040100157652 /* SwiftUIViewStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D47B692ACF040100157652 /* SwiftUIViewStruct.swift */; };
-		28D47B6C2AD022A200157652 /* SwiftUIViewNewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D47B6B2AD022A200157652 /* SwiftUIViewNewView.swift */; };
-		28D47B6E2AD03E0B00157652 /* SwiftUIViewDelete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D47B6D2AD03E0B00157652 /* SwiftUIViewDelete.swift */; };
-		28D47B712AD1A20000157652 /* ExpressItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D47B702AD1A20000157652 /* ExpressItem.swift */; };
-		28D47B732AD1A23200157652 /* Express.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D47B722AD1A23200157652 /* Express.swift */; };
-		28D47B752AD1A27A00157652 /* SwiftUIViewExpress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D47B742AD1A27A00157652 /* SwiftUIViewExpress.swift */; };
-		28D47B772AD1AA3200157652 /* SwiftUIViewAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D47B762AD1AA3200157652 /* SwiftUIViewAddView.swift */; };
 		28D47B7A2AD2F25100157652 /* SwiftUIViewScrolleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D47B792AD2F25100157652 /* SwiftUIViewScrolleView.swift */; };
 		28D47B7C2AD2F7B400157652 /* SwiftUIViewNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D47B7B2AD2F7B400157652 /* SwiftUIViewNavigation.swift */; };
 		28D47B7E2AD305DF00157652 /* SwiftUIViewGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D47B7D2AD305DF00157652 /* SwiftUIViewGridView.swift */; };
@@ -170,11 +161,10 @@
 		282E59202BA43941000C78A7 /* Pro6Part1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pro6Part1.swift; sourceTree = "<group>"; };
 		282E59222BA4A0C4000C78A7 /* Pro6Part2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pro6Part2.swift; sourceTree = "<group>"; };
 		282E59242BA599AE000C78A7 /* ChallengeMilestone4-6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChallengeMilestone4-6.swift"; sourceTree = "<group>"; };
+		282E59272BA5F0AF000C78A7 /* Pro7Part1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pro7Part1.swift; sourceTree = "<group>"; };
+		282E59292BA6996A000C78A7 /* Pro7Part2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pro7Part2.swift; sourceTree = "<group>"; };
+		282E592B2BA6B32F000C78A7 /* Pro7Part3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pro7Part3.swift; sourceTree = "<group>"; };
 		2830A1E82ACA5A8F00D10B66 /* start.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = start.txt; sourceTree = "<group>"; };
-		2830A1EB2ACBB89700D10B66 /* SwiftUIViewAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewAnimation.swift; sourceTree = "<group>"; };
-		2830A1ED2ACC0C6B00D10B66 /* SwiftUIViewAnimation2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewAnimation2.swift; sourceTree = "<group>"; };
-		2830A1EF2ACC13AF00D10B66 /* SwiftUIViewGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewGesture.swift; sourceTree = "<group>"; };
-		2830A1F12ACC882100D10B66 /* SwiftUIViewCornerRotate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewCornerRotate.swift; sourceTree = "<group>"; };
 		2830A1F42ACD930300D10B66 /* ChallengeThree_reference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeThree_reference.swift; sourceTree = "<group>"; };
 		2830A1F62ACD97B800D10B66 /* QuizView_reference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView_reference.swift; sourceTree = "<group>"; };
 		2830A1F82ACDA0E100D10B66 /* ChallengeThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeThree.swift; sourceTree = "<group>"; };
@@ -192,7 +182,6 @@
 		284613002AE6C57100E284B7 /* SwiftUIViewAmazingSpirograph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewAmazingSpirograph.swift; sourceTree = "<group>"; };
 		284613022AEAB32E00E284B7 /* SwiftUIViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewTest.swift; sourceTree = "<group>"; };
 		284613042AEABEA500E284B7 /* ChallengeNineArrow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeNineArrow.swift; sourceTree = "<group>"; };
-		285974062AC9607E00A157C3 /* SwiftUIViewList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewList.swift; sourceTree = "<group>"; };
 		285B888F2AC3FCBD0078D3F0 /* Project1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project1.swift; sourceTree = "<group>"; };
 		285B88912AC474780078D3F0 /* Project2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project2.swift; sourceTree = "<group>"; };
 		285B88962AC5C8FC0078D3F0 /* ChallengeTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeTwo.swift; sourceTree = "<group>"; };
@@ -225,13 +214,6 @@
 		28B30B1C2B00D59F00307467 /* RatingView_Project11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView_Project11.swift; sourceTree = "<group>"; };
 		28B30B1E2B00E25F00307467 /* EmojiRatingView_Project11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiRatingView_Project11.swift; sourceTree = "<group>"; };
 		28B30B202B011B3B00307467 /* DetailView_Project11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView_Project11.swift; sourceTree = "<group>"; };
-		28D47B692ACF040100157652 /* SwiftUIViewStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewStruct.swift; sourceTree = "<group>"; };
-		28D47B6B2AD022A200157652 /* SwiftUIViewNewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewNewView.swift; sourceTree = "<group>"; };
-		28D47B6D2AD03E0B00157652 /* SwiftUIViewDelete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewDelete.swift; sourceTree = "<group>"; };
-		28D47B702AD1A20000157652 /* ExpressItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpressItem.swift; sourceTree = "<group>"; };
-		28D47B722AD1A23200157652 /* Express.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Express.swift; sourceTree = "<group>"; };
-		28D47B742AD1A27A00157652 /* SwiftUIViewExpress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewExpress.swift; sourceTree = "<group>"; };
-		28D47B762AD1AA3200157652 /* SwiftUIViewAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewAddView.swift; sourceTree = "<group>"; };
 		28D47B792AD2F25100157652 /* SwiftUIViewScrolleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewScrolleView.swift; sourceTree = "<group>"; };
 		28D47B7B2AD2F7B400157652 /* SwiftUIViewNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewNavigation.swift; sourceTree = "<group>"; };
 		28D47B7D2AD305DF00157652 /* SwiftUIViewGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewGridView.swift; sourceTree = "<group>"; };
@@ -322,6 +304,7 @@
 				282E59182BA202AC000C78A7 /* Project5 */,
 				282E591F2BA4392C000C78A7 /* Project6 */,
 				282E59032B9F4350000C78A7 /* Challenges */,
+				282E59262BA5F095000C78A7 /* Project7 */,
 				280E59802AC1284100DAC8F1 /* SwiftUIBeginersApp.swift */,
 				280E59822AC1284100DAC8F1 /* ContentView.swift */,
 				28FB289A2B0CFE01003A737E /* Milestone_10-12 */,
@@ -331,10 +314,6 @@
 				2830A1F32ACD12A400D10B66 /* Challenges2 */,
 				285B888E2AC3FCA10078D3F0 /* Projects */,
 				285B88982AC72E770078D3F0 /* D0930 */,
-				285974052AC9606A00A157C3 /* D1001 */,
-				2830A1EA2ACBB86600D10B66 /* D1003 */,
-				28D47B682ACF03EC00157652 /* D1005 */,
-				28D47B6F2AD1A1D100157652 /* D1007 */,
 				28D47B782AD2F23100157652 /* D1008 */,
 				284612EA2ADBFD0500E284B7 /* D1015 */,
 				284612F52AE5019600E284B7 /* D1022 */,
@@ -428,15 +407,14 @@
 			path = Project6;
 			sourceTree = "<group>";
 		};
-		2830A1EA2ACBB86600D10B66 /* D1003 */ = {
+		282E59262BA5F095000C78A7 /* Project7 */ = {
 			isa = PBXGroup;
 			children = (
-				2830A1EB2ACBB89700D10B66 /* SwiftUIViewAnimation.swift */,
-				2830A1ED2ACC0C6B00D10B66 /* SwiftUIViewAnimation2.swift */,
-				2830A1EF2ACC13AF00D10B66 /* SwiftUIViewGesture.swift */,
-				2830A1F12ACC882100D10B66 /* SwiftUIViewCornerRotate.swift */,
+				282E59272BA5F0AF000C78A7 /* Pro7Part1.swift */,
+				282E59292BA6996A000C78A7 /* Pro7Part2.swift */,
+				282E592B2BA6B32F000C78A7 /* Pro7Part3.swift */,
 			);
-			path = D1003;
+			path = Project7;
 			sourceTree = "<group>";
 		};
 		2830A1F32ACD12A400D10B66 /* Challenges2 */ = {
@@ -480,14 +458,6 @@
 				284612FC2AE5256F00E284B7 /* SwiftUIViewPentagram.swift */,
 			);
 			path = D1022;
-			sourceTree = "<group>";
-		};
-		285974052AC9606A00A157C3 /* D1001 */ = {
-			isa = PBXGroup;
-			children = (
-				285974062AC9607E00A157C3 /* SwiftUIViewList.swift */,
-			);
-			path = D1001;
 			sourceTree = "<group>";
 		};
 		285B888E2AC3FCA10078D3F0 /* Projects */ = {
@@ -578,27 +548,6 @@
 				28B30B112AFE076700307467 /* CoreData_Project11.swift */,
 			);
 			path = Feature;
-			sourceTree = "<group>";
-		};
-		28D47B682ACF03EC00157652 /* D1005 */ = {
-			isa = PBXGroup;
-			children = (
-				28D47B692ACF040100157652 /* SwiftUIViewStruct.swift */,
-				28D47B6B2AD022A200157652 /* SwiftUIViewNewView.swift */,
-				28D47B6D2AD03E0B00157652 /* SwiftUIViewDelete.swift */,
-			);
-			path = D1005;
-			sourceTree = "<group>";
-		};
-		28D47B6F2AD1A1D100157652 /* D1007 */ = {
-			isa = PBXGroup;
-			children = (
-				28D47B702AD1A20000157652 /* ExpressItem.swift */,
-				28D47B742AD1A27A00157652 /* SwiftUIViewExpress.swift */,
-				28D47B762AD1AA3200157652 /* SwiftUIViewAddView.swift */,
-				28D47B722AD1A23200157652 /* Express.swift */,
-			);
-			path = D1007;
 			sourceTree = "<group>";
 		};
 		28D47B782AD2F23100157652 /* D1008 */ = {
@@ -819,7 +768,6 @@
 				282E590C2BA03E8F000C78A7 /* Challenge2.swift in Sources */,
 				28FB28792B08BF32003A737E /* SpaceListView_Project12.swift in Sources */,
 				284612F42AE4F9A900E284B7 /* SwiftUIViewColorCircular.swift in Sources */,
-				28D47B752AD1A27A00157652 /* SwiftUIViewExpress.swift in Sources */,
 				285B88922AC474780078D3F0 /* Project2.swift in Sources */,
 				282E59172BA19CF1000C78A7 /* Pro4Part2.swift in Sources */,
 				28B30B042AFA91DB00307467 /* Order_Project10.swift in Sources */,
@@ -830,19 +778,14 @@
 				28FB288E2B0914A9003A737E /* Singer+CoreDataClass.swift in Sources */,
 				28B30B152AFF7A8800307467 /* Bookworm.xcdatamodeld in Sources */,
 				280E59832AC1284100DAC8F1 /* ContentView.swift in Sources */,
-				28D47B6A2ACF040100157652 /* SwiftUIViewStruct.swift in Sources */,
-				285974072AC9607E00A157C3 /* SwiftUIViewList.swift in Sources */,
 				287CA0422AF38668004DC41A /* HabitView.swift in Sources */,
 				285B88902AC3FCBD0078D3F0 /* Project1.swift in Sources */,
 				28FB28A52B0FB348003A737E /* ChallengeUser.swift in Sources */,
 				284613052AEABEA500E284B7 /* ChallengeNineArrow.swift in Sources */,
 				28B30B172AFF7ABF00307467 /* DataController.swift in Sources */,
-				28D47B772AD1AA3200157652 /* SwiftUIViewAddView.swift in Sources */,
-				28D47B712AD1A20000157652 /* ExpressItem.swift in Sources */,
 				282E591E2BA424D4000C78A7 /* Challenge3.swift in Sources */,
 				28B30B0A2AFB302500307467 /* CheckoutView_Project10.swift in Sources */,
 				282E591A2BA202C4000C78A7 /* Pro5Part1.swift in Sources */,
-				28D47B6E2AD03E0B00157652 /* SwiftUIViewDelete.swift in Sources */,
 				28D47B902AD4474800157652 /* SwiftUIViewMissionView.swift in Sources */,
 				28D47B7C2AD2F7B400157652 /* SwiftUIViewNavigation.swift in Sources */,
 				28B30B062AFA931000307467 /* OrderView_Project10.swift in Sources */,
@@ -860,14 +803,15 @@
 				28FB28832B08C542003A737E /* CoreDataProject.xcdatamodeld in Sources */,
 				28FB288F2B0914A9003A737E /* Singer+CoreDataProperties.swift in Sources */,
 				28D47B882AD3102F00157652 /* Astronaut.swift in Sources */,
+				282E59282BA5F0AF000C78A7 /* Pro7Part1.swift in Sources */,
 				285B889A2AC72E890078D3F0 /* SwiftUIViewDate.swift in Sources */,
 				282E59052B9F437A000C78A7 /* Challenge1.swift in Sources */,
+				282E592C2BA6B32F000C78A7 /* Pro7Part3.swift in Sources */,
 				28B30B0E2AFDE3BA00307467 /* SwiftUIViewCustom.swift in Sources */,
 				282E59232BA4A0C4000C78A7 /* Pro6Part2.swift in Sources */,
 				28B30B012AF8DF2800307467 /* SwiftUIViewFromDisable.swift in Sources */,
 				282E59152BA16F53000C78A7 /* Pro4Part1.swift in Sources */,
 				2830A1F92ACDA0E100D10B66 /* ChallengeThree.swift in Sources */,
-				28D47B6C2AD022A200157652 /* SwiftUIViewNewView.swift in Sources */,
 				28FB28872B08C5DF003A737E /* Movie+CoreDataProperties.swift in Sources */,
 				285B889C2AC81CB40078D3F0 /* SwiftUIViewBetterRest.swift in Sources */,
 				2830A1F72ACD97B800D10B66 /* QuizView_reference.swift in Sources */,
@@ -876,12 +820,12 @@
 				282E591C2BA3538A000C78A7 /* Pro5Part2.swift in Sources */,
 				28FB28A02B0F5BDB003A737E /* JSONDemoView.swift in Sources */,
 				282E59212BA43941000C78A7 /* Pro6Part1.swift in Sources */,
+				282E592A2BA6996A000C78A7 /* Pro7Part2.swift in Sources */,
 				28D47B8A2AD3109E00157652 /* Bundle-Decodable.swift in Sources */,
 				28FB28A92B121687003A737E /* ChallengeUserDetailView.swift in Sources */,
 				28FB28952B0A5759003A737E /* Candy+CoreDataProperties.swift in Sources */,
 				28B30B1F2B00E25F00307467 /* EmojiRatingView_Project11.swift in Sources */,
 				28B30AFD2AF8CBE500307467 /* SwiftUIViewResponse.swift in Sources */,
-				2830A1EC2ACBB89700D10B66 /* SwiftUIViewAnimation.swift in Sources */,
 				284613012AE6C57100E284B7 /* SwiftUIViewAmazingSpirograph.swift in Sources */,
 				282E590F2BA08E55000C78A7 /* Pro3Part1.swift in Sources */,
 				28B30B212B011B3B00307467 /* DetailView_Project11.swift in Sources */,
@@ -897,7 +841,6 @@
 				285B889E2AC820C80078D3F0 /* SleepCalculator.mlmodel in Sources */,
 				28FB28972B0A5759003A737E /* Country+CoreDataProperties.swift in Sources */,
 				2830A1F52ACD930300D10B66 /* ChallengeThree_reference.swift in Sources */,
-				28D47B732AD1A23200157652 /* Express.swift in Sources */,
 				282E59122BA14420000C78A7 /* ChallengeMilestone1-3.swift in Sources */,
 				28FB28A72B0FB3FB003A737E /* ChallengeUserView.swift in Sources */,
 				284612EC2ADBFF3100E284B7 /* SwiftUIViewPathDeom.swift in Sources */,
@@ -911,10 +854,7 @@
 				285B88972AC5C8FC0078D3F0 /* ChallengeTwo.swift in Sources */,
 				282E590A2B9FFA1A000C78A7 /* Pro2Part2.swift in Sources */,
 				28FB28862B08C5DF003A737E /* Movie+CoreDataClass.swift in Sources */,
-				2830A1EE2ACC0C6B00D10B66 /* SwiftUIViewAnimation2.swift in Sources */,
 				28B30B082AFB2B9D00307467 /* AddressView_Project10.swift in Sources */,
-				2830A1F02ACC13AF00D10B66 /* SwiftUIViewGesture.swift in Sources */,
-				2830A1F22ACC882100D10B66 /* SwiftUIViewCornerRotate.swift in Sources */,
 				284612F02ADD88F700E284B7 /* SwiftUIViewCG.swift in Sources */,
 				284613032AEAB32E00E284B7 /* SwiftUIViewTest.swift in Sources */,
 				28B30B192AFFD11A00307467 /* AddBookView_Project11.swift in Sources */,
@@ -1093,7 +1033,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
@@ -1131,7 +1071,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.3;

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SwiftUIViewCodableToLearn: View {
     
-    class User: ObservableObject, Codable{
+    class User2: ObservableObject, Codable{
         
         enum CodingKeys: CodingKey{
             case name
