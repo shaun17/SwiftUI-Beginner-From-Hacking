@@ -32,6 +32,12 @@
 		282E59282BA5F0AF000C78A7 /* Pro7Part1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282E59272BA5F0AF000C78A7 /* Pro7Part1.swift */; };
 		282E592A2BA6996A000C78A7 /* Pro7Part2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282E59292BA6996A000C78A7 /* Pro7Part2.swift */; };
 		282E592C2BA6B32F000C78A7 /* Pro7Part3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282E592B2BA6B32F000C78A7 /* Pro7Part3.swift */; };
+		282E592F2BA6E9E7000C78A7 /* Pro8Part1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282E592E2BA6E9E7000C78A7 /* Pro8Part1.swift */; };
+		282E59312BA6F5C3000C78A7 /* Pro8Part2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282E59302BA6F5C3000C78A7 /* Pro8Part2.swift */; };
+		282E59332BA7E2C4000C78A7 /* Pro8Part3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282E59322BA7E2C4000C78A7 /* Pro8Part3.swift */; };
+		282E59352BA7E3A8000C78A7 /* Pro8PoJO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282E59342BA7E3A8000C78A7 /* Pro8PoJO.swift */; };
+		282E59372BA81D3A000C78A7 /* Pro8Part4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282E59362BA81D3A000C78A7 /* Pro8Part4.swift */; };
+		282E59392BA83010000C78A7 /* Pro8Part5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282E59382BA83010000C78A7 /* Pro8Part5.swift */; };
 		2830A1E92ACA5A8F00D10B66 /* start.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2830A1E82ACA5A8F00D10B66 /* start.txt */; };
 		2830A1F52ACD930300D10B66 /* ChallengeThree_reference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2830A1F42ACD930300D10B66 /* ChallengeThree_reference.swift */; };
 		2830A1F72ACD97B800D10B66 /* QuizView_reference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2830A1F62ACD97B800D10B66 /* QuizView_reference.swift */; };
@@ -82,18 +88,8 @@
 		28B30B1D2B00D59F00307467 /* RatingView_Project11.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B30B1C2B00D59F00307467 /* RatingView_Project11.swift */; };
 		28B30B1F2B00E25F00307467 /* EmojiRatingView_Project11.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B30B1E2B00E25F00307467 /* EmojiRatingView_Project11.swift */; };
 		28B30B212B011B3B00307467 /* DetailView_Project11.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B30B202B011B3B00307467 /* DetailView_Project11.swift */; };
-		28D47B7A2AD2F25100157652 /* SwiftUIViewScrolleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D47B792AD2F25100157652 /* SwiftUIViewScrolleView.swift */; };
-		28D47B7C2AD2F7B400157652 /* SwiftUIViewNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D47B7B2AD2F7B400157652 /* SwiftUIViewNavigation.swift */; };
-		28D47B7E2AD305DF00157652 /* SwiftUIViewGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D47B7D2AD305DF00157652 /* SwiftUIViewGridView.swift */; };
-		28D47B802AD30C5400157652 /* Project8.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D47B7F2AD30C5400157652 /* Project8.swift */; };
 		28D47B842AD30C7000157652 /* missions.json in Resources */ = {isa = PBXBuildFile; fileRef = 28D47B822AD30C7000157652 /* missions.json */; };
 		28D47B852AD30C7000157652 /* astronauts.json in Resources */ = {isa = PBXBuildFile; fileRef = 28D47B832AD30C7000157652 /* astronauts.json */; };
-		28D47B882AD3102F00157652 /* Astronaut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D47B872AD3102F00157652 /* Astronaut.swift */; };
-		28D47B8A2AD3109E00157652 /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D47B892AD3109E00157652 /* Bundle-Decodable.swift */; };
-		28D47B8C2AD3B83600157652 /* Mission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D47B8B2AD3B83600157652 /* Mission.swift */; };
-		28D47B8E2AD3BFF700157652 /* ShapeStyle-Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D47B8D2AD3BFF700157652 /* ShapeStyle-Background.swift */; };
-		28D47B902AD4474800157652 /* SwiftUIViewMissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D47B8F2AD4474800157652 /* SwiftUIViewMissionView.swift */; };
-		28D47B922AD596CD00157652 /* AstronautsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D47B912AD596CD00157652 /* AstronautsView.swift */; };
 		28FB286C2B03C2FD003A737E /* HashValue_Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FB286B2B03C2FD003A737E /* HashValue_Project.swift */; };
 		28FB28752B03CF7B003A737E /* MovieView_Project12.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FB28742B03CF7B003A737E /* MovieView_Project12.swift */; };
 		28FB28772B08B843003A737E /* MivewListView_Project12.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FB28762B08B843003A737E /* MivewListView_Project12.swift */; };
@@ -164,6 +160,12 @@
 		282E59272BA5F0AF000C78A7 /* Pro7Part1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pro7Part1.swift; sourceTree = "<group>"; };
 		282E59292BA6996A000C78A7 /* Pro7Part2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pro7Part2.swift; sourceTree = "<group>"; };
 		282E592B2BA6B32F000C78A7 /* Pro7Part3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pro7Part3.swift; sourceTree = "<group>"; };
+		282E592E2BA6E9E7000C78A7 /* Pro8Part1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pro8Part1.swift; sourceTree = "<group>"; };
+		282E59302BA6F5C3000C78A7 /* Pro8Part2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pro8Part2.swift; sourceTree = "<group>"; };
+		282E59322BA7E2C4000C78A7 /* Pro8Part3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pro8Part3.swift; sourceTree = "<group>"; };
+		282E59342BA7E3A8000C78A7 /* Pro8PoJO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pro8PoJO.swift; sourceTree = "<group>"; };
+		282E59362BA81D3A000C78A7 /* Pro8Part4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pro8Part4.swift; sourceTree = "<group>"; };
+		282E59382BA83010000C78A7 /* Pro8Part5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pro8Part5.swift; sourceTree = "<group>"; };
 		2830A1E82ACA5A8F00D10B66 /* start.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = start.txt; sourceTree = "<group>"; };
 		2830A1F42ACD930300D10B66 /* ChallengeThree_reference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeThree_reference.swift; sourceTree = "<group>"; };
 		2830A1F62ACD97B800D10B66 /* QuizView_reference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView_reference.swift; sourceTree = "<group>"; };
@@ -214,18 +216,8 @@
 		28B30B1C2B00D59F00307467 /* RatingView_Project11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView_Project11.swift; sourceTree = "<group>"; };
 		28B30B1E2B00E25F00307467 /* EmojiRatingView_Project11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiRatingView_Project11.swift; sourceTree = "<group>"; };
 		28B30B202B011B3B00307467 /* DetailView_Project11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView_Project11.swift; sourceTree = "<group>"; };
-		28D47B792AD2F25100157652 /* SwiftUIViewScrolleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewScrolleView.swift; sourceTree = "<group>"; };
-		28D47B7B2AD2F7B400157652 /* SwiftUIViewNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewNavigation.swift; sourceTree = "<group>"; };
-		28D47B7D2AD305DF00157652 /* SwiftUIViewGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewGridView.swift; sourceTree = "<group>"; };
-		28D47B7F2AD30C5400157652 /* Project8.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project8.swift; sourceTree = "<group>"; };
 		28D47B822AD30C7000157652 /* missions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = missions.json; sourceTree = "<group>"; };
 		28D47B832AD30C7000157652 /* astronauts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = astronauts.json; sourceTree = "<group>"; };
-		28D47B872AD3102F00157652 /* Astronaut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Astronaut.swift; sourceTree = "<group>"; };
-		28D47B892AD3109E00157652 /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
-		28D47B8B2AD3B83600157652 /* Mission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mission.swift; sourceTree = "<group>"; };
-		28D47B8D2AD3BFF700157652 /* ShapeStyle-Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ShapeStyle-Background.swift"; sourceTree = "<group>"; };
-		28D47B8F2AD4474800157652 /* SwiftUIViewMissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewMissionView.swift; sourceTree = "<group>"; };
-		28D47B912AD596CD00157652 /* AstronautsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronautsView.swift; sourceTree = "<group>"; };
 		28FB286B2B03C2FD003A737E /* HashValue_Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashValue_Project.swift; sourceTree = "<group>"; };
 		28FB28742B03CF7B003A737E /* MovieView_Project12.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieView_Project12.swift; sourceTree = "<group>"; };
 		28FB28762B08B843003A737E /* MivewListView_Project12.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MivewListView_Project12.swift; sourceTree = "<group>"; };
@@ -305,6 +297,7 @@
 				282E591F2BA4392C000C78A7 /* Project6 */,
 				282E59032B9F4350000C78A7 /* Challenges */,
 				282E59262BA5F095000C78A7 /* Project7 */,
+				282E592D2BA6E9AC000C78A7 /* Project8 */,
 				280E59802AC1284100DAC8F1 /* SwiftUIBeginersApp.swift */,
 				280E59822AC1284100DAC8F1 /* ContentView.swift */,
 				28FB289A2B0CFE01003A737E /* Milestone_10-12 */,
@@ -314,11 +307,12 @@
 				2830A1F32ACD12A400D10B66 /* Challenges2 */,
 				285B888E2AC3FCA10078D3F0 /* Projects */,
 				285B88982AC72E770078D3F0 /* D0930 */,
-				28D47B782AD2F23100157652 /* D1008 */,
 				284612EA2ADBFD0500E284B7 /* D1015 */,
 				284612F52AE5019600E284B7 /* D1022 */,
 				280E59862AC1284200DAC8F1 /* SwiftUIBeginers.entitlements */,
 				2830A1E82ACA5A8F00D10B66 /* start.txt */,
+				28D47B832AD30C7000157652 /* astronauts.json */,
+				28D47B822AD30C7000157652 /* missions.json */,
 				285B889D2AC820C80078D3F0 /* SleepCalculator.mlmodel */,
 				280E59842AC1284200DAC8F1 /* Assets.xcassets */,
 				280E59872AC1284200DAC8F1 /* Preview Content */,
@@ -417,6 +411,19 @@
 			path = Project7;
 			sourceTree = "<group>";
 		};
+		282E592D2BA6E9AC000C78A7 /* Project8 */ = {
+			isa = PBXGroup;
+			children = (
+				282E592E2BA6E9E7000C78A7 /* Pro8Part1.swift */,
+				282E59302BA6F5C3000C78A7 /* Pro8Part2.swift */,
+				282E59342BA7E3A8000C78A7 /* Pro8PoJO.swift */,
+				282E59322BA7E2C4000C78A7 /* Pro8Part3.swift */,
+				282E59362BA81D3A000C78A7 /* Pro8Part4.swift */,
+				282E59382BA83010000C78A7 /* Pro8Part5.swift */,
+			);
+			path = Project8;
+			sourceTree = "<group>";
+		};
 		2830A1F32ACD12A400D10B66 /* Challenges2 */ = {
 			isa = PBXGroup;
 			children = (
@@ -465,9 +472,6 @@
 			children = (
 				285B888F2AC3FCBD0078D3F0 /* Project1.swift */,
 				285B88912AC474780078D3F0 /* Project2.swift */,
-				28D47B812AD30C5F00157652 /* Project8-files */,
-				28D47B862AD30FFA00157652 /* Project8-domain */,
-				28D47B7F2AD30C5400157652 /* Project8.swift */,
 			);
 			path = Projects;
 			sourceTree = "<group>";
@@ -548,38 +552,6 @@
 				28B30B112AFE076700307467 /* CoreData_Project11.swift */,
 			);
 			path = Feature;
-			sourceTree = "<group>";
-		};
-		28D47B782AD2F23100157652 /* D1008 */ = {
-			isa = PBXGroup;
-			children = (
-				28D47B792AD2F25100157652 /* SwiftUIViewScrolleView.swift */,
-				28D47B7D2AD305DF00157652 /* SwiftUIViewGridView.swift */,
-				28D47B7B2AD2F7B400157652 /* SwiftUIViewNavigation.swift */,
-			);
-			path = D1008;
-			sourceTree = "<group>";
-		};
-		28D47B812AD30C5F00157652 /* Project8-files */ = {
-			isa = PBXGroup;
-			children = (
-				28D47B832AD30C7000157652 /* astronauts.json */,
-				28D47B822AD30C7000157652 /* missions.json */,
-			);
-			path = "Project8-files";
-			sourceTree = "<group>";
-		};
-		28D47B862AD30FFA00157652 /* Project8-domain */ = {
-			isa = PBXGroup;
-			children = (
-				28D47B872AD3102F00157652 /* Astronaut.swift */,
-				28D47B8B2AD3B83600157652 /* Mission.swift */,
-				28D47B8D2AD3BFF700157652 /* ShapeStyle-Background.swift */,
-				28D47B8F2AD4474800157652 /* SwiftUIViewMissionView.swift */,
-				28D47B912AD596CD00157652 /* AstronautsView.swift */,
-				28D47B892AD3109E00157652 /* Bundle-Decodable.swift */,
-			);
-			path = "Project8-domain";
 			sourceTree = "<group>";
 		};
 		28FB28692B03BE6D003A737E /* Project12 */ = {
@@ -769,9 +741,9 @@
 				28FB28792B08BF32003A737E /* SpaceListView_Project12.swift in Sources */,
 				284612F42AE4F9A900E284B7 /* SwiftUIViewColorCircular.swift in Sources */,
 				285B88922AC474780078D3F0 /* Project2.swift in Sources */,
+				282E59312BA6F5C3000C78A7 /* Pro8Part2.swift in Sources */,
 				282E59172BA19CF1000C78A7 /* Pro4Part2.swift in Sources */,
 				28B30B042AFA91DB00307467 /* Order_Project10.swift in Sources */,
-				28D47B7A2AD2F25100157652 /* SwiftUIViewScrolleView.swift in Sources */,
 				28FB286C2B03C2FD003A737E /* HashValue_Project.swift in Sources */,
 				28FB28942B0A5759003A737E /* Candy+CoreDataClass.swift in Sources */,
 				28FB288B2B09143B003A737E /* FilterView_Project12.swift in Sources */,
@@ -786,8 +758,7 @@
 				282E591E2BA424D4000C78A7 /* Challenge3.swift in Sources */,
 				28B30B0A2AFB302500307467 /* CheckoutView_Project10.swift in Sources */,
 				282E591A2BA202C4000C78A7 /* Pro5Part1.swift in Sources */,
-				28D47B902AD4474800157652 /* SwiftUIViewMissionView.swift in Sources */,
-				28D47B7C2AD2F7B400157652 /* SwiftUIViewNavigation.swift in Sources */,
+				282E59372BA81D3A000C78A7 /* Pro8Part4.swift in Sources */,
 				28B30B062AFA931000307467 /* OrderView_Project10.swift in Sources */,
 				28AD56522B9EF9A90016627E /* DemoPart2.swift in Sources */,
 				28B30AFF2AF8D7A900307467 /* SwiftUIViewAsyncImage.swift in Sources */,
@@ -795,6 +766,7 @@
 				2830A1FB2ACDB89B00D10B66 /* QuizView.swift in Sources */,
 				284612FB2AE5236700E284B7 /* SwiftUIViewShapeAnimatable.swift in Sources */,
 				284612F22ADEDB3F00E284B7 /* SwiftUIViewImagePaint.swift in Sources */,
+				282E59352BA7E3A8000C78A7 /* Pro8PoJO.swift in Sources */,
 				28FB28962B0A5759003A737E /* Country+CoreDataClass.swift in Sources */,
 				280E59812AC1284100DAC8F1 /* SwiftUIBeginersApp.swift in Sources */,
 				284612F72AE501BB00E284B7 /* SwiftUIViewBlurs.swift in Sources */,
@@ -802,13 +774,14 @@
 				282E59252BA599AE000C78A7 /* ChallengeMilestone4-6.swift in Sources */,
 				28FB28832B08C542003A737E /* CoreDataProject.xcdatamodeld in Sources */,
 				28FB288F2B0914A9003A737E /* Singer+CoreDataProperties.swift in Sources */,
-				28D47B882AD3102F00157652 /* Astronaut.swift in Sources */,
 				282E59282BA5F0AF000C78A7 /* Pro7Part1.swift in Sources */,
 				285B889A2AC72E890078D3F0 /* SwiftUIViewDate.swift in Sources */,
 				282E59052B9F437A000C78A7 /* Challenge1.swift in Sources */,
 				282E592C2BA6B32F000C78A7 /* Pro7Part3.swift in Sources */,
 				28B30B0E2AFDE3BA00307467 /* SwiftUIViewCustom.swift in Sources */,
 				282E59232BA4A0C4000C78A7 /* Pro6Part2.swift in Sources */,
+				282E592F2BA6E9E7000C78A7 /* Pro8Part1.swift in Sources */,
+				282E59332BA7E2C4000C78A7 /* Pro8Part3.swift in Sources */,
 				28B30B012AF8DF2800307467 /* SwiftUIViewFromDisable.swift in Sources */,
 				282E59152BA16F53000C78A7 /* Pro4Part1.swift in Sources */,
 				2830A1F92ACDA0E100D10B66 /* ChallengeThree.swift in Sources */,
@@ -821,7 +794,6 @@
 				28FB28A02B0F5BDB003A737E /* JSONDemoView.swift in Sources */,
 				282E59212BA43941000C78A7 /* Pro6Part1.swift in Sources */,
 				282E592A2BA6996A000C78A7 /* Pro7Part2.swift in Sources */,
-				28D47B8A2AD3109E00157652 /* Bundle-Decodable.swift in Sources */,
 				28FB28A92B121687003A737E /* ChallengeUserDetailView.swift in Sources */,
 				28FB28952B0A5759003A737E /* Candy+CoreDataProperties.swift in Sources */,
 				28B30B1F2B00E25F00307467 /* EmojiRatingView_Project11.swift in Sources */,
@@ -829,7 +801,6 @@
 				284613012AE6C57100E284B7 /* SwiftUIViewAmazingSpirograph.swift in Sources */,
 				282E590F2BA08E55000C78A7 /* Pro3Part1.swift in Sources */,
 				28B30B212B011B3B00307467 /* DetailView_Project11.swift in Sources */,
-				28D47B7E2AD305DF00157652 /* SwiftUIViewGridView.swift in Sources */,
 				2885AF462AEFFBDB00E89B0C /* HabitItemView.swift in Sources */,
 				284612F92AE51D2300E284B7 /* SwiftUIViewPicBlurs.swift in Sources */,
 				28FB28992B0A5E19003A737E /* ConuntryCandyView_Project12.swift in Sources */,
@@ -846,7 +817,6 @@
 				284612EC2ADBFF3100E284B7 /* SwiftUIViewPathDeom.swift in Sources */,
 				28AD564F2B9EE6360016627E /* DemoPart1.swift in Sources */,
 				28FB289E2B0E434B003A737E /* ViewBuilderTestView.swift in Sources */,
-				28D47B802AD30C5400157652 /* Project8.swift in Sources */,
 				28B30B1D2B00D59F00307467 /* RatingView_Project11.swift in Sources */,
 				28FB28772B08B843003A737E /* MivewListView_Project12.swift in Sources */,
 				284612EE2ADC281E00E284B7 /* SwiftUIViewBoard.swift in Sources */,
@@ -858,13 +828,11 @@
 				284612F02ADD88F700E284B7 /* SwiftUIViewCG.swift in Sources */,
 				284613032AEAB32E00E284B7 /* SwiftUIViewTest.swift in Sources */,
 				28B30B192AFFD11A00307467 /* AddBookView_Project11.swift in Sources */,
-				28D47B8E2AD3BFF700157652 /* ShapeStyle-Background.swift in Sources */,
 				280E59AC2AC1286600DAC8F1 /* ChallengeOne.swift in Sources */,
 				28B30B122AFE076700307467 /* CoreData_Project11.swift in Sources */,
 				284612FD2AE5256F00E284B7 /* SwiftUIViewPentagram.swift in Sources */,
-				28D47B922AD596CD00157652 /* AstronautsView.swift in Sources */,
 				28FB28752B03CF7B003A737E /* MovieView_Project12.swift in Sources */,
-				28D47B8C2AD3B83600157652 /* Mission.swift in Sources */,
+				282E59392BA83010000C78A7 /* Pro8Part5.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

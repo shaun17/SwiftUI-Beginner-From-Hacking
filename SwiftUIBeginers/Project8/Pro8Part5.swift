@@ -1,17 +1,17 @@
 //
-//  AstronautsView.swift
+//  Pro8Part5.swift
 //  SwiftUIBeginers
 //
-//  Created by shaun on 2023/10/10.
+//  Created by shaun on 2024/3/18.
 //
 
 import SwiftUI
 
-struct AstronautsView: View {
+struct Pro8Part5: View {
     let astronaut: Astronaut
     var body: some View {
-        ScrollView {
-            VStack {
+        ScrollView{
+            VStack{
                 Image(astronaut.id)
                     .resizable()
                     .scaledToFit()
@@ -19,15 +19,17 @@ struct AstronautsView: View {
                 Text(astronaut.description)
                     .padding()
             }
-            .navigationTitle(astronaut.id)
-            .background(.darkBackground)
-            .navigationBarTitleDisplayMode(.inline)
         }
+        .background(.darkBackground)
+        .navigationTitle(astronaut.name)
+        .navigationBarTitleDisplayMode(.inline)
     }
+        
 }
 
 #Preview {
     let astronauts: [String: Astronaut] = Bundle.main.decode("astronauts.json")
-
-    return AstronautsView(astronaut: astronauts["white"]!).preferredColorScheme(.dark)
+    
+    return Pro8Part5(astronaut: astronauts["aldrin"]!)
+        .preferredColorScheme(.dark)
 }
