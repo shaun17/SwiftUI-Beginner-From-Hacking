@@ -137,13 +137,19 @@ struct Pro8Part3: View {
             .background(.darkBackground)
             .preferredColorScheme(.dark)
             .toolbar(content: {
-                Button("Change View") {
-                    change.toggle()
-                }
+                Button("Viwe", systemImage: "list.dash", action: {
+                        change.toggle()
+                    
+                    
+                })
+                
+                   
             })
         }
     }
 }
+
+
 
 #Preview {
     Pro8Part3()

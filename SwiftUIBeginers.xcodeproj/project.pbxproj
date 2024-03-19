@@ -38,6 +38,8 @@
 		282E59352BA7E3A8000C78A7 /* Pro8PoJO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282E59342BA7E3A8000C78A7 /* Pro8PoJO.swift */; };
 		282E59372BA81D3A000C78A7 /* Pro8Part4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282E59362BA81D3A000C78A7 /* Pro8Part4.swift */; };
 		282E59392BA83010000C78A7 /* Pro8Part5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282E59382BA83010000C78A7 /* Pro8Part5.swift */; };
+		282E593C2BA87FF6000C78A7 /* Pro9Part1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282E593B2BA87FF6000C78A7 /* Pro9Part1.swift */; };
+		282E593E2BA88F9E000C78A7 /* Pro9Part2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282E593D2BA88F9E000C78A7 /* Pro9Part2.swift */; };
 		2830A1E92ACA5A8F00D10B66 /* start.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2830A1E82ACA5A8F00D10B66 /* start.txt */; };
 		2830A1F52ACD930300D10B66 /* ChallengeThree_reference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2830A1F42ACD930300D10B66 /* ChallengeThree_reference.swift */; };
 		2830A1F72ACD97B800D10B66 /* QuizView_reference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2830A1F62ACD97B800D10B66 /* QuizView_reference.swift */; };
@@ -166,6 +168,8 @@
 		282E59342BA7E3A8000C78A7 /* Pro8PoJO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pro8PoJO.swift; sourceTree = "<group>"; };
 		282E59362BA81D3A000C78A7 /* Pro8Part4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pro8Part4.swift; sourceTree = "<group>"; };
 		282E59382BA83010000C78A7 /* Pro8Part5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pro8Part5.swift; sourceTree = "<group>"; };
+		282E593B2BA87FF6000C78A7 /* Pro9Part1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pro9Part1.swift; sourceTree = "<group>"; };
+		282E593D2BA88F9E000C78A7 /* Pro9Part2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pro9Part2.swift; sourceTree = "<group>"; };
 		2830A1E82ACA5A8F00D10B66 /* start.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = start.txt; sourceTree = "<group>"; };
 		2830A1F42ACD930300D10B66 /* ChallengeThree_reference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeThree_reference.swift; sourceTree = "<group>"; };
 		2830A1F62ACD97B800D10B66 /* QuizView_reference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView_reference.swift; sourceTree = "<group>"; };
@@ -298,6 +302,7 @@
 				282E59032B9F4350000C78A7 /* Challenges */,
 				282E59262BA5F095000C78A7 /* Project7 */,
 				282E592D2BA6E9AC000C78A7 /* Project8 */,
+				282E593A2BA87FE3000C78A7 /* Project9 */,
 				280E59802AC1284100DAC8F1 /* SwiftUIBeginersApp.swift */,
 				280E59822AC1284100DAC8F1 /* ContentView.swift */,
 				28FB289A2B0CFE01003A737E /* Milestone_10-12 */,
@@ -422,6 +427,15 @@
 				282E59382BA83010000C78A7 /* Pro8Part5.swift */,
 			);
 			path = Project8;
+			sourceTree = "<group>";
+		};
+		282E593A2BA87FE3000C78A7 /* Project9 */ = {
+			isa = PBXGroup;
+			children = (
+				282E593B2BA87FF6000C78A7 /* Pro9Part1.swift */,
+				282E593D2BA88F9E000C78A7 /* Pro9Part2.swift */,
+			);
+			path = Project9;
 			sourceTree = "<group>";
 		};
 		2830A1F32ACD12A400D10B66 /* Challenges2 */ = {
@@ -749,8 +763,10 @@
 				28FB288B2B09143B003A737E /* FilterView_Project12.swift in Sources */,
 				28FB288E2B0914A9003A737E /* Singer+CoreDataClass.swift in Sources */,
 				28B30B152AFF7A8800307467 /* Bookworm.xcdatamodeld in Sources */,
+				282E593C2BA87FF6000C78A7 /* Pro9Part1.swift in Sources */,
 				280E59832AC1284100DAC8F1 /* ContentView.swift in Sources */,
 				287CA0422AF38668004DC41A /* HabitView.swift in Sources */,
+				282E593E2BA88F9E000C78A7 /* Pro9Part2.swift in Sources */,
 				285B88902AC3FCBD0078D3F0 /* Project1.swift in Sources */,
 				28FB28A52B0FB348003A737E /* ChallengeUser.swift in Sources */,
 				284613052AEABEA500E284B7 /* ChallengeNineArrow.swift in Sources */,
