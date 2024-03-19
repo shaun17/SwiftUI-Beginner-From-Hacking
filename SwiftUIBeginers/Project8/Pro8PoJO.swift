@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Astronaut: Codable, Identifiable{
+struct Astronaut: Codable, Identifiable, Hashable{
     let id: String
     let name: String
     let description: String
@@ -39,8 +39,18 @@ extension Bundle{
 }
 
 
-struct Mission: Codable, Identifiable{
-    struct CrewRole: Codable{
+struct Mission: Codable, Identifiable, Hashable{
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+        hasher.combine(description)
+        hasher.combine(crew)
+    }
+    
+    static func == (lhs: Mission, rhs: Mission) -> Bool {
+        lhs.id == rhs.id
+    }
+    
+    struct CrewRole: Codable,Hashable{
         let name: String
         let role: String
     }

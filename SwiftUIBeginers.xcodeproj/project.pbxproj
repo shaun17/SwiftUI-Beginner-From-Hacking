@@ -40,6 +40,11 @@
 		282E59392BA83010000C78A7 /* Pro8Part5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282E59382BA83010000C78A7 /* Pro8Part5.swift */; };
 		282E593C2BA87FF6000C78A7 /* Pro9Part1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282E593B2BA87FF6000C78A7 /* Pro9Part1.swift */; };
 		282E593E2BA88F9E000C78A7 /* Pro9Part2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282E593D2BA88F9E000C78A7 /* Pro9Part2.swift */; };
+		282E59402BA95879000C78A7 /* Pro9Part3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282E593F2BA95879000C78A7 /* Pro9Part3.swift */; };
+		282E59422BA96BD9000C78A7 /* Pro9Part4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282E59412BA96BD9000C78A7 /* Pro9Part4.swift */; };
+		282E59442BA97E41000C78A7 /* Pro7Part4-Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282E59432BA97E41000C78A7 /* Pro7Part4-Challenge.swift */; };
+		282E59462BA98506000C78A7 /* Pro7Part5-Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282E59452BA98506000C78A7 /* Pro7Part5-Challenge.swift */; };
+		282E59482BA98A0E000C78A7 /* Pro8Part6-Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282E59472BA98A0E000C78A7 /* Pro8Part6-Challenge.swift */; };
 		2830A1E92ACA5A8F00D10B66 /* start.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2830A1E82ACA5A8F00D10B66 /* start.txt */; };
 		2830A1F52ACD930300D10B66 /* ChallengeThree_reference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2830A1F42ACD930300D10B66 /* ChallengeThree_reference.swift */; };
 		2830A1F72ACD97B800D10B66 /* QuizView_reference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2830A1F62ACD97B800D10B66 /* QuizView_reference.swift */; };
@@ -170,6 +175,11 @@
 		282E59382BA83010000C78A7 /* Pro8Part5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pro8Part5.swift; sourceTree = "<group>"; };
 		282E593B2BA87FF6000C78A7 /* Pro9Part1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pro9Part1.swift; sourceTree = "<group>"; };
 		282E593D2BA88F9E000C78A7 /* Pro9Part2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pro9Part2.swift; sourceTree = "<group>"; };
+		282E593F2BA95879000C78A7 /* Pro9Part3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pro9Part3.swift; sourceTree = "<group>"; };
+		282E59412BA96BD9000C78A7 /* Pro9Part4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pro9Part4.swift; sourceTree = "<group>"; };
+		282E59432BA97E41000C78A7 /* Pro7Part4-Challenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Pro7Part4-Challenge.swift"; sourceTree = "<group>"; };
+		282E59452BA98506000C78A7 /* Pro7Part5-Challenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Pro7Part5-Challenge.swift"; sourceTree = "<group>"; };
+		282E59472BA98A0E000C78A7 /* Pro8Part6-Challenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Pro8Part6-Challenge.swift"; sourceTree = "<group>"; };
 		2830A1E82ACA5A8F00D10B66 /* start.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = start.txt; sourceTree = "<group>"; };
 		2830A1F42ACD930300D10B66 /* ChallengeThree_reference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeThree_reference.swift; sourceTree = "<group>"; };
 		2830A1F62ACD97B800D10B66 /* QuizView_reference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView_reference.swift; sourceTree = "<group>"; };
@@ -412,6 +422,8 @@
 				282E59272BA5F0AF000C78A7 /* Pro7Part1.swift */,
 				282E59292BA6996A000C78A7 /* Pro7Part2.swift */,
 				282E592B2BA6B32F000C78A7 /* Pro7Part3.swift */,
+				282E59432BA97E41000C78A7 /* Pro7Part4-Challenge.swift */,
+				282E59452BA98506000C78A7 /* Pro7Part5-Challenge.swift */,
 			);
 			path = Project7;
 			sourceTree = "<group>";
@@ -425,6 +437,7 @@
 				282E59322BA7E2C4000C78A7 /* Pro8Part3.swift */,
 				282E59362BA81D3A000C78A7 /* Pro8Part4.swift */,
 				282E59382BA83010000C78A7 /* Pro8Part5.swift */,
+				282E59472BA98A0E000C78A7 /* Pro8Part6-Challenge.swift */,
 			);
 			path = Project8;
 			sourceTree = "<group>";
@@ -434,6 +447,8 @@
 			children = (
 				282E593B2BA87FF6000C78A7 /* Pro9Part1.swift */,
 				282E593D2BA88F9E000C78A7 /* Pro9Part2.swift */,
+				282E593F2BA95879000C78A7 /* Pro9Part3.swift */,
+				282E59412BA96BD9000C78A7 /* Pro9Part4.swift */,
 			);
 			path = Project9;
 			sourceTree = "<group>";
@@ -754,8 +769,10 @@
 				282E590C2BA03E8F000C78A7 /* Challenge2.swift in Sources */,
 				28FB28792B08BF32003A737E /* SpaceListView_Project12.swift in Sources */,
 				284612F42AE4F9A900E284B7 /* SwiftUIViewColorCircular.swift in Sources */,
+				282E59402BA95879000C78A7 /* Pro9Part3.swift in Sources */,
 				285B88922AC474780078D3F0 /* Project2.swift in Sources */,
 				282E59312BA6F5C3000C78A7 /* Pro8Part2.swift in Sources */,
+				282E59462BA98506000C78A7 /* Pro7Part5-Challenge.swift in Sources */,
 				282E59172BA19CF1000C78A7 /* Pro4Part2.swift in Sources */,
 				28B30B042AFA91DB00307467 /* Order_Project10.swift in Sources */,
 				28FB286C2B03C2FD003A737E /* HashValue_Project.swift in Sources */,
@@ -781,6 +798,7 @@
 				2885AF402AEE9CF600E89B0C /* Challenge47Days.swift in Sources */,
 				2830A1FB2ACDB89B00D10B66 /* QuizView.swift in Sources */,
 				284612FB2AE5236700E284B7 /* SwiftUIViewShapeAnimatable.swift in Sources */,
+				282E59422BA96BD9000C78A7 /* Pro9Part4.swift in Sources */,
 				284612F22ADEDB3F00E284B7 /* SwiftUIViewImagePaint.swift in Sources */,
 				282E59352BA7E3A8000C78A7 /* Pro8PoJO.swift in Sources */,
 				28FB28962B0A5759003A737E /* Country+CoreDataClass.swift in Sources */,
@@ -788,6 +806,7 @@
 				284612F72AE501BB00E284B7 /* SwiftUIViewBlurs.swift in Sources */,
 				28FB28892B09140E003A737E /* SingerView_Project12.swift in Sources */,
 				282E59252BA599AE000C78A7 /* ChallengeMilestone4-6.swift in Sources */,
+				282E59482BA98A0E000C78A7 /* Pro8Part6-Challenge.swift in Sources */,
 				28FB28832B08C542003A737E /* CoreDataProject.xcdatamodeld in Sources */,
 				28FB288F2B0914A9003A737E /* Singer+CoreDataProperties.swift in Sources */,
 				282E59282BA5F0AF000C78A7 /* Pro7Part1.swift in Sources */,
@@ -810,6 +829,7 @@
 				28FB28A02B0F5BDB003A737E /* JSONDemoView.swift in Sources */,
 				282E59212BA43941000C78A7 /* Pro6Part1.swift in Sources */,
 				282E592A2BA6996A000C78A7 /* Pro7Part2.swift in Sources */,
+				282E59442BA97E41000C78A7 /* Pro7Part4-Challenge.swift in Sources */,
 				28FB28A92B121687003A737E /* ChallengeUserDetailView.swift in Sources */,
 				28FB28952B0A5759003A737E /* Candy+CoreDataProperties.swift in Sources */,
 				28B30B1F2B00E25F00307467 /* EmojiRatingView_Project11.swift in Sources */,

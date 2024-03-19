@@ -84,7 +84,7 @@ struct InsiderView2: View {
                             .opacity(0.5)
                     }
                     .padding(.vertical)
-                    .frame(maxWidth: .infinity, maxHeight:.infinity)
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
                     .background(.lightBackground)
                 }
                 .clipShape(.rect(cornerRadius: 10))
@@ -96,7 +96,6 @@ struct InsiderView2: View {
         }
     }
 }
-
 
 struct Pro8Part3: View {
     let astronauts: [String: Astronaut] = Bundle.main.decode("astronauts.json")
@@ -110,16 +109,15 @@ struct Pro8Part3: View {
 
     var body: some View {
         NavigationStack {
-            VStack{
+            VStack {
                 if change {
-                        ScrollView{                            InsiderView2(missions: missions, astronauts: astronauts)
-                        }
-                        .navigationTitle("Moonshot")
-                        .padding()
+                    ScrollView { InsiderView2(missions: missions, astronauts: astronauts)
+                    }
+                    .navigationTitle("Moonshot")
+                    .padding()
                     .background(.darkBackground)
                     .preferredColorScheme(.dark)
-                    
-                   
+
                 } else {
                     ScrollView {
                         LazyVGrid(columns: colums, content: {
@@ -130,7 +128,6 @@ struct Pro8Part3: View {
                     .navigationTitle("Moonshot")
                     .background(.darkBackground)
                     .preferredColorScheme(.dark)
-                   
                 }
             }
             .navigationTitle("Moonshot")
@@ -138,18 +135,14 @@ struct Pro8Part3: View {
             .preferredColorScheme(.dark)
             .toolbar(content: {
                 Button("Viwe", systemImage: "list.dash", action: {
-                        change.toggle()
-                    
-                    
+                    change.toggle()
+
                 })
-                
-                   
+
             })
         }
     }
 }
-
-
 
 #Preview {
     Pro8Part3()

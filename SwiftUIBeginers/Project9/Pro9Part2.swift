@@ -26,7 +26,7 @@ struct DataDetail2: View {
     var body: some View {
         VStack {
             let random = Int.random(in: 0..<1000)
-            Button("Push \(random)") {
+            Button("Tap \(random)") {
                 path.append(random)
             }
         }
@@ -45,10 +45,10 @@ struct Pro9Part2: View {
 
     var body: some View {
         NavigationStack(path: $path2) {
-//            DataDetail(path: $path ,number: 0)
-//                .navigationDestination(for: Int.self) { i in
-//                    DataDetail(path: $path, number: i)
-//                }
+            DataDetail(path: $path ,number: 0)
+                .navigationDestination(for: Int.self) { i in
+                    DataDetail(path: $path, number: i)
+                }
             DataDetail2(path: $path2, number: 0)
                 .navigationDestination(for: Int.self) { i in
                     DataDetail2(path: $path2, number: i)
