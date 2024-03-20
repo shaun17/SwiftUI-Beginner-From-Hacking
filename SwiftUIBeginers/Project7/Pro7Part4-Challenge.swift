@@ -44,7 +44,7 @@ struct ExpenseItem_Challenge: Identifiable, Codable, Hashable {
 }
 
 struct Pro7Part4_Challenge: View {
-    @State private var exprese = Expense_Challenge()
+    var exprese = Expense_Challenge()
     @State private var showingAddExpense = false
 
     func getNumberByFormatter(_ input: Double) -> String {

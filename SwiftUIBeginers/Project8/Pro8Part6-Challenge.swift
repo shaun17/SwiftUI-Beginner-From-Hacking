@@ -16,7 +16,6 @@ struct Pro8Part6_Challenge: View {
     ]
 
     @State private var change = false
-    @State private var path = NavigationPath()
 
     var body: some View {
         NavigationStack {
