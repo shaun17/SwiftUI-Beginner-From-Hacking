@@ -240,6 +240,38 @@
             endingLineNumber = "22"
             landmarkName = "body"
             landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "BF818312-0889-4752-BF8E-0003AA5EF8DA - 84c88253d062f264"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.navigationDestination&lt;&#x3c4;_0_0, &#x3c4;_0_1 where &#x3c4;_1_0: Swift.Hashable, &#x3c4;_1_1: SwiftUI.View&gt;(for: &#x3c4;_1_0.Type, destination: (&#x3c4;_1_0) -&gt; &#x3c4;_1_1) -&gt; some&gt;&gt;.0 in SwiftUIBeginers.Pro8Part6_Challenge.body.getter : some"
+                  moduleName = "SwiftUIBeginers"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shaun/Home/swiftui/SwiftUIBeginers/SwiftUIBeginers/Project8/Pro8Part6-Challenge.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "612">
+               </Location>
+               <Location
+                  uuid = "BF818312-0889-4752-BF8E-0003AA5EF8DA - a46a8ffc617ed732"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI._ConditionalContent&lt;&lt;&lt;opaque return type of SwiftUI.View.preferredColorScheme(Swift.Optional&lt;SwiftUI.ColorScheme&gt;) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.preferredColorScheme(Swift.Optional&lt;SwiftUI.ColorScheme&gt;) -&gt; some&gt;&gt;.0&gt; in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.navigationDestination&lt;&#x3c4;_0_0, &#x3c4;_0_1 where &#x3c4;_1_0: Swift.Hashable, &#x3c4;_1_1: SwiftUI.View&gt;(for: &#x3c4;_1_0.Type, destination: (&#x3c4;_1_0) -&gt; &#x3c4;_1_1) -&gt; some&gt;&gt;.0 in SwiftUIBeginers.Pro8Part6_Challenge.body.getter : some"
+                  moduleName = "SwiftUIBeginers"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shaun/Home/swiftui/SwiftUIBeginers/SwiftUIBeginers/Project8/Pro8Part6-Challenge.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "1172">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -256,6 +288,164 @@
             endingLineNumber = "30"
             landmarkName = "body"
             landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "DA8AA09E-FF50-40B3-9832-F1FE8FD92AB3 - a44b5e026b8cee81"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftUIBeginers.HabitItemView.body.getter : some"
+                  moduleName = "SwiftUIBeginers"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shaun/Home/swiftui/SwiftUIBeginers/SwiftUIBeginers/Challenges2/Challenge47/HabitItemView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "220">
+               </Location>
+               <Location
+                  uuid = "DA8AA09E-FF50-40B3-9832-F1FE8FD92AB3 - 3e7fad207e50a1a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.toolbar&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.View&gt;(content: () -&gt; &#x3c4;_1_0) -&gt; some&gt;&gt;.0 in SwiftUIBeginers.HabitItemView.body.getter : some"
+                  moduleName = "SwiftUIBeginers"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shaun/Home/swiftui/SwiftUIBeginers/SwiftUIBeginers/Challenges2/Challenge47/HabitItemView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "484">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "61ED13F8-926C-4179-8933-3B1ABD7D6D66"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftUIBeginers/Project10/Pro10Part6.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0C8176C2-63CD-42CB-98AF-62E14DB2EEC3"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftUIBeginers/Project10/Pro10Part6.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "placeOrder()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D6C5993B-4957-4EAC-8DE9-B8F740B8F519"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftUIBeginers/Project10/Pro10Part6.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "placeOrder()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D6C5993B-4957-4EAC-8DE9-B8F740B8F519 - 999e8899d36805a9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for SwiftUIBeginers.CheckoutViewPro10.placeOrder() async -&gt; ()"
+                  moduleName = "SwiftUIBeginers"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shaun/Home/swiftui/SwiftUIBeginers/SwiftUIBeginers/Project10/Pro10Part6.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "62"
+                  endingLineNumber = "62"
+                  offsetFromSymbolStart = "916">
+               </Location>
+               <Location
+                  uuid = "D6C5993B-4957-4EAC-8DE9-B8F740B8F519 - 92ff3d42f2b8a60f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for SwiftUIBeginers.CheckoutViewPro10.placeOrder() async -&gt; ()"
+                  moduleName = "SwiftUIBeginers"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shaun/Home/swiftui/SwiftUIBeginers/SwiftUIBeginers/Project10/Pro10Part6.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "62"
+                  endingLineNumber = "62"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "D6C5993B-4957-4EAC-8DE9-B8F740B8F519 - 50ed9be890abf9a3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for SwiftUIBeginers.CheckoutViewPro10.placeOrder() async -&gt; ()"
+                  moduleName = "SwiftUIBeginers"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shaun/Home/swiftui/SwiftUIBeginers/SwiftUIBeginers/Project10/Pro10Part6.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "62"
+                  endingLineNumber = "62"
+                  offsetFromSymbolStart = "184">
+               </Location>
+               <Location
+                  uuid = "D6C5993B-4957-4EAC-8DE9-B8F740B8F519 - afbbe593374a87de"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for SwiftUIBeginers.CheckoutViewPro10.placeOrder() async -&gt; ()"
+                  moduleName = "SwiftUIBeginers"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shaun/Home/swiftui/SwiftUIBeginers/SwiftUIBeginers/Project10/Pro10Part6.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "62"
+                  endingLineNumber = "62"
+                  offsetFromSymbolStart = "100">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9756667A-0DDE-4088-9C8E-DF9059AAD70B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftUIBeginers/Project10/Pro10Part6.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "placeOrder()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

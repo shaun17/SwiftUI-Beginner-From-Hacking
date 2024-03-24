@@ -14,44 +14,34 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack {
+                Spacer()
+                
                 NavigationLink {
-                    Pro3Part1()
+                    Pro10Part5()
                 } label: {
                     Label("Project demo", systemImage: "folder")
                     
                 }
+                Spacer()
                 NavigationLink {
                     Challenge1()
                 } label: {
                     Label("Challenge1", systemImage: "folder")
                 }
                 NavigationLink {
-                    ChallengeTwo()
+                    Challenge2()
                 } label: {
                     Label("Challenge Two", systemImage: "folder")
                 }
                 
                 NavigationLink {
-                    ChallengeThree()
+                    Challenge3()
                 } label: {
                     Label("Challenge Three", systemImage: "folder")
                 }
                 
                 NavigationLink {
-                    Project1()
-                } label: {
-                    Label("project One", systemImage: "folder")
-                }
-                
-                NavigationLink {
-                    Project2()
-                } label: {
-                    Label("project Two", systemImage: "folder")
-                } 
-                Spacer()
-                NavigationLink {
-                    
-                    CoreData_Project11()
+                    Challeng4_6()
                         .environment(\.managedObjectContext, dataController.container.viewContext)
                 } label: {
                     Label("test", systemImage: "folder")
