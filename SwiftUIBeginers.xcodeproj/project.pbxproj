@@ -59,6 +59,7 @@
 		282E59632BB12767000C78A7 /* Pro11Part3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282E59622BB12767000C78A7 /* Pro11Part3.swift */; };
 		282E59652BB15D48000C78A7 /* Pro11Part4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282E59642BB15D48000C78A7 /* Pro11Part4.swift */; };
 		282E59672BB16578000C78A7 /* Pro11Part5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282E59662BB16578000C78A7 /* Pro11Part5.swift */; };
+		282E596A2BB1B3CA000C78A7 /* Pro12Part1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282E59692BB1B3CA000C78A7 /* Pro12Part1.swift */; };
 		2830A1E92ACA5A8F00D10B66 /* start.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2830A1E82ACA5A8F00D10B66 /* start.txt */; };
 		2830A1F52ACD930300D10B66 /* ChallengeThree_reference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2830A1F42ACD930300D10B66 /* ChallengeThree_reference.swift */; };
 		2830A1F72ACD97B800D10B66 /* QuizView_reference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2830A1F62ACD97B800D10B66 /* QuizView_reference.swift */; };
@@ -200,6 +201,7 @@
 		282E59622BB12767000C78A7 /* Pro11Part3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pro11Part3.swift; sourceTree = "<group>"; };
 		282E59642BB15D48000C78A7 /* Pro11Part4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pro11Part4.swift; sourceTree = "<group>"; };
 		282E59662BB16578000C78A7 /* Pro11Part5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pro11Part5.swift; sourceTree = "<group>"; };
+		282E59692BB1B3CA000C78A7 /* Pro12Part1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pro12Part1.swift; sourceTree = "<group>"; };
 		2830A1E82ACA5A8F00D10B66 /* start.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = start.txt; sourceTree = "<group>"; };
 		2830A1F42ACD930300D10B66 /* ChallengeThree_reference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeThree_reference.swift; sourceTree = "<group>"; };
 		2830A1F62ACD97B800D10B66 /* QuizView_reference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView_reference.swift; sourceTree = "<group>"; };
@@ -327,6 +329,7 @@
 				282E593A2BA87FE3000C78A7 /* Project9 */,
 				282E59502BAACF4E000C78A7 /* Project10 */,
 				282E595D2BB11250000C78A7 /* Project11 */,
+				282E59682BB1B3AD000C78A7 /* Project12 */,
 				280E59802AC1284100DAC8F1 /* SwiftUIBeginersApp.swift */,
 				280E59822AC1284100DAC8F1 /* ContentView.swift */,
 				28FB289A2B0CFE01003A737E /* Milestone_10-12 */,
@@ -500,6 +503,14 @@
 				282E59662BB16578000C78A7 /* Pro11Part5.swift */,
 			);
 			path = Project11;
+			sourceTree = "<group>";
+		};
+		282E59682BB1B3AD000C78A7 /* Project12 */ = {
+			isa = PBXGroup;
+			children = (
+				282E59692BB1B3CA000C78A7 /* Pro12Part1.swift */,
+			);
+			path = Project12;
 			sourceTree = "<group>";
 		};
 		2830A1F32ACD12A400D10B66 /* Challenges2 */ = {
@@ -849,6 +860,7 @@
 				28FB28872B08C5DF003A737E /* Movie+CoreDataProperties.swift in Sources */,
 				282E59632BB12767000C78A7 /* Pro11Part3.swift in Sources */,
 				285B889C2AC81CB40078D3F0 /* SwiftUIViewBetterRest.swift in Sources */,
+				282E596A2BB1B3CA000C78A7 /* Pro12Part1.swift in Sources */,
 				2830A1F72ACD97B800D10B66 /* QuizView_reference.swift in Sources */,
 				282E59562BAC07BD000C78A7 /* Pro10Part3-Advance.swift in Sources */,
 				28B30B1B2AFFD38100307467 /* BooksView_Project11.swift in Sources */,

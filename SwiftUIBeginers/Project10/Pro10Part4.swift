@@ -14,6 +14,7 @@ class UserPro10: Codable{
     }
     var name = "Taylor"
 }
+
 struct Pro10Part4: View {
     var body: some View {
         Button("Encode Taylor", action: encodeTaylor)
