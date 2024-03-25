@@ -28,7 +28,7 @@ struct ChallengeThree: View {
                     Section("chose element") {
                         VStack {
                             Picker("基数范围请选择", selection: $numSelect) {
-                                ForEach(0 ..< numbs.count) { index in
+                                ForEach(0 ..< numbs.count ) { index in
                                     Text("\(numbs[index])")
                                 }
                             }
