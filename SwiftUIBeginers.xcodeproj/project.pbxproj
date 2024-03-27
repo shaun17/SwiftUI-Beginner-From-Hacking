@@ -95,6 +95,7 @@
 		2885AF462AEFFBDB00E89B0C /* HabitItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2885AF452AEFFBDB00E89B0C /* HabitItemView.swift */; };
 		288DCFC62BB2C3040038F5AF /* Pro12Part4-Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288DCFC52BB2C3040038F5AF /* Pro12Part4-Challenge.swift */; };
 		288DCFC82BB3085B0038F5AF /* PhindView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288DCFC72BB3085B0038F5AF /* PhindView.swift */; };
+		288DCFCA2BB3159E0038F5AF /* JSONDemoView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288DCFC92BB3159E0038F5AF /* JSONDemoView2.swift */; };
 		28AD564F2B9EE6360016627E /* DemoPart1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AD564E2B9EE6360016627E /* DemoPart1.swift */; };
 		28AD56522B9EF9A90016627E /* DemoPart2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AD56512B9EF9A90016627E /* DemoPart2.swift */; };
 		28B30B0E2AFDE3BA00307467 /* SwiftUIViewCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B30B0D2AFDE3BA00307467 /* SwiftUIViewCustom.swift */; };
@@ -242,6 +243,7 @@
 		2885AF452AEFFBDB00E89B0C /* HabitItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitItemView.swift; sourceTree = "<group>"; };
 		288DCFC52BB2C3040038F5AF /* Pro12Part4-Challenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Pro12Part4-Challenge.swift"; sourceTree = "<group>"; };
 		288DCFC72BB3085B0038F5AF /* PhindView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhindView.swift; sourceTree = "<group>"; };
+		288DCFC92BB3159E0038F5AF /* JSONDemoView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDemoView2.swift; sourceTree = "<group>"; };
 		28AD564E2B9EE6360016627E /* DemoPart1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoPart1.swift; sourceTree = "<group>"; };
 		28AD56512B9EF9A90016627E /* DemoPart2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoPart2.swift; sourceTree = "<group>"; };
 		28B30B0D2AFDE3BA00307467 /* SwiftUIViewCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewCustom.swift; sourceTree = "<group>"; };
@@ -342,7 +344,7 @@
 				282E59682BB1B3AD000C78A7 /* Project12 */,
 				280E59802AC1284100DAC8F1 /* SwiftUIBeginersApp.swift */,
 				280E59822AC1284100DAC8F1 /* ContentView.swift */,
-				28FB289A2B0CFE01003A737E /* Milestone_10-12 */,
+				28FB289A2B0CFE01003A737E /* Milestone_10-12_Review */,
 				28B30B0B2AFD385000307467 /* Project111 */,
 				28FB28692B03BE6D003A737E /* Project121 */,
 				2830A1F32ACD12A400D10B66 /* Challenges2 */,
@@ -674,13 +676,14 @@
 			path = Feature;
 			sourceTree = "<group>";
 		};
-		28FB289A2B0CFE01003A737E /* Milestone_10-12 */ = {
+		28FB289A2B0CFE01003A737E /* Milestone_10-12_Review */ = {
 			isa = PBXGroup;
 			children = (
-				28FB289D2B0E434B003A737E /* ViewBuilderTestView.swift */,
 				28FB289F2B0F5BDB003A737E /* JSONDemoView.swift */,
+				288DCFC92BB3159E0038F5AF /* JSONDemoView2.swift */,
+				28FB289D2B0E434B003A737E /* ViewBuilderTestView.swift */,
 			);
-			path = "Milestone_10-12";
+			path = "Milestone_10-12_Review";
 			sourceTree = "<group>";
 		};
 		28FB28A12B0FB218003A737E /* Challenge56 */ = {
@@ -932,6 +935,7 @@
 				285B88972AC5C8FC0078D3F0 /* ChallengeTwo.swift in Sources */,
 				282E590A2B9FFA1A000C78A7 /* Pro2Part2.swift in Sources */,
 				28FB28862B08C5DF003A737E /* Movie+CoreDataClass.swift in Sources */,
+				288DCFCA2BB3159E0038F5AF /* JSONDemoView2.swift in Sources */,
 				284612F02ADD88F700E284B7 /* SwiftUIViewCG.swift in Sources */,
 				284613032AEAB32E00E284B7 /* SwiftUIViewTest.swift in Sources */,
 				282E596E2BB2A469000C78A7 /* Pro12Part3-Challenge.swift in Sources */,

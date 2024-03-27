@@ -11,30 +11,26 @@
 //  Created by shaun on 2024/3/19.
 //
 
-import SwiftUI
 import SwiftData
+import SwiftUI
 
 struct Pro12Part4_Challenge: View {
 
-//    @Bindable var expenses: ExpenseItem_Challenge_Pro12
-    
     let types = ["Business", "Personal"]
-    
+
     @State private var name = "Change name"
     @State private var type = "Business"
     @State private var amount = 0.0
-    
+
     @Environment(\.dismiss) var dismiss
     @Environment(\.modelContext) var modelContext
-    
+
     var body: some View {
-        
-        
-        NavigationStack{
-            Form{
+        NavigationStack {
+            Form {
 //                TextField("input your name", text: $name)
                 Picker("select your type", selection: $type) {
-                    ForEach(types, id: \.self){
+                    ForEach(types, id: \.self) {
                         Text($0)
                     }
                 }
@@ -50,14 +46,41 @@ struct Pro12Part4_Challenge: View {
                     dismiss()
                 }
             })
-
         }
     }
 }
 
+struct Pro12Part4_Challenge_Show: View {
+    @Bindable var expenses: ExpenseItem_Challenge_Pro12
 
+    let types = ["Business", "Personal"]
+
+    var body: some View {
+        NavigationStack {
+            Form {
+//                TextField("input your name", text: $name)
+                Picker("select your type", selection: $expenses.type) {
+                    ForEach(types, id: \.self) {
+                        Text($0)
+                    }
+                }
+                TextField("input your Amount", value: $expenses.amount, format: .currency(code: Locale.current.currency?.identifier ?? "USD"))
+                    .keyboardType(.decimalPad)
+            }
+            .navigationTitle($expenses.name)
+            .navigationBarTitleDisplayMode(.inline)
+        }
+    }
+}
 
 #Preview {
-    Pro12Part4_Challenge()
-        .modelContainer(for: ExpenseItem_Challenge_Pro12.self)
+    do {
+        let config = ModelConfiguration(isStoredInMemoryOnly: true)
+        let modelContainer = try ModelContainer(for: ExpenseItem_Challenge_Pro12.self, configurations: config)
+        let express = ExpenseItem_Challenge_Pro12(name: "name", type: "Personal", amount: 1.1)
+        return Pro12Part4_Challenge_Show(expenses: express)
+            .modelContainer(modelContainer)
+    } catch {
+        return Text("")
+    }
 }

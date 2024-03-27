@@ -8,35 +8,6 @@
 import SwiftData
 import SwiftUI
 
-// @Model
-// class Expense_Challenge_Pro12: ObservableObject, Hashable {
-//    static func == (lhs: Expense_Challenge_Pro12, rhs: Expense_Challenge_Pro12) -> Bool {
-//        lhs.items == rhs.items
-//    }
-//
-//    var items = [ExpenseItem_Challenge_Pro12]() {
-//        didSet {
-//            if let encoder = try? JSONEncoder().encode(items) {
-//                UserDefaults.standard.setValue(encoder, forKey: "Items")
-//            }
-//        }
-//    }
-//
-//    init() {
-//        if let saveItem = UserDefaults.standard.data(forKey: "Items") {
-//            if let decodeItem = try? JSONDecoder().decode([ExpenseItem_Challenge_Pro12].self, from: saveItem) {
-//                items = decodeItem
-//                return
-//            }
-//        }
-//        items = []
-//    }
-//
-//    func hash(into hasher: inout Hasher) {
-//        hasher.combine(items)
-//    }
-// }
-
 @Model
 class ExpenseItem_Challenge_Pro12: Identifiable, Hashable {
     var id = UUID()
@@ -52,7 +23,9 @@ class ExpenseItem_Challenge_Pro12: Identifiable, Hashable {
 }
 
 struct Pro12Part3_ShoView: View {
+    @Environment(\.modelContext) var modelContext
     @Query(sort: \ExpenseItem_Challenge_Pro12.name) var exprese: [ExpenseItem_Challenge_Pro12]
+    @State private var showingAddExpense = false
 
     init(sortOrder: [SortDescriptor<ExpenseItem_Challenge_Pro12>]) {
         _exprese = Query(sort: sortOrder)
@@ -61,7 +34,7 @@ struct Pro12Part3_ShoView: View {
     var body: some View {
         List {
             ForEach(exprese) { item in
-                NavigationLink(value: item) {
+                NavigationLink(destination: Pro12Part4_Challenge_Show(expenses: item)) {
                     HStack {
                         Text(item.name)
                         Text(item.type)
@@ -74,16 +47,28 @@ struct Pro12Part3_ShoView: View {
                         }
                     }
                 }
-//                        .navigationDestination(for: ExpenseItem_Challenge_Pro12.self) { item in
-                ////                            Pro12Part4_Challenge()
-//                        }
             }
-            .onDelete(perform: { _ in
-//                        removeItem(at: indexSet, arr: business)
+            .onDelete(perform: { indexSet in
+                deleteItems(at: indexSet)
             })
         }
     }
-    
+
+    func deleteItems(at offsets: IndexSet) {
+        // 假设你有一个可以访问的ModelContext实例名为modelContext
+        for index in offsets {
+            let expenseItem = exprese[index]
+            modelContext.delete(expenseItem)
+        }
+
+        // 保存更改
+        do {
+            try modelContext.save()
+        } catch {
+            print("删除项目时出现问题: \(error)")
+        }
+    }
+
     func getNumberByFormatter(_ input: Double) -> String {
         let formatter = NumberFormatter()
         formatter.numberStyle = .decimal
@@ -91,22 +76,19 @@ struct Pro12Part3_ShoView: View {
         formatter.maximumFractionDigits = 2 // 最大小数位数
         return formatter.string(from: NSNumber(value: input)) ?? ""
     }
-
-   
 }
 
 struct Pro12Part3_Challenge: View {
     @State private var showingAddExpense = false
+    @State private var path = [ExpenseItem_Challenge_Pro12]()
 
     @State private var sortOrder = [
         SortDescriptor(\ExpenseItem_Challenge_Pro12.name),
         SortDescriptor(\ExpenseItem_Challenge_Pro12.amount),
     ]
 
-   var body: some View {
+    var body: some View {
         NavigationStack {
-            NavigationLink(destination: Pro12Part4_Challenge(), isActive: $showingAddExpense) {}
-                .hidden()
             Pro12Part3_ShoView(sortOrder: sortOrder)
                 .navigationTitle("iExprese")
                 .toolbar(content: {
@@ -128,22 +110,11 @@ struct Pro12Part3_Challenge: View {
                     }
 
                 })
-
-//
-//            .sheet(isPresented: $showingAddExpense, content: {
-//                Pro7Part3(expenses: exprese)
-//            })
         }
+        .sheet(isPresented: $showingAddExpense, content: {
+            Pro12Part4_Challenge()
+        })
     }
-
-//    func removeItem(at offset: IndexSet, arr: [ExpenseItem_Challenge_Pro12]) {
-//        for index in offset {
-//            let item = arr[index]
-//            if let originalIndex = exprese.items.firstIndex(where: { $0.id == item.id }) {
-//                exprese.items.remove(at: originalIndex)
-//            }
-//        }
-//    }
 }
 
 #Preview {

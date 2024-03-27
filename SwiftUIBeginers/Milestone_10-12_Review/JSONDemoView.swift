@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct User1: Codable{
+struct JsonUserReview: Codable{
     var firstName: String
     var lastName: String
 }
@@ -36,9 +36,10 @@ struct JSONDemoView: View {
 
         do {
             let decoder = JSONDecoder()
+            // 蛇形和驼峰转换
             decoder.keyDecodingStrategy = .convertFromSnakeCase
 
-            let user = try decoder.decode(User1.self, from: data)
+            let user = try decoder.decode(JsonUserReview.self, from: data)
             print("Hi, I'm \(user.firstName) \(user.lastName)")
         } catch {
             print("Whoops: \(error.localizedDescription)")
