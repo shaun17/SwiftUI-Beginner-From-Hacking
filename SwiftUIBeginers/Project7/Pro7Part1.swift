@@ -9,12 +9,12 @@ import Observation
 import SwiftUI
 
 @Observable
-class User {
+class UserPro7 {
     var firstName = "Bilbo"
     var lastName = "Baggins"
 }
 
-struct User2: Codable{
+struct UserPro7V2: Codable{
     let firstName: String
     let lastName: String
 }
@@ -32,8 +32,8 @@ struct SecondView: View {
 }
 
 struct Pro7Part1: View {
-    @State private var user = User()
-    @State private var user2 = User2(firstName: "Tomy", lastName: "Jacson")
+    @State private var user = UserPro7()
+    @State private var user2 = UserPro7V2(firstName: "Tomy", lastName: "Jacson")
     @State private var showingSheet = false
 
     @State private var numbers = [Int]()
@@ -69,7 +69,7 @@ struct Pro7Part1: View {
                     Button("get User"){
                         if let data = UserDefaults.standard.data(forKey: "UserData"){
                             let decoder = JSONDecoder()
-                            if let user = try? decoder.decode(User2.self, from: data){
+                            if let user = try? decoder.decode(UserPro7V2.self, from: data){
                                 print(user)
                             }
                         }

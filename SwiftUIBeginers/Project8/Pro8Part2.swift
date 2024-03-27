@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct UserInfo: Codable {
+struct UserInfoPro8: Codable {
     let name: String
     let address: Address
 }
@@ -45,7 +45,7 @@ struct Pro8Part2: View {
             """
             let data = Data(input.utf8)
             let decoder = JSONDecoder()
-            if let user = try? decoder.decode(UserInfo.self, from: data) {
+            if let user = try? decoder.decode(UserInfoPro8.self, from: data) {
                 print(user.address.street)
             }
         }

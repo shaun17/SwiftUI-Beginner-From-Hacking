@@ -96,6 +96,7 @@
 		288DCFC62BB2C3040038F5AF /* Pro12Part4-Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288DCFC52BB2C3040038F5AF /* Pro12Part4-Challenge.swift */; };
 		288DCFC82BB3085B0038F5AF /* PhindView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288DCFC72BB3085B0038F5AF /* PhindView.swift */; };
 		288DCFCA2BB3159E0038F5AF /* JSONDemoView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288DCFC92BB3159E0038F5AF /* JSONDemoView2.swift */; };
+		288DCFCF2BB3F2F20038F5AF /* ChallengeMillstone10-12.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288DCFCE2BB3F2F20038F5AF /* ChallengeMillstone10-12.swift */; };
 		28AD564F2B9EE6360016627E /* DemoPart1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AD564E2B9EE6360016627E /* DemoPart1.swift */; };
 		28AD56522B9EF9A90016627E /* DemoPart2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AD56512B9EF9A90016627E /* DemoPart2.swift */; };
 		28B30B0E2AFDE3BA00307467 /* SwiftUIViewCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B30B0D2AFDE3BA00307467 /* SwiftUIViewCustom.swift */; };
@@ -244,6 +245,7 @@
 		288DCFC52BB2C3040038F5AF /* Pro12Part4-Challenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Pro12Part4-Challenge.swift"; sourceTree = "<group>"; };
 		288DCFC72BB3085B0038F5AF /* PhindView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhindView.swift; sourceTree = "<group>"; };
 		288DCFC92BB3159E0038F5AF /* JSONDemoView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDemoView2.swift; sourceTree = "<group>"; };
+		288DCFCE2BB3F2F20038F5AF /* ChallengeMillstone10-12.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChallengeMillstone10-12.swift"; sourceTree = "<group>"; };
 		28AD564E2B9EE6360016627E /* DemoPart1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoPart1.swift; sourceTree = "<group>"; };
 		28AD56512B9EF9A90016627E /* DemoPart2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoPart2.swift; sourceTree = "<group>"; };
 		28B30B0D2AFDE3BA00307467 /* SwiftUIViewCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewCustom.swift; sourceTree = "<group>"; };
@@ -332,18 +334,22 @@
 				28AD56502B9EF8B30016627E /* Project1 */,
 				282E59062B9F54A8000C78A7 /* Project2 */,
 				282E590D2BA08E09000C78A7 /* Project3 */,
+				288DCFCB2BB3F2760038F5AF /* ChallengeMillstone1-3 */,
 				282E59132BA16F34000C78A7 /* Project4 */,
 				282E59182BA202AC000C78A7 /* Project5 */,
 				282E591F2BA4392C000C78A7 /* Project6 */,
 				282E59032B9F4350000C78A7 /* Challenges */,
+				288DCFCC2BB3F2990038F5AF /* ChallengeMillstone4-6 */,
 				282E59262BA5F095000C78A7 /* Project7 */,
 				282E592D2BA6E9AC000C78A7 /* Project8 */,
 				282E593A2BA87FE3000C78A7 /* Project9 */,
+				282E59492BAA8030000C78A7 /* ChallengeMilstone7-9 */,
 				282E59502BAACF4E000C78A7 /* Project10 */,
 				282E595D2BB11250000C78A7 /* Project11 */,
 				282E59682BB1B3AD000C78A7 /* Project12 */,
 				280E59802AC1284100DAC8F1 /* SwiftUIBeginersApp.swift */,
 				280E59822AC1284100DAC8F1 /* ContentView.swift */,
+				288DCFCD2BB3F2C10038F5AF /* ChallengeMillstone10-12 */,
 				28FB289A2B0CFE01003A737E /* Milestone_10-12_Review */,
 				28B30B0B2AFD385000307467 /* Project111 */,
 				28FB28692B03BE6D003A737E /* Project121 */,
@@ -393,11 +399,8 @@
 			isa = PBXGroup;
 			children = (
 				282E59042B9F437A000C78A7 /* Challenge1.swift */,
-				282E59112BA14420000C78A7 /* ChallengeMilstone1-3.swift */,
 				282E590B2BA03E8F000C78A7 /* Challenge2.swift */,
 				282E591D2BA424D4000C78A7 /* Challenge3.swift */,
-				282E59242BA599AE000C78A7 /* ChallengeMilstone4-6.swift */,
-				282E59492BAA8030000C78A7 /* ChallengeMilstone7-9 */,
 			);
 			path = Challenges;
 			sourceTree = "<group>";
@@ -609,6 +612,30 @@
 				287CA0412AF38668004DC41A /* HabitView.swift */,
 			);
 			path = Challenge47;
+			sourceTree = "<group>";
+		};
+		288DCFCB2BB3F2760038F5AF /* ChallengeMillstone1-3 */ = {
+			isa = PBXGroup;
+			children = (
+				282E59112BA14420000C78A7 /* ChallengeMilstone1-3.swift */,
+			);
+			path = "ChallengeMillstone1-3";
+			sourceTree = "<group>";
+		};
+		288DCFCC2BB3F2990038F5AF /* ChallengeMillstone4-6 */ = {
+			isa = PBXGroup;
+			children = (
+				282E59242BA599AE000C78A7 /* ChallengeMilstone4-6.swift */,
+			);
+			path = "ChallengeMillstone4-6";
+			sourceTree = "<group>";
+		};
+		288DCFCD2BB3F2C10038F5AF /* ChallengeMillstone10-12 */ = {
+			isa = PBXGroup;
+			children = (
+				288DCFCE2BB3F2F20038F5AF /* ChallengeMillstone10-12.swift */,
+			);
+			path = "ChallengeMillstone10-12";
 			sourceTree = "<group>";
 		};
 		28AD56502B9EF8B30016627E /* Project1 */ = {
@@ -860,6 +887,7 @@
 				28AD56522B9EF9A90016627E /* DemoPart2.swift in Sources */,
 				2885AF402AEE9CF600E89B0C /* Challenge47Days.swift in Sources */,
 				2830A1FB2ACDB89B00D10B66 /* QuizView.swift in Sources */,
+				288DCFCF2BB3F2F20038F5AF /* ChallengeMillstone10-12.swift in Sources */,
 				284612FB2AE5236700E284B7 /* SwiftUIViewShapeAnimatable.swift in Sources */,
 				282E59422BA96BD9000C78A7 /* Pro9Part4.swift in Sources */,
 				284612F22ADEDB3F00E284B7 /* SwiftUIViewImagePaint.swift in Sources */,
