@@ -97,6 +97,10 @@
 		288DCFCA2BB3159E0038F5AF /* JSONDemoView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288DCFC92BB3159E0038F5AF /* JSONDemoView2.swift */; };
 		288DCFCF2BB3F2F20038F5AF /* ChallengeMillstone10-12.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288DCFCE2BB3F2F20038F5AF /* ChallengeMillstone10-12.swift */; };
 		288DCFD22BB513B00038F5AF /* SwiftUIViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288DCFD12BB513B00038F5AF /* SwiftUIViewTest.swift */; };
+		288DCFD52BB544D80038F5AF /* Pro13Part1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288DCFD42BB544D80038F5AF /* Pro13Part1.swift */; };
+		288DCFD72BB54EC70038F5AF /* Pro13Part2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288DCFD62BB54EC70038F5AF /* Pro13Part2.swift */; };
+		288DCFD92BB557FF0038F5AF /* Pro13Part3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288DCFD82BB557FF0038F5AF /* Pro13Part3.swift */; };
+		288DCFDB2BB56BB20038F5AF /* Pro13Part4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288DCFDA2BB56BB20038F5AF /* Pro13Part4.swift */; };
 		28AD564F2B9EE6360016627E /* DemoPart1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AD564E2B9EE6360016627E /* DemoPart1.swift */; };
 		28AD56522B9EF9A90016627E /* DemoPart2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AD56512B9EF9A90016627E /* DemoPart2.swift */; };
 		28B30B0E2AFDE3BA00307467 /* SwiftUIViewCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B30B0D2AFDE3BA00307467 /* SwiftUIViewCustom.swift */; };
@@ -246,6 +250,10 @@
 		288DCFC92BB3159E0038F5AF /* JSONDemoView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDemoView2.swift; sourceTree = "<group>"; };
 		288DCFCE2BB3F2F20038F5AF /* ChallengeMillstone10-12.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChallengeMillstone10-12.swift"; sourceTree = "<group>"; };
 		288DCFD12BB513B00038F5AF /* SwiftUIViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewTest.swift; sourceTree = "<group>"; };
+		288DCFD42BB544D80038F5AF /* Pro13Part1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pro13Part1.swift; sourceTree = "<group>"; };
+		288DCFD62BB54EC70038F5AF /* Pro13Part2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pro13Part2.swift; sourceTree = "<group>"; };
+		288DCFD82BB557FF0038F5AF /* Pro13Part3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pro13Part3.swift; sourceTree = "<group>"; };
+		288DCFDA2BB56BB20038F5AF /* Pro13Part4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pro13Part4.swift; sourceTree = "<group>"; };
 		28AD564E2B9EE6360016627E /* DemoPart1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoPart1.swift; sourceTree = "<group>"; };
 		28AD56512B9EF9A90016627E /* DemoPart2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoPart2.swift; sourceTree = "<group>"; };
 		28B30B0D2AFDE3BA00307467 /* SwiftUIViewCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewCustom.swift; sourceTree = "<group>"; };
@@ -347,11 +355,12 @@
 				282E59502BAACF4E000C78A7 /* Project10 */,
 				282E595D2BB11250000C78A7 /* Project11 */,
 				282E59682BB1B3AD000C78A7 /* Project12 */,
+				28FB289A2B0CFE01003A737E /* Milestone_10-12_Review */,
+				288DCFCD2BB3F2C10038F5AF /* ChallengeMillstone10-12 */,
+				288DCFD32BB544C90038F5AF /* Project13 */,
 				280E59802AC1284100DAC8F1 /* SwiftUIBeginersApp.swift */,
 				280E59822AC1284100DAC8F1 /* ContentView.swift */,
 				288DCFD02BB513950038F5AF /* Test */,
-				28FB289A2B0CFE01003A737E /* Milestone_10-12_Review */,
-				288DCFCD2BB3F2C10038F5AF /* ChallengeMillstone10-12 */,
 				28B30B0B2AFD385000307467 /* Project111 */,
 				28FB28692B03BE6D003A737E /* Project121 */,
 				2830A1F32ACD12A400D10B66 /* Challenges2 */,
@@ -646,6 +655,17 @@
 			path = Test;
 			sourceTree = "<group>";
 		};
+		288DCFD32BB544C90038F5AF /* Project13 */ = {
+			isa = PBXGroup;
+			children = (
+				288DCFD42BB544D80038F5AF /* Pro13Part1.swift */,
+				288DCFD62BB54EC70038F5AF /* Pro13Part2.swift */,
+				288DCFD82BB557FF0038F5AF /* Pro13Part3.swift */,
+				288DCFDA2BB56BB20038F5AF /* Pro13Part4.swift */,
+			);
+			path = Project13;
+			sourceTree = "<group>";
+		};
 		28AD56502B9EF8B30016627E /* Project1 */ = {
 			isa = PBXGroup;
 			children = (
@@ -914,6 +934,7 @@
 				285B889A2AC72E890078D3F0 /* SwiftUIViewDate.swift in Sources */,
 				282E59052B9F437A000C78A7 /* Challenge1.swift in Sources */,
 				282E592C2BA6B32F000C78A7 /* Pro7Part3.swift in Sources */,
+				288DCFD92BB557FF0038F5AF /* Pro13Part3.swift in Sources */,
 				28B30B0E2AFDE3BA00307467 /* SwiftUIViewCustom.swift in Sources */,
 				282E59232BA4A0C4000C78A7 /* Pro6Part2.swift in Sources */,
 				282E592F2BA6E9E7000C78A7 /* Pro8Part1.swift in Sources */,
@@ -933,6 +954,7 @@
 				282E591C2BA3538A000C78A7 /* Pro5Part2.swift in Sources */,
 				28FB28A02B0F5BDB003A737E /* JSONDemoView.swift in Sources */,
 				282E59612BB121C6000C78A7 /* Pro11Part2.swift in Sources */,
+				288DCFDB2BB56BB20038F5AF /* Pro13Part4.swift in Sources */,
 				282E594B2BAA8064000C78A7 /* ChallengeMillstone7-9.swift in Sources */,
 				282E59212BA43941000C78A7 /* Pro6Part1.swift in Sources */,
 				282E59672BB16578000C78A7 /* Pro11Part5.swift in Sources */,
@@ -966,8 +988,10 @@
 				28AD564F2B9EE6360016627E /* DemoPart1.swift in Sources */,
 				28FB289E2B0E434B003A737E /* ViewBuilderTestView.swift in Sources */,
 				28B30B1D2B00D59F00307467 /* RatingView_Project11.swift in Sources */,
+				288DCFD72BB54EC70038F5AF /* Pro13Part2.swift in Sources */,
 				28FB28772B08B843003A737E /* MivewListView_Project12.swift in Sources */,
 				284612EE2ADC281E00E284B7 /* SwiftUIViewBoard.swift in Sources */,
+				288DCFD52BB544D80038F5AF /* Pro13Part1.swift in Sources */,
 				282E59082B9F54D2000C78A7 /* Pro2Part1.swift in Sources */,
 				285B88972AC5C8FC0078D3F0 /* ChallengeTwo.swift in Sources */,
 				282E590A2B9FFA1A000C78A7 /* Pro2Part2.swift in Sources */,
