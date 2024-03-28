@@ -7,6 +7,20 @@
 
 import SwiftUI
 
+struct DetailView: View {
+    var number: Int
+
+    var body: some View {
+        Text("Detail View \(number)")
+    }
+
+    init(number: Int) {
+        self.number = number
+        print("Creating detail view \(number)")
+    }
+}
+
+
 struct Pro9Part1: View {
     @State private var path = [Int]()
     @State private var path2 = NavigationPath()
@@ -54,22 +68,22 @@ struct Pro9Part1: View {
         
         // 支持多种类型的页面，使用navigation的modify判断
         // link中的文本只是用于展示，具体页面信息看modify中的数据
-//        NavigationStack{
-//            List {
-//                ForEach(0..<5) { i in
-//                    NavigationLink("Select Number: \(i)", value: i)
-//                }
-//                ForEach(0..<5) { i in
-//                    NavigationLink("Select String: \(i)", value: String(i))
-//                }
-//            }
-//            .navigationDestination(for: Int.self) { selection in
-//                Text("You selected the number \(selection)")
-//            }
-//            .navigationDestination(for: String.self) { selection in
-//                Text("You selected the string \(selection)")
-//            }
-//        }
+        NavigationStack{
+            List {
+                ForEach(0..<5) { i in
+                    NavigationLink("Select Number: \(i)", value: i)
+                }
+                ForEach(0..<5) { i in
+                    NavigationLink("Select String: \(i)", value: String(i))
+                }
+            }
+            .navigationDestination(for: Int.self) { selection in
+                Text("You selected the number \(selection)")
+            }
+            .navigationDestination(for: String.self) { selection in
+                Text("You selected the string \(selection)")
+            }
+        }
         
         
         NavigationStack(path: $path2) {
@@ -100,18 +114,6 @@ struct Pro9Part1: View {
     }
 }
 
-struct DetailView: View {
-    var number: Int
-
-    var body: some View {
-        Text("Detail View \(number)")
-    }
-
-    init(number: Int) {
-        self.number = number
-        print("Creating detail view \(number)")
-    }
-}
 
 
 #Preview {

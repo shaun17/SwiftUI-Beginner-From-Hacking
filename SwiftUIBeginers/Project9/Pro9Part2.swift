@@ -44,7 +44,7 @@ struct Pro9Part2: View {
     @State private var path2 = NavigationPath()
 
     var body: some View {
-        NavigationStack(path: $path2) {
+        NavigationStack(path: $path) {
             DataDetail(path: $path ,number: 0)
                 .navigationDestination(for: Int.self) { i in
                     DataDetail(path: $path, number: i)

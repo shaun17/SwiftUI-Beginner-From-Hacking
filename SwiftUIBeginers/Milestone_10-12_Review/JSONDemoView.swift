@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct JsonUserReview: Codable{
+class JsonUserReview: Codable{
     var firstName: String
     var lastName: String
 }

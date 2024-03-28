@@ -102,7 +102,7 @@ struct Pro8Part3: View {
     let missions: [Mission] = Bundle.main.decode("missions.json")
 
     let colums = [
-        GridItem(.adaptive(minimum: 150, maximum: 150))
+        GridItem(.adaptive(minimum: 150, maximum: 150)),
     ]
 
     @State private var change = false
@@ -110,25 +110,19 @@ struct Pro8Part3: View {
     var body: some View {
         NavigationStack {
             VStack {
-                if change {
-                    ScrollView { InsiderView2(missions: missions, astronauts: astronauts)
-                    }
-                    .navigationTitle("Moonshot")
-                    .padding()
-                    .background(.darkBackground)
-                    .preferredColorScheme(.dark)
-
-                } else {
-                    ScrollView {
+                ScrollView {
+                    if change {
+                        InsiderView2(missions: missions, astronauts: astronauts)
+                    } else {
                         LazyVGrid(columns: colums, content: {
                             InsiderView(missions: missions, astronauts: astronauts)
                         })
                         .padding([.horizontal, .bottom])
                     }
-                    .navigationTitle("Moonshot")
-                    .background(.darkBackground)
-                    .preferredColorScheme(.dark)
                 }
+                .navigationTitle("Moonshot")
+                .background(.darkBackground)
+                .preferredColorScheme(.dark)
             }
             .navigationTitle("Moonshot")
             .background(.darkBackground)

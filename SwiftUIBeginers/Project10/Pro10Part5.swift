@@ -8,7 +8,7 @@
 import SwiftUI
 
 @Observable
-class AddressPro: Codable{
+class AddressPro: Codable {
     var name = ""
     var streetAddress = ""
     var city = ""
@@ -22,49 +22,47 @@ class AddressPro: Codable{
 }
 
 @Observable
-class OrderPro10: Codable{
-    
+class OrderPro10: Codable {
     enum CodingKeys: String, CodingKey {
-        case _type  = "type"
+        case _type = "type"
         case _quality = "quality"
         case _specialRequestEnabled = "specialRequestEnabled"
         case _extraForsing = "extraForsing"
         case _addSprinkle = "addSprinkle"
-        
     }
+
     static let types = ["Vanilla", "Strawberry", "Chocolate", "Rainbow"]
     var type = 0
     var quality = 3
-    var specialRequestEnabled = false 
-    {
-        didSet{
+    var specialRequestEnabled = false {
+        didSet {
             if specialRequestEnabled == false {
                 extraForsing = false
                 addSprinkle = false
-                   }
+            }
         }
     }
+
     var extraForsing = false
     var addSprinkle = false
-    
+
     var addressPro = AddressPro()
-    
-    
+
     var hasValidAddress: Bool {
-        if addressPro.name.isEmpty ||  addressPro.streetAddress.trimmingCharacters(in: .whitespaces).isEmpty || addressPro.city.isEmpty || addressPro.zip.isEmpty {
+        if addressPro.name.isEmpty || addressPro.streetAddress.trimmingCharacters(in: .whitespaces).isEmpty || addressPro.city.isEmpty || addressPro.zip.isEmpty {
             return false
         }
         return true
     }
-    
-    var cost :Double {
+
+    var cost: Double {
         var cost = Double(quality) * 2
-        cost += (Double(type)/2)
+        cost += (Double(type) / 2)
         if extraForsing {
             cost += Double(quality)
         }
         if addSprinkle {
-            cost += Double(quality)/2
+            cost += Double(quality) / 2
         }
         return cost
     }
@@ -72,20 +70,19 @@ class OrderPro10: Codable{
 
 struct Pro10Part5: View {
     @State private var order = OrderPro10()
-    
+
     var body: some View {
-        NavigationStack{
-            Form{
-                Section{
+        NavigationStack {
+            Form {
+                Section {
                     Picker("Select your cake type", selection: $order.type) {
-                        ForEach(OrderPro10.types.indices, id: \.self){
+                        ForEach(OrderPro10.types.indices, id: \.self) {
                             Text(OrderPro10.types[$0])
                         }
-                        
                     }
-                    Stepper("Number of cake \(order.quality)", value: $order.quality, in: 3...30)
+                    Stepper("Number of cake \(order.quality)", value: $order.quality, in: 3 ... 30)
                 }
-                
+
                 Section {
                     Toggle("Any special requests?", isOn: $order.specialRequestEnabled)
                     if order.specialRequestEnabled {
@@ -93,31 +90,29 @@ struct Pro10Part5: View {
                         Toggle("Add extra sprinkles", isOn: $order.addSprinkle)
                     }
                 }
-                
-                Section{
+
+                Section {
                     NavigationLink(destination: AddressViewPro10(order: order)) {
                         Text("add a delivery")
                     }
                 }
-                
-                
             }
             .navigationTitle("Cupcake Corner")
         }
     }
 }
 
-struct AddressViewPro10:View {
+struct AddressViewPro10: View {
     @Bindable var order: OrderPro10
     var body: some View {
-        Form{
+        Form {
             Section {
                 TextField("Name", text: $order.addressPro.name)
                 TextField("Street Address", text: $order.addressPro.streetAddress)
                 TextField("City", text: $order.addressPro.city)
                 TextField("Zip", text: $order.addressPro.zip)
             }
-            
+
             Section {
                 NavigationLink("Check out ") {
                     CheckoutViewPro10(order: order)
@@ -132,25 +127,22 @@ struct AddressViewPro10:View {
                 saveAddress(order)
             }
         })
-        
     }
-    
-    func saveAddress(_ order: OrderPro10){
-            let addredd = AddressPro(name: order.addressPro.name,streetAddress: order.addressPro.streetAddress,city: order.addressPro.city,zip: order.addressPro.zip)
-        if let encoder = try? JSONEncoder().encode(addredd){
 
+    func saveAddress(_ order: OrderPro10) {
+        let addredd = AddressPro(name: order.addressPro.name, streetAddress: order.addressPro.streetAddress, city: order.addressPro.city, zip: order.addressPro.zip)
+        if let encoder = try? JSONEncoder().encode(addredd) {
             UserDefaults.standard.setValue(encoder, forKey: "addressInfo")
         }
     }
-    
+
     init(order: OrderPro10) {
         self.order = order
-        if let address = UserDefaults.standard.data(forKey: "addressInfo"){
-            if let data = try? JSONDecoder().decode(AddressPro.self, from: address){
+        if let address = UserDefaults.standard.data(forKey: "addressInfo") {
+            if let data = try? JSONDecoder().decode(AddressPro.self, from: address) {
                 order.addressPro = data
             }
         }
-       
     }
 }
 

@@ -73,14 +73,14 @@ struct Pro12Part4_Challenge_Show: View {
     }
 }
 
-#Preview {
-    do {
-        let config = ModelConfiguration(isStoredInMemoryOnly: true)
-        let modelContainer = try ModelContainer(for: ExpenseItem_Challenge_Pro12.self, configurations: config)
-        let express = ExpenseItem_Challenge_Pro12(name: "name", type: "Personal", amount: 1.1)
-        return Pro12Part4_Challenge_Show(expenses: express)
-            .modelContainer(modelContainer)
-    } catch {
-        return Text("")
-    }
-}
+//#Preview {
+//    do {
+//        let config = ModelConfiguration(isStoredInMemoryOnly: true)
+//        let modelContainer = try ModelContainer(for: ExpenseItem_Challenge_Pro12.self, configurations: config)
+//        let express = ExpenseItem_Challenge_Pro12(name: "name", type: "Personal", amount: 1.1)
+//        return Pro12Part4_Challenge_Show(expenses: express)
+//            .modelContainer(modelContainer)
+//    } catch {
+//        return Text("")
+//    }
+//}

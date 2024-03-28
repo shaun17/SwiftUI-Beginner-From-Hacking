@@ -32,25 +32,46 @@ struct Pro12Part3_ShoView: View {
     }
 
     var body: some View {
-        List {
-            ForEach(exprese) { item in
-                NavigationLink(destination: Pro12Part4_Challenge_Show(expenses: item)) {
-                    HStack {
-                        Text(item.name)
-                        Text(item.type)
-                        if item.amount < 10 {
-                            Text("\(item.amount)")
-                        } else if item.amount < 100 {
-                            Text(item.amount.formatted(.number.precision(.fractionLength(2))))
-                        } else {
-                            Text(getNumberByFormatter(item.amount))
+        VStack {
+            List {
+                ForEach(exprese) { item in
+                    NavigationLink(destination: Pro12Part4_Challenge_Show(expenses: item)) {
+                        HStack {
+                            Text(item.name)
+                            Text(item.type)
+                            if item.amount < 10 {
+                                Text("\(item.amount)")
+                            } else if item.amount < 100 {
+                                Text(item.amount.formatted(.number.precision(.fractionLength(2))))
+                            } else {
+                                Text(getNumberByFormatter(item.amount))
+                            }
                         }
                     }
+
+                    // 没成功
+//                    NavigationLink(value: item) {
+//                        HStack {
+//                            Text(item.name)
+//                            Text(item.type)
+//                            if item.amount < 10 {
+//                                Text("\(item.amount)")
+//                            } else if item.amount < 100 {
+//                                Text(item.amount.formatted(.number.precision(.fractionLength(2))))
+//                            } else {
+//                                Text(getNumberByFormatter(item.amount))
+//                            }
+//                        }
+//                    }
                 }
+                .onDelete(perform: { indexSet in
+                    deleteItems(at: indexSet)
+                })
             }
-            .onDelete(perform: { indexSet in
-                deleteItems(at: indexSet)
-            })
+//
+//            .navigationDestination(for: ExpenseItem_Challenge_Pro12.self) { pro in
+//                Pro12Part4_Challenge_Show(expenses: pro)
+//            }
         }
     }
 
@@ -90,6 +111,7 @@ struct Pro12Part3_Challenge: View {
     var body: some View {
         NavigationStack {
             Pro12Part3_ShoView(sortOrder: sortOrder)
+
                 .navigationTitle("iExprese")
                 .toolbar(content: {
                     Button("Add Exprese", systemImage: "plus") {
