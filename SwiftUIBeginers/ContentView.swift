@@ -17,13 +17,7 @@ struct ContentView: View {
                 Spacer()
                 
                 NavigationLink {
-                    Pro11Part2()
-                } label: {
-                    Label("Project demo", systemImage: "folder")
-                    
-                }
-                NavigationLink {
-                    Pro10Part5()
+                    Pro13Part5()
                 } label: {
                     Label("Project demo", systemImage: "folder")
                     

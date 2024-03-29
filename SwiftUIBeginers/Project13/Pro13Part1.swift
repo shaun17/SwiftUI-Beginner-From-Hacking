@@ -13,35 +13,35 @@ struct Pro13Part1: View {
             print("New value is \(blurAmount)")
         }
     }
-    
+
     @State private var showingConfirmation = false
-       @State private var backgroundColor = Color.white
+    @State private var backgroundColor = Color.white
 
     var body: some View {
         VStack {
             Text("Hello World")
                 .blur(radius: blurAmount)
             Slider(value: $blurAmount, in: 0...20)
-                .onChange(of: blurAmount) { oldValue, newValue in
+                .onChange(of: blurAmount) { _, newValue in
                     print("New value is \(newValue)")
                 }
             Button("Random blur") {
                 blurAmount = Double.random(in: 0...20)
             }
-            
+
             Button("Hello World") {
                 showingConfirmation = true
             }
             .frame(width: 300, height: 300)
             .background(backgroundColor)
             .confirmationDialog("Change BackgroundColor", isPresented: $showingConfirmation) {
-                Button("Red"){
+                Button("Red") {
                     backgroundColor = .red
                 }
-                Button("Green"){
+                Button("Green") {
                     backgroundColor = .green
                 }
-                Button("Yellow"){
+                Button("Yellow") {
                     backgroundColor = .yellow
                 }
             } message: {
