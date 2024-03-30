@@ -107,6 +107,7 @@
 		288DCFE42BB6B96E0038F5AF /* Pro14Part3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288DCFE32BB6B96E0038F5AF /* Pro14Part3.swift */; };
 		288DCFE62BB6D1590038F5AF /* Pro14Part4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288DCFE52BB6D1590038F5AF /* Pro14Part4.swift */; };
 		288DCFE82BB81AFE0038F5AF /* Pro14Part4-POJO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288DCFE72BB81AFE0038F5AF /* Pro14Part4-POJO.swift */; };
+		288DCFEA2BB85ABD0038F5AF /* Pro14Part5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288DCFE92BB85ABD0038F5AF /* Pro14Part5.swift */; };
 		28AD564F2B9EE6360016627E /* DemoPart1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AD564E2B9EE6360016627E /* DemoPart1.swift */; };
 		28AD56522B9EF9A90016627E /* DemoPart2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AD56512B9EF9A90016627E /* DemoPart2.swift */; };
 		28B30B0E2AFDE3BA00307467 /* SwiftUIViewCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B30B0D2AFDE3BA00307467 /* SwiftUIViewCustom.swift */; };
@@ -266,6 +267,7 @@
 		288DCFE32BB6B96E0038F5AF /* Pro14Part3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pro14Part3.swift; sourceTree = "<group>"; };
 		288DCFE52BB6D1590038F5AF /* Pro14Part4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pro14Part4.swift; sourceTree = "<group>"; };
 		288DCFE72BB81AFE0038F5AF /* Pro14Part4-POJO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Pro14Part4-POJO.swift"; sourceTree = "<group>"; };
+		288DCFE92BB85ABD0038F5AF /* Pro14Part5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pro14Part5.swift; sourceTree = "<group>"; };
 		28AD564E2B9EE6360016627E /* DemoPart1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoPart1.swift; sourceTree = "<group>"; };
 		28AD56512B9EF9A90016627E /* DemoPart2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoPart2.swift; sourceTree = "<group>"; };
 		28B30B0D2AFDE3BA00307467 /* SwiftUIViewCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewCustom.swift; sourceTree = "<group>"; };
@@ -688,6 +690,7 @@
 				288DCFE32BB6B96E0038F5AF /* Pro14Part3.swift */,
 				288DCFE52BB6D1590038F5AF /* Pro14Part4.swift */,
 				288DCFE72BB81AFE0038F5AF /* Pro14Part4-POJO.swift */,
+				288DCFE92BB85ABD0038F5AF /* Pro14Part5.swift */,
 			);
 			path = Project14;
 			sourceTree = "<group>";
@@ -987,6 +990,7 @@
 				288DCFDB2BB56BB20038F5AF /* Pro13Part4.swift in Sources */,
 				282E594B2BAA8064000C78A7 /* ChallengeMillstone7-9.swift in Sources */,
 				288DCFE62BB6D1590038F5AF /* Pro14Part4.swift in Sources */,
+				288DCFEA2BB85ABD0038F5AF /* Pro14Part5.swift in Sources */,
 				282E59212BA43941000C78A7 /* Pro6Part1.swift in Sources */,
 				282E59672BB16578000C78A7 /* Pro11Part5.swift in Sources */,
 				282E592A2BA6996A000C78A7 /* Pro7Part2.swift in Sources */,

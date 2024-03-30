@@ -5,6 +5,7 @@
 //  Created by shaun on 2024/3/29.
 //
 //
+
 import MapKit
 import SwiftUI
 
@@ -27,49 +28,63 @@ struct LocationPro14: Codable, Equatable, Identifiable {
 }
 
 struct Pro14Part4: View {
-    @State private var locations = [LocationPro14]()
-    @State private var seletedPlace: LocationPro14?
-
+//    @State private var locations = [LocationPro14]()
+//    @State private var seletedPlace: LocationPro14?
+//
     let startPosition = MapCameraPosition.region(MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 56, longitude: -3), span: MKCoordinateSpan(latitudeDelta: 10, longitudeDelta: 10)))
 
+    @State private var viewModel = ViewModel()
+
     var body: some View {
-        MapReader { proxy in
-
-            Map(initialPosition: startPosition) {
-                ForEach(locations) { location in
-
-//                    Marker(location.name, coordinate: CLLocationCoordinate2D(latitude: location.latitude, longitude: location.longitude))
-
-                    Annotation(location.name, coordinate: location.coordinate) {
-                        Image(systemName: "star.circle")
-                            .resizable()
-                            .foregroundColor(.red)
-                            .frame(width: 20, height: 20)
-                            .background(.white)
-                            .clipShape(.circle)
-                            .onLongPressGesture {
-                                seletedPlace = location
-                            }
+        if viewModel.isUnlocked {
+            
+            MapReader { proxy in
+                
+                Map(initialPosition: startPosition) {
+                    ForEach(viewModel.locations) { location in
+                        
+                        //                    Marker(location.name, coordinate: CLLocationCoordinate2D(latitude: location.latitude, longitude: location.longitude))
+                        
+                        Annotation(location.name, coordinate: location.coordinate) {
+                            Image(systemName: "star.circle")
+                                .resizable()
+                                .foregroundColor(.red)
+                                .frame(width: 20, height: 20)
+                                .background(.white)
+                                .clipShape(.circle)
+                                .onLongPressGesture {
+                                    viewModel.selectedPlace = location
+                                }
+                        }
+                    }
+                }
+                .mapStyle(.hybrid)
+                .onTapGesture { position in
+                    print("Tapped at \(position)")
+                    if let coordinate = proxy.convert(position, from: .local) {
+                        //                    let newLocation = LocationPro14(id: UUID(), name: "New location", description: "", latitude: coordinate.latitude, longitude: coordinate.longitude)
+                        viewModel.addLocation(at: CLLocationCoordinate2D(latitude: coordinate.latitude, longitude: coordinate.longitude))
                     }
                 }
             }
-            .mapStyle(.hybrid)
-            .onTapGesture { position in
-                print("Tapped at \(position)")
-                if let coordinate = proxy.convert(position, from: .local) {
-                    let newLocation = LocationPro14(id: UUID(), name: "New location", description: "", latitude: coordinate.latitude, longitude: coordinate.longitude)
-                    locations.append(newLocation)
+            .sheet(item: $viewModel.selectedPlace) { place in
+                EditViewPro14(location: place) { newLocation in
+                    
+                    viewModel.update(location: newLocation)
+                    //                if let index = viewModel.locations.firstIndex(of: place) {
+                    //                    viewModel.locations[index] = newLocation
+                    //                }
                 }
             }
-        }
-        .sheet(item: $seletedPlace) { place in
-            EditViewPro14(location: place) { newLocation in
-                if let index = locations.firstIndex(of: place) {
-                    locations[index] = newLocation
-                }
-            }
+        } else {
+            Button("Unlock Places", action: viewModel.authenticate)
+                .padding()
+                .background(.blue)
+                .foregroundStyle(.white)
+                .clipShape(.capsule)
         }
     }
+
 }
 
 struct EditViewPro14: View {
@@ -111,7 +126,7 @@ struct EditViewPro14: View {
                             Text(page.title)
                                 .font(.headline)
                                 + Text(": ") +
-                            Text(page.description)
+                                Text(page.description)
                                 .italic()
                         }
 
