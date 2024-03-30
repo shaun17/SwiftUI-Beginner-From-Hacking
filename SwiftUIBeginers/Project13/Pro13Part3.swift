@@ -16,8 +16,9 @@ struct Pro13Part3: View {
         VStack{
             let example = Image(.horror)
             
-            Label("Click to share", systemImage: "airplane")
             ShareLink(item: example, preview: SharePreview("Horror", image: example)){
+                Label("Click to share", systemImage: "airplane")
+
             }
             
             ShareLink(item: URL(string: "https://www.hackingwithswift.com")!) {
