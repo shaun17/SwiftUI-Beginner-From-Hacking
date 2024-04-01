@@ -108,6 +108,7 @@
 		288DCFE62BB6D1590038F5AF /* Pro14Part4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288DCFE52BB6D1590038F5AF /* Pro14Part4.swift */; };
 		288DCFE82BB81AFE0038F5AF /* Pro14Part4-POJO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288DCFE72BB81AFE0038F5AF /* Pro14Part4-POJO.swift */; };
 		288DCFEA2BB85ABD0038F5AF /* Pro14Part5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288DCFE92BB85ABD0038F5AF /* Pro14Part5.swift */; };
+		288DCFED2BBA6B470038F5AF /* ChallengeMilstone13-15.swift in Sources */ = {isa = PBXBuildFile; fileRef = 288DCFEC2BBA6B470038F5AF /* ChallengeMilstone13-15.swift */; };
 		28AD564F2B9EE6360016627E /* DemoPart1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AD564E2B9EE6360016627E /* DemoPart1.swift */; };
 		28AD56522B9EF9A90016627E /* DemoPart2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AD56512B9EF9A90016627E /* DemoPart2.swift */; };
 		28B30B0E2AFDE3BA00307467 /* SwiftUIViewCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B30B0D2AFDE3BA00307467 /* SwiftUIViewCustom.swift */; };
@@ -268,6 +269,7 @@
 		288DCFE52BB6D1590038F5AF /* Pro14Part4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pro14Part4.swift; sourceTree = "<group>"; };
 		288DCFE72BB81AFE0038F5AF /* Pro14Part4-POJO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Pro14Part4-POJO.swift"; sourceTree = "<group>"; };
 		288DCFE92BB85ABD0038F5AF /* Pro14Part5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pro14Part5.swift; sourceTree = "<group>"; };
+		288DCFEC2BBA6B470038F5AF /* ChallengeMilstone13-15.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChallengeMilstone13-15.swift"; sourceTree = "<group>"; };
 		28AD564E2B9EE6360016627E /* DemoPart1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoPart1.swift; sourceTree = "<group>"; };
 		28AD56512B9EF9A90016627E /* DemoPart2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoPart2.swift; sourceTree = "<group>"; };
 		28B30B0D2AFDE3BA00307467 /* SwiftUIViewCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewCustom.swift; sourceTree = "<group>"; };
@@ -375,6 +377,7 @@
 				280E59802AC1284100DAC8F1 /* SwiftUIBeginersApp.swift */,
 				288DCFDE2BB6A1200038F5AF /* Project14 */,
 				280E59822AC1284100DAC8F1 /* ContentView.swift */,
+				288DCFEB2BBA6B100038F5AF /* ChallengeMilstone13-15 */,
 				288DCFD02BB513950038F5AF /* Test */,
 				28B30B0B2AFD385000307467 /* Project111 */,
 				28FB28692B03BE6D003A737E /* Project121 */,
@@ -695,6 +698,14 @@
 			path = Project14;
 			sourceTree = "<group>";
 		};
+		288DCFEB2BBA6B100038F5AF /* ChallengeMilstone13-15 */ = {
+			isa = PBXGroup;
+			children = (
+				288DCFEC2BBA6B470038F5AF /* ChallengeMilstone13-15.swift */,
+			);
+			path = "ChallengeMilstone13-15";
+			sourceTree = "<group>";
+		};
 		28AD56502B9EF8B30016627E /* Project1 */ = {
 			isa = PBXGroup;
 			children = (
@@ -924,6 +935,7 @@
 				282E59312BA6F5C3000C78A7 /* Pro8Part2.swift in Sources */,
 				282E59462BA98506000C78A7 /* Pro7Part5-Challenge.swift in Sources */,
 				282E59172BA19CF1000C78A7 /* Pro4Part2.swift in Sources */,
+				288DCFED2BBA6B470038F5AF /* ChallengeMilstone13-15.swift in Sources */,
 				28FB286C2B03C2FD003A737E /* HashValue_Project.swift in Sources */,
 				28FB28942B0A5759003A737E /* Candy+CoreDataClass.swift in Sources */,
 				288DCFC62BB2C3040038F5AF /* Pro12Part4-Challenge.swift in Sources */,
@@ -1199,6 +1211,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "we need to unlock your data";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -1239,6 +1252,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "we need to unlock your data";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;

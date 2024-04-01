@@ -17,7 +17,10 @@ extension Pro14Part4 {
         var selectedPlace: LocationPro14?
         let savePath = URL.documentsDirectory.appending(path: "SavedPlaces")
 
-        var isUnlocked = false
+        var isUnlocked = true
+        var errorMsg = ""
+        var isMixture = true
+        
 
         init() {
             do {
@@ -61,10 +64,16 @@ extension Pro14Part4 {
                     if success {
                         self.isUnlocked = true
                     } else {
-                        // error
+                        self.isUnlocked = false
+                        self.errorMsg = "Sorry, authenticate fail !"
                     }
                 }
-            } else {}
+            } else {
+                DispatchQueue.main.async {
+                    self.errorMsg = "Biometric authentication is not available."
+                }
+                
+            }
         }
     }
 }

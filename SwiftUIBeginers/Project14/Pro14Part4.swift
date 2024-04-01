@@ -37,14 +37,17 @@ struct Pro14Part4: View {
 
     var body: some View {
         if viewModel.isUnlocked {
-            
+            Button("change") {
+                print(viewModel.isMixture)
+                viewModel.isMixture.toggle()
+            }
             MapReader { proxy in
-                
+
                 Map(initialPosition: startPosition) {
                     ForEach(viewModel.locations) { location in
-                        
+
                         //                    Marker(location.name, coordinate: CLLocationCoordinate2D(latitude: location.latitude, longitude: location.longitude))
-                        
+
                         Annotation(location.name, coordinate: location.coordinate) {
                             Image(systemName: "star.circle")
                                 .resizable()
@@ -58,7 +61,7 @@ struct Pro14Part4: View {
                         }
                     }
                 }
-                .mapStyle(.hybrid)
+                .mapStyle(viewModel.isMixture ? .standard : .hybrid)
                 .onTapGesture { position in
                     print("Tapped at \(position)")
                     if let coordinate = proxy.convert(position, from: .local) {
@@ -69,22 +72,30 @@ struct Pro14Part4: View {
             }
             .sheet(item: $viewModel.selectedPlace) { place in
                 EditViewPro14(location: place) { newLocation in
-                    
+
                     viewModel.update(location: newLocation)
                     //                if let index = viewModel.locations.firstIndex(of: place) {
                     //                    viewModel.locations[index] = newLocation
                     //                }
                 }
             }
+
         } else {
-            Button("Unlock Places", action: viewModel.authenticate)
-                .padding()
-                .background(.blue)
-                .foregroundStyle(.white)
-                .clipShape(.capsule)
+            VStack {
+                Button("Unlock Places", action: viewModel.authenticate)
+                    .padding()
+                    .background(.blue)
+                    .foregroundStyle(.white)
+                    .clipShape(.capsule)
+
+                if !viewModel.errorMsg.isEmpty && !viewModel.isUnlocked {
+                    Text(viewModel.errorMsg)
+                        .foregroundColor(.red)
+                        .padding()
+                }
+            }
         }
     }
-
 }
 
 struct EditViewPro14: View {
