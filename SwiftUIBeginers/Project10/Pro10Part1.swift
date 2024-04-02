@@ -7,18 +7,18 @@
 
 import SwiftUI
 
-struct Response: Codable {
-    var results: [Result]
+struct ResponsePro10: Codable {
+    var results: [ResultPro10]
 }
 
-struct Result: Codable {
+struct ResultPro10: Codable {
     var trackId: Int
     var trackName: String
     var collectionName: String
 }
 
 struct Pro10Part1: View {
-    @State private var results = [Result]()
+    @State private var results = [ResultPro10]()
     
     @State private var username = ""
     @State private var email = ""
@@ -75,7 +75,7 @@ struct Pro10Part1: View {
         
         do {
             let (data, _) = try await URLSession.shared.data(from: url)
-            if let decodedResponse = try? JSONDecoder().decode(Response.self, from: data) {
+            if let decodedResponse = try? JSONDecoder().decode(ResponsePro10.self, from: data) {
                 results = decodedResponse.results
             }
         } catch {
