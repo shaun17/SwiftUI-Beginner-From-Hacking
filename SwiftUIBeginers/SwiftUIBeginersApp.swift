@@ -16,6 +16,7 @@ struct SwiftUIBeginersApp: App {
                 ContentView()
             }
         }
+        .modelContainer(for: Prospect.self)
         .modelContainer(for: StudentPro11.self)
         .modelContainer(for: BookPro11.self)
     }

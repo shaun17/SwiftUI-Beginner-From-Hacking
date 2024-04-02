@@ -8,6 +8,30 @@ import CodeScanner
 import CoreImage.CIFilterBuiltins
 import SwiftData
 import SwiftUI
+import UserNotifications
+
+struct DetailViewPro16: View {
+    @Bindable var prospect: Prospect
+    @Environment(\.dismiss) var dismiss
+    
+    
+    var body: some View {
+        VStack {
+            TextField("Name", text: $prospect.name)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+                .padding()
+
+            TextField("Email", text: $prospect.emailAddress)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+                .padding()
+        }
+        .toolbar(content: {
+            Button("Save"){
+                dismiss()
+            }
+        })
+    }
+}
 
 struct ProspectsView: View {
     enum FilterType {
@@ -46,29 +70,43 @@ struct ProspectsView: View {
     var body: some View {
         NavigationStack {
             List(prospects, selection: $selectedProspects) { prospect in
-                VStack(alignment: .leading) {
-                    Text(prospect.name)
-                        .font(.headline)
-                    Text(prospect.emailAddress)
-                        .foregroundStyle(.secondary)
-                }
-                .swipeActions {
-                    if prospect.isContacted {
-                        Button("Mark Uncontacted", systemImage: "person.crop.circle.badge.xmark") {
-                            prospect.isContacted.toggle()
+                NavigationLink {
+                    DetailViewPro16(prospect: prospect)
+                } label: {
+                    VStack(alignment: .leading) {
+                        HStack {
+                            Text(prospect.name)
+                                .font(.headline)
+                            if prospect.isContacted && filter == .none {
+                                Image(systemName: "checkmark.circle")
+                            }
                         }
-                        .tint(.blue)
-                    } else {
-                        Button("Mark Contacted", systemImage: "person.crop.circle.fill.badge.checkmark") {
-                            prospect.isContacted.toggle()
+                        Text(prospect.emailAddress)
+                            .foregroundStyle(.secondary)
+                    }
+                    .swipeActions {
+                        if prospect.isContacted {
+                            Button("Mark Uncontacted", systemImage: "person.crop.circle.badge.xmark") {
+                                prospect.isContacted.toggle()
+                            }
+                            .tint(.blue)
+                        } else {
+                            Button("Mark Contacted", systemImage: "person.crop.circle.fill.badge.checkmark") {
+                                prospect.isContacted.toggle()
+                            }
+                            .tint(.green)
+
+                            Button("Remind Me", systemImage: "bell") {
+                                addNotification(for: prospect)
+                            }
+                            .tint(.orange)
                         }
-                        .tint(.green)
+                        Button("Delete", systemImage: "trash", role: .destructive) {
+                            modelContext.delete(prospect)
+                        }
                     }
-                    Button("Delete", systemImage: "trash", role: .destructive) {
-                        modelContext.delete(prospect)
-                    }
+                    .tag(prospect)
                 }
-                .tag(prospect)
             }
             .navigationTitle(title)
             .toolbar(content: {
@@ -115,6 +153,38 @@ struct ProspectsView: View {
             modelContext.delete(prospect)
         }
     }
+
+    func addNotification(for prospect: Prospect) {
+        let center = UNUserNotificationCenter.current()
+        let addRequest = {
+            let content = UNMutableNotificationContent()
+            content.title = "Contact \(prospect.name)"
+            content.subtitle = prospect.emailAddress
+            content.sound = UNNotificationSound.default
+
+            var dateComponents = DateComponents()
+            dateComponents.hour = 9
+//            let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: false)
+            let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+
+            let reuqest = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
+            center.add(reuqest)
+        }
+
+        center.getNotificationSettings { setting in
+            if setting.authorizationStatus == .authorized {
+                addRequest()
+            } else {
+                center.requestAuthorization(options: [.alert, .badge, .sound]) { success, error in
+                    if success {
+                        addRequest()
+                    } else if let error {
+                        print(error.localizedDescription)
+                    }
+                }
+            }
+        }
+    }
 }
 
 struct MeView: View {
@@ -123,6 +193,9 @@ struct MeView: View {
 
     let context = CIContext()
     let filter = CIFilter.qrCodeGenerator()
+
+    // qrcode 缓存
+    @State private var qrCode = UIImage()
 
     var body: some View {
         NavigationStack {
@@ -140,20 +213,39 @@ struct MeView: View {
                     .resizable()
                     .scaledToFit()
                     .frame(width: 200, height: 200)
+                    .contextMenu(ContextMenu(menuItems: {
+                        ShareLink(item: Image(uiImage: qrCode), preview: SharePreview("My QR Code", image: Image(uiImage: qrCode)))
+
+                    }))
             }
             .navigationTitle("your code")
+            .onAppear(perform: {
+                updateCode()
+            })
+            .onChange(of: name) {
+                updateCode()
+            }
+            .onChange(of: emailAddress) {
+                updateCode()
+            }
         }
     }
 
     func generateQRCode(from string: String) -> UIImage {
+        print(111)
         filter.message = Data(string.utf8)
+
         if let outputImage = filter.outputImage {
-            if let cgImge = context.createCGImage(outputImage, from: outputImage.extent) {
-                return UIImage(cgImage: cgImge)
+            if let cgImage = context.createCGImage(outputImage, from: outputImage.extent) {
+                return UIImage(cgImage: cgImage)
             }
         }
 
         return UIImage(systemName: "xmark.circle") ?? UIImage()
+    }
+
+    func updateCode() {
+        qrCode = generateQRCode(from: "\(name)\n\(emailAddress)")
     }
 }
 

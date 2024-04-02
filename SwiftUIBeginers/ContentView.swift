@@ -17,7 +17,9 @@ struct ContentView: View {
                 Spacer()
                 
                 NavigationLink {
-                    Pro16Part3()
+                    Pro16Part4()
+                        .modelContainer(for: Prospect.self)
+
                 } label: {
                     Label("Project demo", systemImage: "folder")
                     
