@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2809D8802BBBF68A002D033C /* Pro17Part1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2809D87F2BBBF68A002D033C /* Pro17Part1.swift */; };
+		2809D8822BBC002A002D033C /* Pro17Part2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2809D8812BBC002A002D033C /* Pro17Part2.swift */; };
+		2809D8842BBC02AE002D033C /* Pro17Part3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2809D8832BBC02AE002D033C /* Pro17Part3.swift */; };
+		2809D8862BBC0F75002D033C /* Pro17Part4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2809D8852BBC0F75002D033C /* Pro17Part4.swift */; };
+		2809D8882BBC18CD002D033C /* Pro17Part5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2809D8872BBC18CD002D033C /* Pro17Part5.swift */; };
 		280E59812AC1284100DAC8F1 /* SwiftUIBeginersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280E59802AC1284100DAC8F1 /* SwiftUIBeginersApp.swift */; };
 		280E59832AC1284100DAC8F1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280E59822AC1284100DAC8F1 /* ContentView.swift */; };
 		280E59852AC1284200DAC8F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 280E59842AC1284200DAC8F1 /* Assets.xcassets */; };
@@ -170,6 +175,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2809D87F2BBBF68A002D033C /* Pro17Part1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pro17Part1.swift; sourceTree = "<group>"; };
+		2809D8812BBC002A002D033C /* Pro17Part2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pro17Part2.swift; sourceTree = "<group>"; };
+		2809D8832BBC02AE002D033C /* Pro17Part3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pro17Part3.swift; sourceTree = "<group>"; };
+		2809D8852BBC0F75002D033C /* Pro17Part4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pro17Part4.swift; sourceTree = "<group>"; };
+		2809D8872BBC18CD002D033C /* Pro17Part5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pro17Part5.swift; sourceTree = "<group>"; };
 		280E597D2AC1284100DAC8F1 /* SwiftUIBeginers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIBeginers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		280E59802AC1284100DAC8F1 /* SwiftUIBeginersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIBeginersApp.swift; sourceTree = "<group>"; };
 		280E59822AC1284100DAC8F1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -344,6 +354,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2809D87E2BBBF679002D033C /* Project17 */ = {
+			isa = PBXGroup;
+			children = (
+				2809D87F2BBBF68A002D033C /* Pro17Part1.swift */,
+				2809D8812BBC002A002D033C /* Pro17Part2.swift */,
+				2809D8832BBC02AE002D033C /* Pro17Part3.swift */,
+				2809D8852BBC0F75002D033C /* Pro17Part4.swift */,
+				2809D8872BBC18CD002D033C /* Pro17Part5.swift */,
+			);
+			path = Project17;
+			sourceTree = "<group>";
+		};
 		280E59742AC1284100DAC8F1 = {
 			isa = PBXGroup;
 			children = (
@@ -388,9 +410,10 @@
 				288DCFD32BB544C90038F5AF /* Project13 */,
 				288DCFDE2BB6A1200038F5AF /* Project14 */,
 				288DCFEB2BBA6B100038F5AF /* ChallengeMilstone13-15 */,
+				288EE8532BBA9D1200840E4E /* Project16 */,
 				280E59822AC1284100DAC8F1 /* ContentView.swift */,
 				280E59802AC1284100DAC8F1 /* SwiftUIBeginersApp.swift */,
-				288EE8532BBA9D1200840E4E /* Project16 */,
+				2809D87E2BBBF679002D033C /* Project17 */,
 				288DCFD02BB513950038F5AF /* Test */,
 				28B30B0B2AFD385000307467 /* Project111 */,
 				28FB28692B03BE6D003A737E /* Project121 */,
@@ -981,10 +1004,12 @@
 				280E59832AC1284100DAC8F1 /* ContentView.swift in Sources */,
 				287CA0422AF38668004DC41A /* HabitView.swift in Sources */,
 				282E593E2BA88F9E000C78A7 /* Pro9Part2.swift in Sources */,
+				2809D8822BBC002A002D033C /* Pro17Part2.swift in Sources */,
 				285B88902AC3FCBD0078D3F0 /* Project1.swift in Sources */,
 				288DCFE42BB6B96E0038F5AF /* Pro14Part3.swift in Sources */,
 				28FB28A52B0FB348003A737E /* ChallengeUser.swift in Sources */,
 				288EE8552BBA9D2700840E4E /* Pro16Part1.swift in Sources */,
+				2809D8842BBC02AE002D033C /* Pro17Part3.swift in Sources */,
 				284613052AEABEA500E284B7 /* ChallengeNineArrow.swift in Sources */,
 				288DCFE02BB6A1370038F5AF /* Pro14Part1.swift in Sources */,
 				28B30B172AFF7ABF00307467 /* DataController.swift in Sources */,
@@ -1010,6 +1035,7 @@
 				282E59482BA98A0E000C78A7 /* Pro8Part6-Challenge.swift in Sources */,
 				28FB28832B08C542003A737E /* CoreDataProject.xcdatamodeld in Sources */,
 				28FB288F2B0914A9003A737E /* Singer+CoreDataProperties.swift in Sources */,
+				2809D8802BBBF68A002D033C /* Pro17Part1.swift in Sources */,
 				282E59282BA5F0AF000C78A7 /* Pro7Part1.swift in Sources */,
 				285B889A2AC72E890078D3F0 /* SwiftUIViewDate.swift in Sources */,
 				282E59052B9F437A000C78A7 /* Challenge1.swift in Sources */,
@@ -1075,7 +1101,9 @@
 				28FB28772B08B843003A737E /* MivewListView_Project12.swift in Sources */,
 				284612EE2ADC281E00E284B7 /* SwiftUIViewBoard.swift in Sources */,
 				288DCFD52BB544D80038F5AF /* Pro13Part1.swift in Sources */,
+				2809D8882BBC18CD002D033C /* Pro17Part5.swift in Sources */,
 				282E59082B9F54D2000C78A7 /* Pro2Part1.swift in Sources */,
+				2809D8862BBC0F75002D033C /* Pro17Part4.swift in Sources */,
 				285B88972AC5C8FC0078D3F0 /* ChallengeTwo.swift in Sources */,
 				282E590A2B9FFA1A000C78A7 /* Pro2Part2.swift in Sources */,
 				28FB28862B08C5DF003A737E /* Movie+CoreDataClass.swift in Sources */,
