@@ -8,7 +8,7 @@
 import Combine
 import SwiftUI
 
-struct Card: Identifiable {
+struct Card: Identifiable, Codable {
     var id: UUID
     var prompt: String
     var answer: String
@@ -24,17 +24,22 @@ extension View {
 }
 
 struct Pro17Part5View: View {
-    @State private var cards = [Card](repeating: .example, count: 10)
-    @Environment(\.accessibilityDifferentiateWithoutColor) var accessibilityDifferentiateWithoutColor
+    @State private var cards = [Card]()
+    @State private var cards_bak = [Card]()
 
     @State private var timeRemaining = 100
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
-    
+
     @Environment(\.scenePhase) var scenePhase
     @State private var isActive = true
+
+    @State private var showingEditScreen = false
+    @Environment(\.accessibilityVoiceOverEnabled) var accessibilityVoiceOverEnabled
+    @Environment(\.accessibilityDifferentiateWithoutColor) var accessibilityDifferentiateWithoutColor
+
     var body: some View {
         ZStack {
-            Image(.background)
+            Image(decorative: "background")
                 .resizable()
                 .scaledToFill()
                 .ignoresSafeArea()
@@ -47,31 +52,83 @@ struct Pro17Part5View: View {
                     .padding(.vertical, 5)
                     .background(.black.opacity(0.75))
                     .clipShape(.capsule)
-                
+
                 ZStack {
                     ForEach(0 ..< cards.count, id: \.self) { index in
-                        Pro17Part5(card: cards[index]) {
+                        Pro17Part5(card: cards[index], cards_bak: $cards_bak) {
                             withAnimation {
+                                guard index >= 0 else { return }
                                 removeCard(at: index)
                             }
                         }
                         .stack(at: index, in: cards.count)
+                        .allowsHitTesting(index == cards.count - 1)
+                        .accessibilityHidden(index < cards.count - 1)
                     }
+                }
+                .allowsHitTesting(timeRemaining > 0)
+
+                if cards.isEmpty {
+                    Button("Restar") {
+                        resetCards()
+                    }
+                    .padding()
+                    .background(.white)
+                    .foregroundStyle(.black)
+                    .clipShape(.capsule)
                 }
             }
 
-            if accessibilityDifferentiateWithoutColor {
+            VStack {
+                HStack {
+                    Button {
+                        showingEditScreen = true
+                    } label: {
+                        Image(systemName: "plus.circle")
+                            .padding()
+                            .background(.black.opacity(0.7))
+                            .clipShape(.circle)
+                    }
+                }
+
+                Spacer()
+            }
+            .foregroundStyle(.white)
+            .font(.largeTitle)
+            .padding()
+
+            if accessibilityDifferentiateWithoutColor || accessibilityVoiceOverEnabled {
                 VStack {
                     Spacer()
-                    Image(systemName: "xmark.circle")
-                        .padding()
-                        .background(.black.opacity(0.7))
-                        .clipShape(.circle)
                     Spacer()
-                    Image(systemName: "checkmark.circle")
-                        .padding()
-                        .background(.black.opacity(0.7))
-                        .clipShape(.circle)
+                    HStack {
+                        Button {
+                            withAnimation {
+                                removeCard(at: cards.count - 1)
+                            }
+                        } label: {
+                            Image(systemName: "xmark.circle")
+                                .padding()
+                                .background(.black.opacity(0.7))
+                                .clipShape(.circle)
+                        }
+                        .accessibilityLabel("Wrong")
+                        .accessibilityHint("Mark your answer as being incorrect.")
+
+                        Button {
+                            withAnimation {
+                                removeCard(at: cards.count - 1)
+                            }
+                        } label: {
+                            Image(systemName: "checkmark.circle")
+                                .padding()
+                                .background(.black.opacity(0.7))
+                                .clipShape(.circle)
+                        }
+                        .accessibilityLabel("Correct")
+                        .accessibilityHint("Mark your answer as being correct.")
+                    }
+                    Spacer()
                 }
             }
         }
@@ -83,26 +140,58 @@ struct Pro17Part5View: View {
             }
         })
         .onChange(of: scenePhase) {
-            if scenePhase == .active {
-               isActive = true
+            if scenePhase == .active && !cards.isEmpty {
+                isActive = true
             } else {
-               isActive = false
+                isActive = false
             }
+        }
+        .sheet(isPresented: $showingEditScreen, onDismiss: resetCards) {
+            Pro17Part6()
+        }
+        .onAppear {
+            resetCards()
         }
     }
 
     func removeCard(at index: Int) {
         cards.remove(at: index)
+        if cards.isEmpty && !cards_bak.isEmpty {
+            cards += cards_bak
+            cards_bak.removeAll()
+            print(cards)
+        }
+        
+        if cards.isEmpty {
+            isActive = false
+        }
+    }
+
+    func loadData() {
+        if let data = UserDefaults.standard.data(forKey: "Cards") {
+            if let decoded = try? JSONDecoder().decode([Card].self, from: data) {
+                cards = decoded
+            }
+        }
+    }
+
+    func resetCards() {
+        timeRemaining = 100
+        isActive = true
+        loadData()
     }
 }
 
 struct Pro17Part5: View {
     let card: Card
+    @Binding var cards_bak: [Card]
     var removal: (() -> Void)? = nil
 
     @State private var isShowingAnswer = false
     @State private var offSet = CGSize.zero
     @Environment(\.accessibilityDifferentiateWithoutColor) var accessibilityDifferentiateWithoutColor
+
+    @Environment(\.accessibilityVoiceOverEnabled) var voiceOverEnabled
 
     var body: some View {
         ZStack {
@@ -119,13 +208,20 @@ struct Pro17Part5: View {
                 .shadow(radius: 10)
 
             VStack {
-                Text(card.prompt)
-                    .font(.largeTitle)
-                    .foregroundStyle(.black)
-                if isShowingAnswer {
-                    Text(card.answer)
-                        .font(.title)
-                        .foregroundStyle(.secondary)
+                if voiceOverEnabled {
+                    Text(isShowingAnswer ? card.answer : card.prompt)
+                        .font(.largeTitle)
+                        .foregroundStyle(.black)
+                } else {
+                    Text(card.prompt)
+                        .font(.largeTitle)
+                        .foregroundStyle(.black)
+
+                    if isShowingAnswer {
+                        Text(card.answer)
+                            .font(.title)
+                            .foregroundStyle(.secondary)
+                    }
                 }
             }
             .padding(20)
@@ -135,22 +231,25 @@ struct Pro17Part5: View {
         .rotationEffect(.degrees(offSet.width / 2))
         .offset(x: offSet.width * 5, y: offSet.height * 1.5)
         .opacity(1 - Double(abs(offSet.width / 50)))
-        .gesture(DragGesture()
-            .onChanged { gesture in
-                print(gesture.translation.width)
-                offSet = gesture.translation
-            }
-            .onEnded { _ in
-                if abs(offSet.width) > 0 {
-                    removal?()
-
-                } else {
-                    offSet = .zero
+        .gesture(
+            DragGesture()
+                .onChanged { gesture in
+                    offSet = gesture.translation
                 }
-            })
+                .onEnded { _ in
+                    if abs(offSet.width) > 0 {
+                        if offSet.width < 0 {
+                            cards_bak.append(card)
+                        }
+                        removal?()
+                    } else {
+                        offSet = .zero
+                    }
+                })
         .onTapGesture {
             isShowingAnswer.toggle()
         }
+        .accessibilityAddTraits(.isButton)
     }
 }
 

@@ -9,7 +9,19 @@ import SwiftUI
 
 struct Pro17Part3: View {
     var body: some View {
+        VStack{
+            Text("Hello")
+                Spacer().frame(height: 100)
+                Text("World")
+        }
+        .contentShape(.rect)
+        .onTapGesture {
+            print("VStack tapped")
+        }
+        
+        
         ZStack{
+            
             Rectangle()
                 .fill(.blue)
                 .frame(width: 300,height: 300)
@@ -20,7 +32,7 @@ struct Pro17Part3: View {
             Circle()
                 .fill(.red)
                 .frame(width: 300, height: 300)
-                .contentShape(.rect)
+//                .contentShape(.rect)
                 .onTapGesture {
                     print("Circle tapped")
                 }

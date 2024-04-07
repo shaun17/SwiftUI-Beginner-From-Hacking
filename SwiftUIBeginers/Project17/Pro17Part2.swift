@@ -11,6 +11,7 @@ struct Pro17Part2: View {
     @State private var offSet = CGSize.zero
     @State private var isDragging = false
     var body: some View {
+        // 拖动手势
         let dragGesture = DragGesture()
             .onChanged { value in
                 offSet = value.translation
@@ -21,7 +22,7 @@ struct Pro17Part2: View {
                     isDragging = false
                 }
             }
-
+        // 长按手势
         let longPressGesture = LongPressGesture()
             .onEnded { _ in
                 withAnimation {
@@ -29,8 +30,9 @@ struct Pro17Part2: View {
                     isDragging = false
                 }
             }
+        // 长按+拖动 存在队列   
         let combine = longPressGesture.sequenced(before: dragGesture)
-        
+
         Circle()
             .fill(.red)
             .frame(width: 64, height: 64)

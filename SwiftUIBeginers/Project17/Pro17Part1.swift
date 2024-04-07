@@ -20,9 +20,11 @@ struct Pro17Part1: View {
                         currentAmount = value.rotation
                     }
 
-                    .onEnded { _ in
+                    .onEnded { value in
                         finalAmount += currentAmount
                         currentAmount = .zero
+                        print("RotateGesture: \(value) !")
+
                     }
             )
             .onTapGesture(count: 2, perform: {
@@ -57,5 +59,5 @@ struct Pro17Part1_bak: View {
 }
 
 #Preview {
-    Pro17Part1_bak()
+    Pro17Part1()
 }
