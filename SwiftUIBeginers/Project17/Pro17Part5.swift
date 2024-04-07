@@ -19,7 +19,7 @@ struct Card: Identifiable, Codable {
 extension View {
     func stack(at position: Int, in total: Int) -> some View {
         let offSet = Double(total - position)
-        return offset(y: offSet * 10)
+        return offset(x: CGSize.zero.width, y: offSet * 10)
     }
 }
 
@@ -36,6 +36,8 @@ struct Pro17Part5View: View {
     @State private var showingEditScreen = false
     @Environment(\.accessibilityVoiceOverEnabled) var accessibilityVoiceOverEnabled
     @Environment(\.accessibilityDifferentiateWithoutColor) var accessibilityDifferentiateWithoutColor
+
+    @State private var review = false
 
     var body: some View {
         ZStack {
@@ -55,13 +57,15 @@ struct Pro17Part5View: View {
 
                 ZStack {
                     ForEach(0 ..< cards.count, id: \.self) { index in
-                        Pro17Part5(card: cards[index], cards_bak: $cards_bak) {
+                        Pro17Part5(card: cards[index]) { isLeftSwipe in
                             withAnimation {
                                 guard index >= 0 else { return }
-                                removeCard(at: index)
+                                removeCard(at: index, isLeftSwipe: isLeftSwipe)
                             }
                         }
                         .stack(at: index, in: cards.count)
+//                        .opacity(1)
+//                        .rotationEffect(.zero)
                         .allowsHitTesting(index == cards.count - 1)
                         .accessibilityHidden(index < cards.count - 1)
                     }
@@ -104,7 +108,7 @@ struct Pro17Part5View: View {
                     HStack {
                         Button {
                             withAnimation {
-                                removeCard(at: cards.count - 1)
+                                removeCard(at: cards.count - 1, isLeftSwipe: true)
                             }
                         } label: {
                             Image(systemName: "xmark.circle")
@@ -117,7 +121,7 @@ struct Pro17Part5View: View {
 
                         Button {
                             withAnimation {
-                                removeCard(at: cards.count - 1)
+                                removeCard(at: cards.count - 1, isLeftSwipe: false)
                             }
                         } label: {
                             Image(systemName: "checkmark.circle")
@@ -154,14 +158,20 @@ struct Pro17Part5View: View {
         }
     }
 
-    func removeCard(at index: Int) {
-        cards.remove(at: index)
-        if cards.isEmpty && !cards_bak.isEmpty {
-            cards += cards_bak
-            cards_bak.removeAll()
-            print(cards)
+    func removeCard(at index: Int, isLeftSwipe: Bool, review _: Bool = false) {
+        print(index)
+
+        let card = cards.remove(at: index)
+
+        if isLeftSwipe {
+            // 如果是向左滑动，将卡片添加到cards_bak数组中
+            cards_bak.append(card)
         }
-        
+        if cards.isEmpty && !cards_bak.isEmpty {
+            cards = cards_bak.reversed()
+            cards_bak.removeAll()
+        }
+
         if cards.isEmpty {
             isActive = false
         }
@@ -183,9 +193,15 @@ struct Pro17Part5View: View {
 }
 
 struct Pro17Part5: View {
+    init(card: Card, removal: ((Bool) -> Void)? = nil) {
+        // 创建一个全新的Card实例，其内部值与传入的cardold实例相同
+        self.card = Card(id: UUID(), prompt: card.prompt, answer: card.answer)
+        self.removal = removal
+    }
+
     let card: Card
-    @Binding var cards_bak: [Card]
-    var removal: (() -> Void)? = nil
+
+    var removal: ((Bool) -> Void)? = nil
 
     @State private var isShowingAnswer = false
     @State private var offSet = CGSize.zero
@@ -228,8 +244,8 @@ struct Pro17Part5: View {
             .multilineTextAlignment(.center)
         }
         .frame(width: 450, height: 250)
-        .rotationEffect(.degrees(offSet.width / 2))
-        .offset(x: offSet.width * 5, y: offSet.height * 1.5)
+        .rotationEffect(.degrees(offSet.width / 5))
+        .offset(x: offSet.width * 5)
         .opacity(1 - Double(abs(offSet.width / 50)))
         .gesture(
             DragGesture()
@@ -238,13 +254,12 @@ struct Pro17Part5: View {
                 }
                 .onEnded { _ in
                     if abs(offSet.width) > 0 {
-                        if offSet.width < 0 {
-                            cards_bak.append(card)
-                        }
-                        removal?()
-                    } else {
+                        removal?(offSet.width < 0)
+                    }
+                    DispatchQueue.main.async {
                         offSet = .zero
                     }
+
                 })
         .onTapGesture {
             isShowingAnswer.toggle()
