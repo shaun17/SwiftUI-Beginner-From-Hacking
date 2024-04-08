@@ -56,18 +56,18 @@ struct Pro17Part5View: View {
                     .clipShape(.capsule)
 
                 ZStack {
-                    ForEach(0 ..< cards.count, id: \.self) { index in
-                        Pro17Part5(card: cards[index]) { isLeftSwipe in
-                            withAnimation {
-                                guard index >= 0 else { return }
-                                removeCard(at: index, isLeftSwipe: isLeftSwipe)
+                    if !review {
+                        ForEach(0 ..< cards.count, id: \.self) { index in
+                            Pro17Part5(card: cards[index], index: index) { isLeftSwipe in
+                                withAnimation {
+                                    guard index >= 0 else { return }
+                                    removeCard(at: index, isLeftSwipe: isLeftSwipe)
+                                }
                             }
+                            .stack(at: index, in: cards.count)
+                            .allowsHitTesting(index == cards.count - 1)
+                            .accessibilityHidden(index < cards.count - 1)
                         }
-                        .stack(at: index, in: cards.count)
-//                        .opacity(1)
-//                        .rotationEffect(.zero)
-                        .allowsHitTesting(index == cards.count - 1)
-                        .accessibilityHidden(index < cards.count - 1)
                     }
                 }
                 .allowsHitTesting(timeRemaining > 0)
@@ -156,9 +156,14 @@ struct Pro17Part5View: View {
         .onAppear {
             resetCards()
         }
+        .alert(isPresented: $review, content: {
+            Alert(title: Text("Review"),dismissButton: Alert.Button.cancel({
+                review = false
+            }))
+        })
     }
 
-    func removeCard(at index: Int, isLeftSwipe: Bool, review _: Bool = false) {
+    func removeCard(at index: Int, isLeftSwipe: Bool) {
         print(index)
 
         let card = cards.remove(at: index)
@@ -166,10 +171,12 @@ struct Pro17Part5View: View {
         if isLeftSwipe {
             // 如果是向左滑动，将卡片添加到cards_bak数组中
             cards_bak.append(card)
+//            cards.insert(card, at: 0)
         }
         if cards.isEmpty && !cards_bak.isEmpty {
             cards = cards_bak.reversed()
             cards_bak.removeAll()
+            review = true
         }
 
         if cards.isEmpty {
@@ -193,13 +200,14 @@ struct Pro17Part5View: View {
 }
 
 struct Pro17Part5: View {
-    init(card: Card, removal: ((Bool) -> Void)? = nil) {
-        // 创建一个全新的Card实例，其内部值与传入的cardold实例相同
-        self.card = Card(id: UUID(), prompt: card.prompt, answer: card.answer)
-        self.removal = removal
-    }
+//    init(card: Card, removal: ((Bool) -> Void)? = nil) {
+//        // 创建一个全新的Card实例，其内部值与传入的cardold实例相同
+//        self.card = Card(id: UUID(), prompt: card.prompt, answer: card.answer)
+//        self.removal = removal
+//    }
 
     let card: Card
+    let index: Int
 
     var removal: ((Bool) -> Void)? = nil
 
@@ -255,8 +263,10 @@ struct Pro17Part5: View {
                 .onEnded { _ in
                     if abs(offSet.width) > 0 {
                         removal?(offSet.width < 0)
-                    }
-                    DispatchQueue.main.async {
+                        if index == 0 {
+                            offSet = .zero
+                        }
+                    } else {
                         offSet = .zero
                     }
 
