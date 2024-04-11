@@ -21,6 +21,7 @@
 		280E599F2AC1284200DAC8F1 /* SwiftUIBeginersUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280E599E2AC1284200DAC8F1 /* SwiftUIBeginersUITestsLaunchTests.swift */; };
 		280E59AC2AC1286600DAC8F1 /* ChallengeOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280E59AB2AC1286600DAC8F1 /* ChallengeOne.swift */; };
 		2813FE672BC1927C0073EBDF /* Pro17Part6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2813FE662BC1927C0073EBDF /* Pro17Part6.swift */; };
+		2813FE6A2BC400E60073EBDF /* Pro18Part1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2813FE692BC400E60073EBDF /* Pro18Part1.swift */; };
 		282E59052B9F437A000C78A7 /* Challenge1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282E59042B9F437A000C78A7 /* Challenge1.swift */; };
 		282E59082B9F54D2000C78A7 /* Pro2Part1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282E59072B9F54D2000C78A7 /* Pro2Part1.swift */; };
 		282E590A2B9FFA1A000C78A7 /* Pro2Part2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282E59092B9FFA1A000C78A7 /* Pro2Part2.swift */; };
@@ -135,6 +136,11 @@
 		28B30B212B011B3B00307467 /* DetailView_Project11.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B30B202B011B3B00307467 /* DetailView_Project11.swift */; };
 		28D47B842AD30C7000157652 /* missions.json in Resources */ = {isa = PBXBuildFile; fileRef = 28D47B822AD30C7000157652 /* missions.json */; };
 		28D47B852AD30C7000157652 /* astronauts.json in Resources */ = {isa = PBXBuildFile; fileRef = 28D47B832AD30C7000157652 /* astronauts.json */; };
+		28FB1C782BC51A2800544556 /* StudentNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FB1C772BC51A2800544556 /* StudentNameView.swift */; };
+		28FB1C7A2BC51D1100544556 /* StudentNameView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FB1C792BC51D1100544556 /* StudentNameView2.swift */; };
+		28FB1C7C2BC5920D00544556 /* Pro18Part2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FB1C7B2BC5920D00544556 /* Pro18Part2.swift */; };
+		28FB1C7E2BC6D2F600544556 /* Pro18Part3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FB1C7D2BC6D2F600544556 /* Pro18Part3.swift */; };
+		28FB1C802BC6F5BE00544556 /* Pro18Part4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FB1C7F2BC6F5BE00544556 /* Pro18Part4.swift */; };
 		28FB286C2B03C2FD003A737E /* HashValue_Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FB286B2B03C2FD003A737E /* HashValue_Project.swift */; };
 		28FB28752B03CF7B003A737E /* MovieView_Project12.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FB28742B03CF7B003A737E /* MovieView_Project12.swift */; };
 		28FB28772B08B843003A737E /* MivewListView_Project12.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FB28762B08B843003A737E /* MivewListView_Project12.swift */; };
@@ -194,6 +200,7 @@
 		280E599E2AC1284200DAC8F1 /* SwiftUIBeginersUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIBeginersUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		280E59AB2AC1286600DAC8F1 /* ChallengeOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeOne.swift; sourceTree = "<group>"; };
 		2813FE662BC1927C0073EBDF /* Pro17Part6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pro17Part6.swift; sourceTree = "<group>"; };
+		2813FE692BC400E60073EBDF /* Pro18Part1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pro18Part1.swift; sourceTree = "<group>"; };
 		282E59042B9F437A000C78A7 /* Challenge1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge1.swift; sourceTree = "<group>"; };
 		282E59072B9F54D2000C78A7 /* Pro2Part1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pro2Part1.swift; sourceTree = "<group>"; };
 		282E59092B9FFA1A000C78A7 /* Pro2Part2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pro2Part2.swift; sourceTree = "<group>"; };
@@ -307,6 +314,11 @@
 		28B30B202B011B3B00307467 /* DetailView_Project11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView_Project11.swift; sourceTree = "<group>"; };
 		28D47B822AD30C7000157652 /* missions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = missions.json; sourceTree = "<group>"; };
 		28D47B832AD30C7000157652 /* astronauts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = astronauts.json; sourceTree = "<group>"; };
+		28FB1C772BC51A2800544556 /* StudentNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentNameView.swift; sourceTree = "<group>"; };
+		28FB1C792BC51D1100544556 /* StudentNameView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentNameView2.swift; sourceTree = "<group>"; };
+		28FB1C7B2BC5920D00544556 /* Pro18Part2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pro18Part2.swift; sourceTree = "<group>"; };
+		28FB1C7D2BC6D2F600544556 /* Pro18Part3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pro18Part3.swift; sourceTree = "<group>"; };
+		28FB1C7F2BC6F5BE00544556 /* Pro18Part4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pro18Part4.swift; sourceTree = "<group>"; };
 		28FB286B2B03C2FD003A737E /* HashValue_Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashValue_Project.swift; sourceTree = "<group>"; };
 		28FB28742B03CF7B003A737E /* MovieView_Project12.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieView_Project12.swift; sourceTree = "<group>"; };
 		28FB28762B08B843003A737E /* MivewListView_Project12.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MivewListView_Project12.swift; sourceTree = "<group>"; };
@@ -417,6 +429,7 @@
 				280E59822AC1284100DAC8F1 /* ContentView.swift */,
 				280E59802AC1284100DAC8F1 /* SwiftUIBeginersApp.swift */,
 				2809D87E2BBBF679002D033C /* Project17 */,
+				2813FE682BC400D80073EBDF /* Project18 */,
 				288DCFD02BB513950038F5AF /* Test */,
 				28B30B0B2AFD385000307467 /* Project111 */,
 				28FB28692B03BE6D003A737E /* Project121 */,
@@ -461,6 +474,17 @@
 				280E599E2AC1284200DAC8F1 /* SwiftUIBeginersUITestsLaunchTests.swift */,
 			);
 			path = SwiftUIBeginersUITests;
+			sourceTree = "<group>";
+		};
+		2813FE682BC400D80073EBDF /* Project18 */ = {
+			isa = PBXGroup;
+			children = (
+				2813FE692BC400E60073EBDF /* Pro18Part1.swift */,
+				28FB1C7B2BC5920D00544556 /* Pro18Part2.swift */,
+				28FB1C7D2BC6D2F600544556 /* Pro18Part3.swift */,
+				28FB1C7F2BC6F5BE00544556 /* Pro18Part4.swift */,
+			);
+			path = Project18;
 			sourceTree = "<group>";
 		};
 		282E59032B9F4350000C78A7 /* Challenges */ = {
@@ -709,6 +733,8 @@
 			isa = PBXGroup;
 			children = (
 				288DCFD12BB513B00038F5AF /* SwiftUIViewTest.swift */,
+				28FB1C772BC51A2800544556 /* StudentNameView.swift */,
+				28FB1C792BC51D1100544556 /* StudentNameView2.swift */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -1003,6 +1029,7 @@
 				28FB288B2B09143B003A737E /* FilterView_Project12.swift in Sources */,
 				28FB288E2B0914A9003A737E /* Singer+CoreDataClass.swift in Sources */,
 				28B30B152AFF7A8800307467 /* Bookworm.xcdatamodeld in Sources */,
+				2813FE6A2BC400E60073EBDF /* Pro18Part1.swift in Sources */,
 				282E593C2BA87FF6000C78A7 /* Pro9Part1.swift in Sources */,
 				280E59832AC1284100DAC8F1 /* ContentView.swift in Sources */,
 				287CA0422AF38668004DC41A /* HabitView.swift in Sources */,
@@ -1012,6 +1039,7 @@
 				288DCFE42BB6B96E0038F5AF /* Pro14Part3.swift in Sources */,
 				28FB28A52B0FB348003A737E /* ChallengeUser.swift in Sources */,
 				288EE8552BBA9D2700840E4E /* Pro16Part1.swift in Sources */,
+				28FB1C7E2BC6D2F600544556 /* Pro18Part3.swift in Sources */,
 				2809D8842BBC02AE002D033C /* Pro17Part3.swift in Sources */,
 				284613052AEABEA500E284B7 /* ChallengeNineArrow.swift in Sources */,
 				288DCFE02BB6A1370038F5AF /* Pro14Part1.swift in Sources */,
@@ -1051,12 +1079,14 @@
 				282E59332BA7E2C4000C78A7 /* Pro8Part3.swift in Sources */,
 				282E595C2BAC2FCA000C78A7 /* Pro10Part6.swift in Sources */,
 				282E59152BA16F53000C78A7 /* Pro4Part1.swift in Sources */,
+				28FB1C782BC51A2800544556 /* StudentNameView.swift in Sources */,
 				2830A1F92ACDA0E100D10B66 /* ChallengeThree.swift in Sources */,
 				28FB28872B08C5DF003A737E /* Movie+CoreDataProperties.swift in Sources */,
 				288DCFD22BB513B00038F5AF /* SwiftUIViewTest.swift in Sources */,
 				282E59632BB12767000C78A7 /* Pro11Part3.swift in Sources */,
 				285B889C2AC81CB40078D3F0 /* SwiftUIViewBetterRest.swift in Sources */,
 				282E596A2BB1B3CA000C78A7 /* Pro12Part1.swift in Sources */,
+				28FB1C7C2BC5920D00544556 /* Pro18Part2.swift in Sources */,
 				2830A1F72ACD97B800D10B66 /* QuizView_reference.swift in Sources */,
 				282E59562BAC07BD000C78A7 /* Pro10Part3-Advance.swift in Sources */,
 				28B30B1B2AFFD38100307467 /* BooksView_Project11.swift in Sources */,
@@ -1094,6 +1124,7 @@
 				28FB28972B0A5759003A737E /* Country+CoreDataProperties.swift in Sources */,
 				2830A1F52ACD930300D10B66 /* ChallengeThree_reference.swift in Sources */,
 				282E59122BA14420000C78A7 /* ChallengeMilstone1-3.swift in Sources */,
+				28FB1C802BC6F5BE00544556 /* Pro18Part4.swift in Sources */,
 				282E59582BAC16D1000C78A7 /* Pro10Part4.swift in Sources */,
 				28FB28A72B0FB3FB003A737E /* ChallengeUserView.swift in Sources */,
 				284612EC2ADBFF3100E284B7 /* SwiftUIViewPathDeom.swift in Sources */,
@@ -1112,6 +1143,7 @@
 				282E590A2B9FFA1A000C78A7 /* Pro2Part2.swift in Sources */,
 				28FB28862B08C5DF003A737E /* Movie+CoreDataClass.swift in Sources */,
 				288DCFCA2BB3159E0038F5AF /* JSONDemoView2.swift in Sources */,
+				28FB1C7A2BC51D1100544556 /* StudentNameView2.swift in Sources */,
 				284612F02ADD88F700E284B7 /* SwiftUIViewCG.swift in Sources */,
 				282E596E2BB2A469000C78A7 /* Pro12Part3-Challenge.swift in Sources */,
 				28B30B192AFFD11A00307467 /* AddBookView_Project11.swift in Sources */,
