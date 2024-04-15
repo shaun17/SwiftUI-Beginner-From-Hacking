@@ -30,7 +30,8 @@ struct Pro13Part2: View {
         NavigationStack {
             VStack {
                 NavigationLink {
-                    ContentUnavailableView("No snippets", systemImage: "swift", description: Text("You don't have any saved snippets yet."))
+                    DoNotClick()
+//                    ContentUnavailableView("No snippets", systemImage: "pencil" , description: Text("You don't have any saved snippets yet."))
                 } label: {
                     Text("DO NOT CLICK")
                 }
@@ -77,8 +78,12 @@ struct Pro13Part2: View {
         if inputKeys.contains(kCIInputIntensityKey) {
             currentFilter.setValue(amount, forKey: kCIInputIntensityKey)
         }
-        if inputKeys.contains(kCIInputRadiusKey) { currentFilter.setValue(amount * 200, forKey: kCIInputRadiusKey) }
-        if inputKeys.contains(kCIInputScaleKey) { currentFilter.setValue(amount * 10, forKey: kCIInputScaleKey) }
+        if inputKeys.contains(kCIInputRadiusKey) {
+            currentFilter.setValue(amount * 200, forKey: kCIInputRadiusKey)
+        }
+        if inputKeys.contains(kCIInputScaleKey) {
+            currentFilter.setValue(amount * 10, forKey: kCIInputScaleKey)
+        }
 
         guard let outputImage = currentFilter.outputImage else { return }
         guard let cgImage = context.createCGImage(outputImage, from: outputImage.extent) else { return }

@@ -26,60 +26,64 @@ struct Pro13Part5: View {
 
     var body: some View {
         NavigationStack {
-            Spacer()
-
-            PhotosPicker(selection: $selectedItem) {
-                if let image {
-                    image
-                        .resizable()
-                        .scaledToFit()
-                } else {
-                    ContentUnavailableView("No pic", systemImage: "photo.badge.plus", description: Text("Tap to import a photo"))
-                }
-            }
-//            .buttonStyle(.plain)
-            .onChange(of: selectedItem, loadImage)
-
-            Spacer()
             VStack {
-                HStack {
-                    Text("Intensity")
-                    Slider(value: $filterIntensity)
-                        .onChange(of: filterIntensity, applyProcessing)
-                        .disabled(image == nil)
-                }
-
-                HStack {
-                    Text("Radius")
-                    Slider(value: $filterRadius)
-                        .onChange(of: filterRadius, applyProcessing2)
-                        .disabled(image == nil)
-                }
-            }
-            .padding(.vertical)
-            HStack {
-                Button("Change Filter") {
-                    changeFilter()
-                }.disabled(image == nil)
-
                 Spacer()
 
-                if let image {
-                    ShareLink(item: image, preview: SharePreview("Instafilter image", image: image))
+                PhotosPicker(selection: $selectedItem) {
+                    if let image {
+                        image
+                            .resizable()
+                            .scaledToFit()
+                    } else {
+                        ContentUnavailableView("No pic", systemImage: "photo.badge.plus", description: Text("Tap to import a photo"))
+                    }
                 }
+                //            .buttonStyle(.plain)
+                .onChange(of: selectedItem, loadImage)
+
+                Spacer()
+                VStack {
+                    HStack {
+                        Text("Intensity")
+                        Slider(value: $filterIntensity)
+                            .onChange(of: filterIntensity, applyIntensityKey)
+                            .disabled(image == nil)
+                    }
+
+                    HStack {
+                        Text("Radius")
+                        Slider(value: $filterRadius)
+                            .onChange(of: filterRadius, applyRadiusKey)
+                            .disabled(image == nil)
+                    }
+                }
+                .padding(.vertical)
+                HStack {
+                    Button("Change Filter") {
+                        changeFilter()
+                    }.disabled(image == nil)
+
+                    Spacer()
+
+                    if let image {
+                        ShareLink(item: image, preview: SharePreview("Instafilter image", image: image))
+                    }
+                }
+                .padding([.horizontal, .bottom])
+                .navigationTitle("Instafilter")
             }
-        }
-        .padding([.horizontal, .vertical])
-        .navigationTitle("Instafilter")
-        .confirmationDialog("Select a filter", isPresented: $showingFilters) {
-            Button("Crystallize") { setFilter(CIFilter.crystallize()) }
-            Button("Edges") { setFilter(CIFilter.edges()) }
-            Button("Gaussian Blur") { setFilter(CIFilter.gaussianBlur()) }
-            Button("Pixellate") { setFilter(CIFilter.pixellate()) }
-            Button("Sepia Tone") { setFilter(CIFilter.sepiaTone()) }
-            Button("Unsharp Mask") { setFilter(CIFilter.unsharpMask()) }
-            Button("Vignette") { setFilter(CIFilter.vignette()) }
-            Button("Cancel", role: .cancel) {}
+            .padding([.horizontal, .bottom])
+            .navigationTitle("Instafilter")
+            .confirmationDialog("Select a filter", isPresented: $showingFilters) {
+                Button("Crystallize") { setFilter(CIFilter.crystallize()) }
+                Button("Edges") { setFilter(CIFilter.edges()) }
+                Button("Gaussian Blur") { setFilter(CIFilter.gaussianBlur()) }
+                Button("Pixellate") { setFilter(CIFilter.pixellate()) }
+                Button("Sepia Tone") { setFilter(CIFilter.sepiaTone()) }
+                Button("Unsharp Mask") { setFilter(CIFilter.unsharpMask()) }
+                Button("Vignette") { setFilter(CIFilter.vignette()) }
+                Button("Cancel", role: .cancel) {}
+            }
         }
     }
 
@@ -105,28 +109,31 @@ struct Pro13Part5: View {
 
             let beginImage = CIImage(image: inputImage)
             currentFilter.setValue(beginImage, forKey: kCIInputImageKey)
-            applyProcessing()
-            applyProcessing2()
+            applyIntensityKey()
+            applyRadiusKey()
         }
     }
 
-    func applyProcessing() {
+    func applyIntensityKey() {
         let inputKeys = currentFilter.inputKeys
 
-        if inputKeys.contains(kCIInputIntensityKey) { currentFilter.setValue(filterIntensity, forKey: kCIInputIntensityKey) }
+        if inputKeys.contains(kCIInputIntensityKey) { currentFilter.setValue(filterIntensity, forKey: kCIInputIntensityKey)
+        }
 //        if inputKeys.contains(kCIInputRadiusKey) { currentFilter.setValue(filterIntensity * 200, forKey: kCIInputRadiusKey) }
-        if inputKeys.contains(kCIInputScaleKey) { currentFilter.setValue(filterIntensity * 10, forKey: kCIInputScaleKey) }
+        if inputKeys.contains(kCIInputScaleKey) {
+            currentFilter.setValue(filterIntensity * 10, forKey: kCIInputScaleKey)
+        }
         guard let outputImage = currentFilter.outputImage else { return }
         guard let cgImage = context.createCGImage(outputImage, from: outputImage.extent) else { return }
         let uiImage = UIImage(cgImage: cgImage)
         image = Image(uiImage: uiImage)
     }
 
-    func applyProcessing2() {
+    func applyRadiusKey() {
         let inputKeys = currentFilter.inputKeys
 
 //        if inputKeys.contains(kCIInputIntensityKey) { currentFilter.setValue(filterIntensity, forKey: kCIInputIntensityKey) }
-        if inputKeys.contains(kCIInputRadiusKey) { currentFilter.setValue(filterRadius*200, forKey: kCIInputRadiusKey) }
+        if inputKeys.contains(kCIInputRadiusKey) { currentFilter.setValue(filterRadius * 200, forKey: kCIInputRadiusKey) }
 //        if inputKeys.contains(kCIInputScaleKey) { currentFilter.setValue(filterRadius * 10, forKey: kCIInputScaleKey) }
         guard let outputImage = currentFilter.outputImage else { return }
         guard let cgImage = context.createCGImage(outputImage, from: outputImage.extent) else { return }
