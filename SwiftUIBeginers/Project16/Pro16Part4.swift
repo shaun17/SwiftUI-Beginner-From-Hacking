@@ -232,7 +232,6 @@ struct MeView: View {
     }
 
     func generateQRCode(from string: String) -> UIImage {
-        print(111)
         filter.message = Data(string.utf8)
 
         if let outputImage = filter.outputImage {
