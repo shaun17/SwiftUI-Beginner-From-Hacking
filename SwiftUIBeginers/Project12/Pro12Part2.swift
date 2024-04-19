@@ -105,7 +105,8 @@ struct Pro12Part2: View {
             UserViewPro12(minimumJoinDate: showingUpcomingOnly ? .now : .distantPast,
                           sortOrder: sortOrder)
             
-
+            
+        
                 .toolbar(content: {
                     EditButton()
                     

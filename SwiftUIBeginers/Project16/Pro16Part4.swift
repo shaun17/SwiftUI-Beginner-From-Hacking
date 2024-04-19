@@ -50,7 +50,7 @@ struct ProspectsView: View {
             "Uncontacted people"
         }
     }
-
+    
     init(filter: FilterType) {
         self.filter = filter
         if filter != .none {

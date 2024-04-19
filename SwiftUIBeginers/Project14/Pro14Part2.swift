@@ -18,8 +18,11 @@ struct Pro14Part2: View {
     let locations = [
         Location(name: "Buckingham Palace", coordinate: CLLocationCoordinate2D(latitude: 51.501, longitude: -0.141)),
         Location(name: "Tower of London", coordinate: CLLocationCoordinate2D(latitude: 51.508, longitude: -0.076)),
+        Location(name: "point3", coordinate: CLLocationCoordinate2D(latitude: 51.512, longitude: -0.106)),
+        Location(name: "point3", coordinate: CLLocationCoordinate2D(latitude: 51.498, longitude: -0.106)),
     ]
 
+    // 默认伦敦
     @State private var position = MapCameraPosition.region(
         MKCoordinateRegion(
             center: CLLocationCoordinate2D(latitude: 51.507222, longitude: -0.1275),
@@ -56,22 +59,23 @@ struct Pro14Part2: View {
                 }
         }
         // 地图打点
-//        Map{
-//            ForEach(locations){ location in
-//                Marker(location.name, coordinate: location.coordinate)
-//
-//                    // 自定义标记打点
-        ////                Annotation(location.name, coordinate: location.coordinate) {
-        ////                    Text(location.name)
-        ////                        .font(.headline)
-        ////                        .padding()
-        ////                        .background(.blue)
-        ////                        .foregroundStyle(.white)
-        ////                        .clipShape(.capsule)
-        ////                }
-        ////                .annotationTitles(.hidden)
-//            }
-//        }
+        Map {
+            
+            ForEach(locations) { location in
+                // 默认打点
+                Marker(location.name, coordinate: location.coordinate)
+                // 自定义标记打点
+//                Annotation(location.name, coordinate: location.coordinate) {
+//                    Text(location.name)
+//                        .font(.headline)
+//                        .padding()
+//                        .background(.blue)
+//                        .foregroundStyle(.white)
+//                        .clipShape(.capsule)
+//                }
+//                .annotationTitles(.hidden)
+            }
+        }
 
         Map(position: $position)
             //            .mapStyle(.imagery)

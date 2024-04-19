@@ -31,7 +31,10 @@ struct Pro14Part4: View {
 //    @State private var locations = [LocationPro14]()
 //    @State private var seletedPlace: LocationPro14?
 //
-    let startPosition = MapCameraPosition.region(MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 56, longitude: -3), span: MKCoordinateSpan(latitudeDelta: 10, longitudeDelta: 10)))
+    let startPosition = MapCameraPosition.region(MKCoordinateRegion(
+        center: CLLocationCoordinate2D(latitude: 56, longitude: -3),
+        span: MKCoordinateSpan(latitudeDelta: 10, longitudeDelta: 10)
+    ))
 
     @State private var viewModel = ViewModel()
 

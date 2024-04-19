@@ -136,6 +136,7 @@
 		28B30B212B011B3B00307467 /* DetailView_Project11.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B30B202B011B3B00307467 /* DetailView_Project11.swift */; };
 		28D47B842AD30C7000157652 /* missions.json in Resources */ = {isa = PBXBuildFile; fileRef = 28D47B822AD30C7000157652 /* missions.json */; };
 		28D47B852AD30C7000157652 /* astronauts.json in Resources */ = {isa = PBXBuildFile; fileRef = 28D47B832AD30C7000157652 /* astronauts.json */; };
+		28F9F0B02BD2A8B0000417F2 /* EditListDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F9F0AF2BD2A8B0000417F2 /* EditListDemo.swift */; };
 		28FB1C782BC51A2800544556 /* StudentNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FB1C772BC51A2800544556 /* StudentNameView.swift */; };
 		28FB1C7A2BC51D1100544556 /* StudentNameView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FB1C792BC51D1100544556 /* StudentNameView2.swift */; };
 		28FB1C7C2BC5920D00544556 /* Pro18Part2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FB1C7B2BC5920D00544556 /* Pro18Part2.swift */; };
@@ -314,6 +315,7 @@
 		28B30B202B011B3B00307467 /* DetailView_Project11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView_Project11.swift; sourceTree = "<group>"; };
 		28D47B822AD30C7000157652 /* missions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = missions.json; sourceTree = "<group>"; };
 		28D47B832AD30C7000157652 /* astronauts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = astronauts.json; sourceTree = "<group>"; };
+		28F9F0AF2BD2A8B0000417F2 /* EditListDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditListDemo.swift; sourceTree = "<group>"; };
 		28FB1C772BC51A2800544556 /* StudentNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentNameView.swift; sourceTree = "<group>"; };
 		28FB1C792BC51D1100544556 /* StudentNameView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentNameView2.swift; sourceTree = "<group>"; };
 		28FB1C7B2BC5920D00544556 /* Pro18Part2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pro18Part2.swift; sourceTree = "<group>"; };
@@ -680,6 +682,7 @@
 			children = (
 				285B888F2AC3FCBD0078D3F0 /* Project1.swift */,
 				285B88912AC474780078D3F0 /* Project2.swift */,
+				28F9F0AF2BD2A8B0000417F2 /* EditListDemo.swift */,
 			);
 			path = Projects;
 			sourceTree = "<group>";
@@ -1008,6 +1011,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28F9F0B02BD2A8B0000417F2 /* EditListDemo.swift in Sources */,
 				282E590C2BA03E8F000C78A7 /* Challenge2.swift in Sources */,
 				28FB28792B08BF32003A737E /* SpaceListView_Project12.swift in Sources */,
 				284612F42AE4F9A900E284B7 /* SwiftUIViewColorCircular.swift in Sources */,

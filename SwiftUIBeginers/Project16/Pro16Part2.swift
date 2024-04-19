@@ -51,6 +51,7 @@ struct Pro16Part2: View {
             let url = URL(string: "https://hws.dev/readings.json")!
             let (data, _) = try await URLSession.shared.data(from: url)
             let readings = try JSONDecoder().decode([Double].self, from: data)
+            try await Task.sleep(nanoseconds: 2_000_000_000)
             output = "Found \(readings.count) readings"
             return output
         }
