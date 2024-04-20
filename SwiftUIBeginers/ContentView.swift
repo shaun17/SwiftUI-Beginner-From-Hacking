@@ -19,7 +19,7 @@ struct ContentView: View {
                 NavigationLink {
 //                    Pro16Part4()
 //                        .modelContainer(for: Prospect.self)
-                    Pro16Part3()
+                    DragToReorderList()
 
                 } label: {
                     Label("Project demo", systemImage: "folder")

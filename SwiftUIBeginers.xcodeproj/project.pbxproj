@@ -137,6 +137,8 @@
 		28D47B842AD30C7000157652 /* missions.json in Resources */ = {isa = PBXBuildFile; fileRef = 28D47B822AD30C7000157652 /* missions.json */; };
 		28D47B852AD30C7000157652 /* astronauts.json in Resources */ = {isa = PBXBuildFile; fileRef = 28D47B832AD30C7000157652 /* astronauts.json */; };
 		28F9F0B02BD2A8B0000417F2 /* EditListDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F9F0AF2BD2A8B0000417F2 /* EditListDemo.swift */; };
+		28F9F0B42BD37AFE000417F2 /* DragToReorderList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F9F0B32BD37AFE000417F2 /* DragToReorderList.swift */; };
+		28F9F0B62BD38152000417F2 /* EditListDemo2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F9F0B52BD38152000417F2 /* EditListDemo2.swift */; };
 		28FB1C782BC51A2800544556 /* StudentNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FB1C772BC51A2800544556 /* StudentNameView.swift */; };
 		28FB1C7A2BC51D1100544556 /* StudentNameView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FB1C792BC51D1100544556 /* StudentNameView2.swift */; };
 		28FB1C7C2BC5920D00544556 /* Pro18Part2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FB1C7B2BC5920D00544556 /* Pro18Part2.swift */; };
@@ -316,6 +318,8 @@
 		28D47B822AD30C7000157652 /* missions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = missions.json; sourceTree = "<group>"; };
 		28D47B832AD30C7000157652 /* astronauts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = astronauts.json; sourceTree = "<group>"; };
 		28F9F0AF2BD2A8B0000417F2 /* EditListDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditListDemo.swift; sourceTree = "<group>"; };
+		28F9F0B32BD37AFE000417F2 /* DragToReorderList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragToReorderList.swift; sourceTree = "<group>"; };
+		28F9F0B52BD38152000417F2 /* EditListDemo2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditListDemo2.swift; sourceTree = "<group>"; };
 		28FB1C772BC51A2800544556 /* StudentNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentNameView.swift; sourceTree = "<group>"; };
 		28FB1C792BC51D1100544556 /* StudentNameView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentNameView2.swift; sourceTree = "<group>"; };
 		28FB1C7B2BC5920D00544556 /* Pro18Part2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pro18Part2.swift; sourceTree = "<group>"; };
@@ -683,6 +687,8 @@
 				285B888F2AC3FCBD0078D3F0 /* Project1.swift */,
 				285B88912AC474780078D3F0 /* Project2.swift */,
 				28F9F0AF2BD2A8B0000417F2 /* EditListDemo.swift */,
+				28F9F0B52BD38152000417F2 /* EditListDemo2.swift */,
+				28F9F0B32BD37AFE000417F2 /* DragToReorderList.swift */,
 			);
 			path = Projects;
 			sourceTree = "<group>";
@@ -1055,6 +1061,7 @@
 				28AD56522B9EF9A90016627E /* DemoPart2.swift in Sources */,
 				2885AF402AEE9CF600E89B0C /* Challenge47Days.swift in Sources */,
 				2830A1FB2ACDB89B00D10B66 /* QuizView.swift in Sources */,
+				28F9F0B42BD37AFE000417F2 /* DragToReorderList.swift in Sources */,
 				288DCFCF2BB3F2F20038F5AF /* ChallengeMillstone10-12.swift in Sources */,
 				284612FB2AE5236700E284B7 /* SwiftUIViewShapeAnimatable.swift in Sources */,
 				282E59422BA96BD9000C78A7 /* Pro9Part4.swift in Sources */,
@@ -1073,6 +1080,7 @@
 				2809D8802BBBF68A002D033C /* Pro17Part1.swift in Sources */,
 				282E59282BA5F0AF000C78A7 /* Pro7Part1.swift in Sources */,
 				285B889A2AC72E890078D3F0 /* SwiftUIViewDate.swift in Sources */,
+				28F9F0B62BD38152000417F2 /* EditListDemo2.swift in Sources */,
 				282E59052B9F437A000C78A7 /* Challenge1.swift in Sources */,
 				282E592C2BA6B32F000C78A7 /* Pro7Part3.swift in Sources */,
 				288DCFDD2BB5BB6C0038F5AF /* Pro13Part5.swift in Sources */,
