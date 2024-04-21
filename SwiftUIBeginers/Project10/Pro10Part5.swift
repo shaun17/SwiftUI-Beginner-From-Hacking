@@ -9,10 +9,12 @@ import SwiftUI
 
 @Observable
 class AddressPro: Codable {
-    var name = ""
-    var streetAddress = ""
-    var city = ""
-    var zip = ""
+
+    var name: String
+    var streetAddress: String
+    var city: String
+    var zip: String
+    
     init(name: String = "", streetAddress: String = "", city: String = "", zip: String = "") {
         self.name = name
         self.streetAddress = streetAddress

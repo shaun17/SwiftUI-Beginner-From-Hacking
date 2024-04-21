@@ -8,19 +8,15 @@
 import SwiftUI
 
 struct ChallengeThree: View {
-    
     @State private var symbols = ["➕", "➖", "✖️", "➗"]
     @State private var symbolSelect = "➕"
-    
-    
+
     @State private var numbs = Array(5 ..< 13)
     @State private var numSelect = 0
-    
-    
-    @State private var questionCounts = [5,10,15,20]
+
+    @State private var questionCounts = [5, 10, 15, 20]
     @State private var selectQuestionCount = 0
-    
-    
+
     var body: some View {
         NavigationView {
             VStack {
@@ -28,7 +24,7 @@ struct ChallengeThree: View {
                     Section("chose element") {
                         VStack {
                             Picker("基数范围请选择", selection: $numSelect) {
-                                ForEach(0 ..< numbs.count ) { index in
+                                ForEach(0 ..< numbs.count, id: \.self) { index in
                                     Text("\(numbs[index])")
                                 }
                             }
@@ -39,9 +35,9 @@ struct ChallengeThree: View {
                             } label: {
                                 Text("运算符")
                             }
-                            
+
                             Picker(selection: $selectQuestionCount) {
-                                ForEach(0..<questionCounts.count) { index in
+                                ForEach(0 ..< questionCounts.count, id: \.self) { index in
                                     Text(String(questionCounts[index]))
                                 }
                             } label: {
@@ -50,15 +46,15 @@ struct ChallengeThree: View {
                         }
                     }
                 }
-                
-                NavigationLink(destination: QuizView(symbol: symbolSelect, cardinal: numbs[numSelect], questioCount: questionCounts[selectQuestionCount] )) {
+
+                NavigationLink(destination: QuizView(symbol: symbolSelect, cardinal: numbs[numSelect], questioCount: questionCounts[selectQuestionCount])) {
                     Text("Let's Go")
                 }
             }
         }
     }
 }
-    
+
 #Preview {
     ChallengeThree()
 }
