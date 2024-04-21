@@ -157,7 +157,7 @@ struct Pro17Part5View: View {
             resetCards()
         }
         .alert(isPresented: $review, content: {
-            Alert(title: Text("Review"),dismissButton: Alert.Button.cancel({
+            Alert(title: Text("Review"),dismissButton: Alert.Button.default(Text("OK"), action: {
                 review = false
             }))
         })
