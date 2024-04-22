@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct Pro17Part7: View {
+    // 一个时间工具，每一秒动态链接
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     @State private var timeRemaining = 100
     @State private var cards = [Card]()
@@ -38,7 +39,7 @@ struct Pro17Part7: View {
                             Pro17CardSubView(card: card) { isLeftSwipe in
                                 withAnimation {
                                     guard index >= 0 else { return }
-                                    removeCard2(at: index, isLeftSwipe: isLeftSwipe)
+                                    removeCardByIndex(at: index, card: card, isLeftSwipe: isLeftSwipe)
                                 }
                             }
                             .stack(at: index, in: cards.count)
@@ -105,11 +106,15 @@ struct Pro17Part7: View {
         })
     }
 
-    func removeCard2(at index: Int, isLeftSwipe: Bool) {
-        let car = cards.remove(at: index)
+    func removeCardByIndex(at index: Int, card: Card, isLeftSwipe: Bool) {
+        // 获取索引值
+        if let i = cards.firstIndex(where: {$0.id == card.id}){
+            let car = cards.remove(at: i)
+        }
+        
+        // 如果是向左滑动，将卡片添加到cards_bak数组中
         if isLeftSwipe {
-            // 如果是向左滑动，将卡片添加到cards_bak数组中
-            cards.insert(car, at: 0)
+            cards.insert(card, at: 0)
         }
         if cards.isEmpty {
             isActive = false

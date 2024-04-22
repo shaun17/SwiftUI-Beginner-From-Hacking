@@ -384,8 +384,8 @@
 				2809D8832BBC02AE002D033C /* Pro17Part3.swift */,
 				2809D8852BBC0F75002D033C /* Pro17Part4.swift */,
 				2809D8872BBC18CD002D033C /* Pro17Part5.swift */,
-				28F9F0B72BD51497000417F2 /* Pro17Part7.swift */,
 				2813FE662BC1927C0073EBDF /* Pro17Part6.swift */,
+				28F9F0B72BD51497000417F2 /* Pro17Part7.swift */,
 			);
 			path = Project17;
 			sourceTree = "<group>";
