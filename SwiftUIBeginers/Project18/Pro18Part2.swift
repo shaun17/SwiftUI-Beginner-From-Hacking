@@ -22,7 +22,6 @@ struct Pro18Part2: View {
         HStack(alignment: .midAccountAndName) {
             VStack {
                 Text("Hello World")
-
                 Text("@twostraws")
                     .alignmentGuide(.midAccountAndName) { d in d[VerticalAlignment.center] }
                 Image(.example)
@@ -33,8 +32,9 @@ struct Pro18Part2: View {
             VStack {
                 Text("Full name:")
                 Text("PAUL HUDSON")
-                    .alignmentGuide(.midAccountAndName) { d in d[VerticalAlignment.center] }
                     .font(.largeTitle)
+                    .alignmentGuide(.midAccountAndName) { d in d[VerticalAlignment.center] }
+
                 Text("Hello World")
                     .font(.headline
                     )

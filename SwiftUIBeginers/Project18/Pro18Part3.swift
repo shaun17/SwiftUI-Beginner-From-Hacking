@@ -10,10 +10,10 @@ import SwiftUI
 struct OuterView: View {
     var body: some View {
         VStack {
-            Text("Top")
+            Text("Top").padding()
             InnerView()
                 .background(.green)
-            Text("Bottom")
+            Text("Bottom").padding()
         }
     }
 }
@@ -22,6 +22,7 @@ struct InnerView: View {
     var body: some View {
         HStack {
             Text("Left")
+
             GeometryReader(content: { proxy in
                 Text("Content")
                     .background(.blue)
@@ -29,6 +30,7 @@ struct InnerView: View {
                         print("Global center: \(proxy.frame(in: .global).midX) x \(proxy.frame(in: .global).midY)")
                         print("Custom center: \(proxy.frame(in: .named("Custom")).midX) x \(proxy.frame(in: .named("Custom")).midY)")
                         print("Local center: \(proxy.frame(in: .local).midX) x \(proxy.frame(in: .local).midY)")
+                        print("=============================")
                     }
             })
             .background(.orange)

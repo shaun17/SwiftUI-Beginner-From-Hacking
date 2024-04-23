@@ -13,6 +13,7 @@ struct Pro18Part4: View {
 
     var body: some View {
         GeometryReader { fullView in
+            Color.orange
             ScrollView {
                 ForEach(0 ..< 50) { index in
                     GeometryReader { proxy in
@@ -31,15 +32,22 @@ struct Pro18Part4: View {
                 }
             }
         }
+        .ignoresSafeArea()
     }
-    func colorForView(proxy: GeometryProxy, in fullView: GeometryProxy) -> Color {
-            let minY = proxy.frame(in: .global).minY
-            let height = fullView.size.height
-            let position = minY / height // 计算视图的垂直位置比例
 
-            // 使用色调值创建颜色，色调值随视图的垂直位置变化
-            return Color(hue: position, saturation: 1, brightness: 1)
-        }
+    func colorForView(proxy: GeometryProxy, in fullView: GeometryProxy) -> Color {
+        let minY = proxy.frame(in: .global).minY
+        print("minY: \(proxy.frame(in: .global).maxY)")
+
+        let height = fullView.size.height
+        print("height: \(+height)")
+
+        let position = minY / height // 计算视图的垂直位置比例
+
+        // 使用色调值创建颜色，色调值随视图的垂直位置变化
+        return Color(hue: position, saturation: 1, brightness: 1)
+    }
+
     // 根据视图在全局坐标系中的垂直位置计算缩放比例
     func scaleForView(proxy: GeometryProxy, in fullView: GeometryProxy) -> CGFloat {
         let minY = proxy.frame(in: .global).minY
