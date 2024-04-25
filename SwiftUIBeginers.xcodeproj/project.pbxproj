@@ -95,6 +95,11 @@
 		285B889E2AC820C80078D3F0 /* SleepCalculator.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 285B889D2AC820C80078D3F0 /* SleepCalculator.mlmodel */; };
 		287092F42BD76E3100681C2F /* ChallengMileStone16-18.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287092F32BD76E3100681C2F /* ChallengMileStone16-18.swift */; };
 		287092F62BD78C7B00681C2F /* ChallengeSubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287092F52BD78C7B00681C2F /* ChallengeSubView.swift */; };
+		287092FC2BD7B15C00681C2F /* Pro19Part1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287092FB2BD7B15C00681C2F /* Pro19Part1.swift */; };
+		287092FE2BD7BA1200681C2F /* Pro19Part2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287092FD2BD7BA1200681C2F /* Pro19Part2.swift */; };
+		287093002BD8E51200681C2F /* Pro19Part3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287092FF2BD8E51200681C2F /* Pro19Part3.swift */; };
+		287093022BD8EA2100681C2F /* Pro19Part4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287093012BD8EA2100681C2F /* Pro19Part4.swift */; };
+		287093042BD8F70C00681C2F /* Pro19Part5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287093032BD8F70C00681C2F /* Pro19Part5.swift */; };
 		287CA0422AF38668004DC41A /* HabitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287CA0412AF38668004DC41A /* HabitView.swift */; };
 		2885AF3D2AED5F6E00E89B0C /* SwiftUIViewColorCyclingRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2885AF3C2AED5F6E00E89B0C /* SwiftUIViewColorCyclingRectangle.swift */; };
 		2885AF402AEE9CF600E89B0C /* Challenge47Days.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2885AF3F2AEE9CF600E89B0C /* Challenge47Days.swift */; };
@@ -280,6 +285,11 @@
 		285B889D2AC820C80078D3F0 /* SleepCalculator.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SleepCalculator.mlmodel; sourceTree = "<group>"; };
 		287092F32BD76E3100681C2F /* ChallengMileStone16-18.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChallengMileStone16-18.swift"; sourceTree = "<group>"; };
 		287092F52BD78C7B00681C2F /* ChallengeSubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeSubView.swift; sourceTree = "<group>"; };
+		287092FB2BD7B15C00681C2F /* Pro19Part1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pro19Part1.swift; sourceTree = "<group>"; };
+		287092FD2BD7BA1200681C2F /* Pro19Part2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pro19Part2.swift; sourceTree = "<group>"; };
+		287092FF2BD8E51200681C2F /* Pro19Part3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pro19Part3.swift; sourceTree = "<group>"; };
+		287093012BD8EA2100681C2F /* Pro19Part4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pro19Part4.swift; sourceTree = "<group>"; };
+		287093032BD8F70C00681C2F /* Pro19Part5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pro19Part5.swift; sourceTree = "<group>"; };
 		287CA0412AF38668004DC41A /* HabitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitView.swift; sourceTree = "<group>"; };
 		2885AF3C2AED5F6E00E89B0C /* SwiftUIViewColorCyclingRectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewColorCyclingRectangle.swift; sourceTree = "<group>"; };
 		2885AF3F2AEE9CF600E89B0C /* Challenge47Days.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge47Days.swift; sourceTree = "<group>"; };
@@ -440,10 +450,11 @@
 				288DCFEB2BBA6B100038F5AF /* ChallengeMilstone13-15 */,
 				280E59822AC1284100DAC8F1 /* ContentView.swift */,
 				280E59802AC1284100DAC8F1 /* SwiftUIBeginersApp.swift */,
-				287092F22BD76DF400681C2F /* ChallengeMileStone16-18 */,
 				288EE8532BBA9D1200840E4E /* Project16 */,
 				2809D87E2BBBF679002D033C /* Project17 */,
 				2813FE682BC400D80073EBDF /* Project18 */,
+				287092FA2BD7B14300681C2F /* Project19 */,
+				287092F22BD76DF400681C2F /* ChallengeMileStone16-18 */,
 				288DCFD02BB513950038F5AF /* Test */,
 				28B30B0B2AFD385000307467 /* Project111 */,
 				28FB28692B03BE6D003A737E /* Project121 */,
@@ -717,6 +728,18 @@
 				287092F52BD78C7B00681C2F /* ChallengeSubView.swift */,
 			);
 			path = "ChallengeMileStone16-18";
+			sourceTree = "<group>";
+		};
+		287092FA2BD7B14300681C2F /* Project19 */ = {
+			isa = PBXGroup;
+			children = (
+				287092FB2BD7B15C00681C2F /* Pro19Part1.swift */,
+				287092FD2BD7BA1200681C2F /* Pro19Part2.swift */,
+				287092FF2BD8E51200681C2F /* Pro19Part3.swift */,
+				287093012BD8EA2100681C2F /* Pro19Part4.swift */,
+				287093032BD8F70C00681C2F /* Pro19Part5.swift */,
+			);
+			path = Project19;
 			sourceTree = "<group>";
 		};
 		2885AF3E2AEE9CCD00E89B0C /* Challenge47 */ = {
@@ -1043,6 +1066,7 @@
 				282E595F2BB11263000C78A7 /* Pro11Part1.swift in Sources */,
 				282E59402BA95879000C78A7 /* Pro9Part3.swift in Sources */,
 				285B88922AC474780078D3F0 /* Project2.swift in Sources */,
+				287092FE2BD7BA1200681C2F /* Pro19Part2.swift in Sources */,
 				287092F62BD78C7B00681C2F /* ChallengeSubView.swift in Sources */,
 				288DCFE22BB6B0C80038F5AF /* Pro14Part2.swift in Sources */,
 				282E59712BB2A908000C78A7 /* SwiftUIView.swift in Sources */,
@@ -1059,9 +1083,11 @@
 				28FB288E2B0914A9003A737E /* Singer+CoreDataClass.swift in Sources */,
 				28B30B152AFF7A8800307467 /* Bookworm.xcdatamodeld in Sources */,
 				2813FE6A2BC400E60073EBDF /* Pro18Part1.swift in Sources */,
+				287093042BD8F70C00681C2F /* Pro19Part5.swift in Sources */,
 				282E593C2BA87FF6000C78A7 /* Pro9Part1.swift in Sources */,
 				280E59832AC1284100DAC8F1 /* ContentView.swift in Sources */,
 				287CA0422AF38668004DC41A /* HabitView.swift in Sources */,
+				287093022BD8EA2100681C2F /* Pro19Part4.swift in Sources */,
 				282E593E2BA88F9E000C78A7 /* Pro9Part2.swift in Sources */,
 				2809D8822BBC002A002D033C /* Pro17Part2.swift in Sources */,
 				285B88902AC3FCBD0078D3F0 /* Project1.swift in Sources */,
@@ -1091,6 +1117,7 @@
 				280E59812AC1284100DAC8F1 /* SwiftUIBeginersApp.swift in Sources */,
 				284612F72AE501BB00E284B7 /* SwiftUIViewBlurs.swift in Sources */,
 				282E594F2BAA8C3D000C78A7 /* ChallengeMillstone-View.swift in Sources */,
+				287093002BD8E51200681C2F /* Pro19Part3.swift in Sources */,
 				28FB28892B09140E003A737E /* SingerView_Project12.swift in Sources */,
 				282E59252BA599AE000C78A7 /* ChallengeMilstone4-6.swift in Sources */,
 				282E594D2BAA8B2B000C78A7 /* ChallengeMillstonePOJO.swift in Sources */,
@@ -1116,6 +1143,7 @@
 				28FB28872B08C5DF003A737E /* Movie+CoreDataProperties.swift in Sources */,
 				288DCFD22BB513B00038F5AF /* SwiftUIViewTest.swift in Sources */,
 				282E59632BB12767000C78A7 /* Pro11Part3.swift in Sources */,
+				287092FC2BD7B15C00681C2F /* Pro19Part1.swift in Sources */,
 				285B889C2AC81CB40078D3F0 /* SwiftUIViewBetterRest.swift in Sources */,
 				282E596A2BB1B3CA000C78A7 /* Pro12Part1.swift in Sources */,
 				28FB1C7C2BC5920D00544556 /* Pro18Part2.swift in Sources */,
